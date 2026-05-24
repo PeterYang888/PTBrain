@@ -1,0 +1,82 @@
+---
+type: source
+tags: [Harness_Engineering, AI職涯, Agent架構, AI工具, 矽谷, ai-tooling]
+created: 2026-05-16
+source_url: https://www.youtube.com/watch?v=T_GuZBHJ2mc
+source_date: 2026-05-16
+source_type: transcript
+---
+
+# Harness Engineering：2026 年 AI 第二波戰爭的核心系統架構
+
+## 執行摘要
+
+隨著人工智慧技術的演進，業界對 AI 的關注點已從單純的大語言模型（LLM）能力，轉向如何構建支撐這些模型的系統架構。**Harness Engineering（架構工程）** 被視為 2026 年 AI 競爭的核心，它定義了如何為 AI 建立一個能與現實世界互動的「身體」。
+
+本文件分析了 Harness Engineering 的定義、其與提示工程（Prompt Engineering）的本質差異、兩大主流技術流派（OpenCloud 與 Hermes）的競爭，以及該領域對未來工程師職涯的深遠影響。Harness Engineer 已成為矽谷高薪職缺，其核心價值在於解決 LLM 的記憶、工具使用、規劃執行與自動評估等四大核心難題。
+
+---
+
+## 核心主題深入分析
+
+### 1. Harness Engineering 的定義與功能
+若將 LLM 比喻為一個「超級聰明但失憶且殘疾的大腦」，Harness 就是為其裝上的「身體」。
+
+一套完整的 Harness 必須解決以下四個核心問題：
+
+| 功能模組 | 說明 |
+| :--- | :--- |
+| **記憶 (Memory)** | 解決 LLM 缺乏長期記憶的問題，儲存歷史對話、代碼規範（Coding Style）及用戶偏好。 |
+| **工具 (Tools)** | 為 AI 提供「手腳」，使其能讀取檔案、操作終端機（Terminal）、開啟瀏覽器、寄送郵件或串接 API。 |
+| **規劃與執行 (Planning & Execution)** | 將用戶需求拆解為步驟，並建立執行與錯誤重試（Retry）的邏輯循環。 |
+| **評估 (Evaluation)** | 建立判斷機制，自動測試執行結果是否正確，並決定是否需要重新運行。 |
+
+### 2. Harness Engineering vs. Prompt Engineering
+*   **Prompt Engineering（提示工程）：** 專注於「輸入層」的優化，研究如何與 AI 對話以獲得更好結果。比喻為「如何有效地詢問醫生」。
+*   **Harness Engineering（架構工程）：** 專注於「系統架構」設計。比喻為「如何建設一整間醫院（包含掛號、病歷、藥房到手術室的流程）」。
+
+### 3. 2026 年的技術轉折：兩大流派對決
+
+| 框架名稱 | 設計理念 | 核心架構 | 核心賣點 |
+| :--- | :--- | :--- | :--- |
+| **OpenCloud** | 連接的廣度 | **Gateway First** (中控系統) | 連接一切外部世界，擁有龐大的 Skills 市集（約 4.4 萬個技能）。 |
+| **Hermes Agent** | 記憶與學習的深度 | **Agent First** (持久記憶) | 學習閉環（執行-評估-萃取-改進-檢索），強調「越用越懂你」。 |
+
+### 4. Harness 設計的三大挑戰
+*   **上下文管理 (Context Management)：** 決定每次餵給模型多少資訊。塞太少會導致回答品質下降，塞太多則會分散注意力、增加延遲並提高 token 成本。
+*   **工具授權 (Tool Use)：** 涉及安全性決策。例如是否允許 AI 直接刪除檔案、動用生產資料庫或使用公司信用卡支付 API 費用。
+*   **評估循環 (Evaluation Loop)：** 這是目前最困難的部分。如何定義任務完成、如何 checkpoint 長時間任務，以及解決 AI 「自我感覺良好」但結果錯誤的虛假評估問題。
+
+---
+
+## 關鍵語錄與語境分析
+
+> 「LLM 就像是一個超級聰明，但是失憶而且沒有手沒有腳的大腦。Harness 就是你幫這個大腦裝上的身體。」
+
+> 「2022 年 AI 的戰場是誰的大腦最聰明，2026 年開始戰場換成了誰幫大腦裝了最好的身體。」
+
+> 「Prompt engineering 是怎麼問醫生比較有用，但是 engineering 則是怎麼建一整間醫院。」
+
+---
+
+## 實踐範例：PR Code Review Agent
+1.  **建立記憶層：** 讀取 Coding Style 文件並轉換為 JSON 格式的錯誤模式。
+2.  **串接工具：** 利用 GitHub API 獲取 PR 的 Diff 內容，並賦予其在指定行數留言的權限。
+3.  **設計規劃循環：** 將 Diff 內容與記憶中的規範結合，生成審查計畫（Review Plan）。
+4.  **實施雙層評估：** 第一層讓模型自審 Review Plan 是否合理；第二層執行留言並記錄回記憶層。
+
+---
+
+## 行動建議與見解
+
+### 對工程師的專業建議
+1.  **建立技術差異化：** 不要只做會用模型工具的工程師，要理解 Agent 為什麼會跑壞，並具備設計 Harness 讓系統穩定的工程能力。
+2.  **深入研究開源源碼：** 閱讀 OpenCloud 與 Hermes 的源代碼，重點研究其記憶層設計、技能介面定義及評估循環的實現方式。
+3.  **把握早期優勢：** Harness Engineering 尚處於早期階段，目前的「新潮流」將在 1-2 年後成為基礎必備技能。
+
+### 職涯發展路徑
+*   **ML Engineer / Model Engineer：** 專注於模型訓練與底層優化（需 Pytorch 等能力）。
+*   **Application Engineer：** 使用現成 Agent 整合至業務流程（傳統軟體開發 + 產品思維）。
+*   **Harness Engineer：** 設計整個系統架構。需要**系統設計、LLM 特性理解、分散式系統與評估方法論**的四維交集能力。
+
+**薪資參考：** 矽谷 AI Harness Engineer 的平均底薪約為 22 萬至 38 萬美元，總報酬（含股票）可達 50 萬美元以上。

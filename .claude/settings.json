@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:/Python314/python.exe C:/Users/user/Desktop/PTBrain/PTBrain/.claude/check_raw.py",
+            "timeout": 10,
+            "statusMessage": "掃描 raw/ 新檔案..."
+          }
+        ]
+      }
+    ]
+  }
+}
