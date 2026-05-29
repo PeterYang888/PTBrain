@@ -113,6 +113,25 @@
 - 新建 concepts：[[世界模型]], [[VAE]], [[CLIP]], [[CFG]], [[擴散模型]], [[MCP]]
 - 更新：[[Yann_LeCun]]（修正 Meta 現職描述 → 已離職，AMI Labs 創辦人）、[[index]]（+4 entities, +6 concepts, 統計更新）
 
+## [2026-05-30] ingest | 7 支影片（ai-tooling ×7）+ 1 支失敗（competitor-intel Pinata）
+- 工具：notebooklm generate report --format briefing-doc -s <source_id>，逐源生成繁體中文 briefing
+- 處理來源：inbox.md 2026-05-30 批次（ai-tooling 7 支 + competitor-intel 1 支）
+- **失敗**：競爭情報 Pinata Wins by PG Soft（https://www.youtube.com/watch?v=ecyfJTM2LmI），API 返回無資料（可能影片有地區限制或私人設定）
+- source 頁（7 頁）：
+  [[2026-05-30_ai_agent_goal功能]]（/goal 功能與 Rubric 評審架構）、
+  [[2026-05-30_股癌_ep659_生理科技心智]]（AI 硬體輪動 + AI Slop + 生理優化）、
+  [[2026-05-30_karpathy_ai編程陷阱]]（claud.md 四條規則，返工率 41%→11%）、
+  [[2026-05-30_codex_零基礎入門]]（Codex 入門、Plugins/Skills/NCP）、
+  [[2026-05-30_codex_office全包辦]]（AGENTS.md + Computer Use + 校慶案例）、
+  [[2026-05-30_ai_ppt_codex]]（邏輯分離法則，8分鐘/10頁 PPT）、
+  [[2026-05-30_ai眼鏡時代]]（AI 智慧眼鏡市場，CAGR 58%，三強鼎立）
+- 新建 entities：[[OpenAI_Codex]]、[[Meta]]
+- 新建 concepts：[[AI智慧眼鏡]]
+- 更新：[[Andrej_Karpathy]]（+claud.md 四條規則）、[[OpenAI]]（+Codex 產品說明）、
+  [[Google]]（+EssilorLuxottica+Magic Leap 合作）、[[Agentic_Workflow]]（+/goal+Context Anxiety+Rubric）
+- 更新：[[index]]（+7 sources, +2 entities, +1 concept）
+- inbox.md：7 支移至已處理，competitor-intel Pinata 記錄失敗原因後保留
+
 ## [2026-05-24] ingest | 7 支 ai-tooling 影片（Karpathy 三部曲 + Karpathy 筆記術 + PrintingPress + Google I/O 2026 + AI裁員）
 - 工具：notebooklm ask --json（PowerShell UTF-8 模式解決 Windows 編碼問題）
 - source 頁（7 頁）：

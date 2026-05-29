@@ -4,7 +4,7 @@ entity_type: organization
 tags: [AI公司, LLM, ChatGPT, B2C]
 created: 2026-05-16
 updated: 2026-05-16
-sources: [2026-05-16_anthropic_超越_openai, 2026-05-16_ai前沿週報_ep6_claude勒索, 2026-05-16_ai教父_agi內幕]
+sources: [2026-05-16_anthropic_超越_openai, 2026-05-16_ai前沿週報_ep6_claude勒索, 2026-05-16_ai教父_agi內幕, 2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 2026-05-30_ai_ppt_codex]
 ---
 
 # OpenAI
@@ -22,11 +22,22 @@ sources: [2026-05-16_anthropic_超越_openai, 2026-05-16_ai前沿週報_ep6_clau
 - 對 Anthropic ARR 數字提出質疑：若以「淨額」計算，Anthropic 核心收入可能僅 40 億美元
 - GPT Real-Time API：支援 70 語言即時語音、128K context、邊想邊說，語音成為主要界面（來自 [[2026-05-16_ai前沿週報_ep6_claude勒索]]）
 
+## 產品：OpenAI Codex（2026 年主力生產力工具）
+Codex 已從程式碼 API 演進為全功能桌面端 AI 助理，可執行 Gmail 管理、PPT 製作、網站開發、Computer Use 等任務（來自 [[2026-05-30_codex_零基礎入門]]）：
+- **AGENTS.md** 專案守則 + **Skills/Plugins** 系統
+- PPT 生成：約 8 分鐘/10 頁，含自我截圖視覺檢查
+- 被定位為「AI 做 PPT 的最優工具」（2026 年）
+→ 詳見 [[OpenAI_Codex]]
+
 ## 與其他頁的關係
 - 競爭對手：[[Anthropic]]（2026 年 4 月 ARR 被超越）
 - 技術路線批評者：[[Yann_LeCun]] 認為 LLM 是通往 AGI 的死胡同
+- 工具競爭：[[OpenAI_Codex]] vs [[Claude_Code]]
 
 ## 相關來源
 - [[2026-05-16_anthropic_超越_openai]]
 - [[2026-05-16_ai前沿週報_ep6_claude勒索]]
 - [[2026-05-16_ai教父_agi內幕]]
+- [[2026-05-30_codex_零基礎入門]]
+- [[2026-05-30_codex_office全包辦]]
+- [[2026-05-30_ai_ppt_codex]]

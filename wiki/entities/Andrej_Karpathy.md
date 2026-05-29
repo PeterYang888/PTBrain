@@ -3,8 +3,8 @@ type: entity
 entity_type: person
 tags: [AI研究者, OpenAI, Tesla, LLM教育]
 created: 2026-05-24
-updated: 2026-05-24
-sources: [2026-05-24_karpathy_how_i_use_llms, 2026-05-24_karpathy_deep_dive_llms, 2026-05-24_karpathy_intro_llms_1hr, 2026-05-24_karpathy_筆記術_claude_code]
+updated: 2026-05-30
+sources: [2026-05-24_karpathy_how_i_use_llms, 2026-05-24_karpathy_deep_dive_llms, 2026-05-24_karpathy_intro_llms_1hr, 2026-05-24_karpathy_筆記術_claude_code, 2026-05-30_karpathy_ai編程陷阱]
 ---
 
 # Andrej Karpathy
@@ -33,8 +33,19 @@ sources: [2026-05-24_karpathy_how_i_use_llms, 2026-05-24_karpathy_deep_dive_llms
 - 使用工具：[[Claude_Code]]、Cursor、Obsidian
 - 關聯組織：[[OpenAI]]、[[Anthropic]]（使用 Claude）
 
+## claud.md 四條規則（2026-05-30 新增）
+Karpathy 指出 AI 編程有三大陷阱：錯誤假設、過度複雜化、無關編輯。對應開源的 `claud.md`（GitHub 14萬星）提出四條規則：
+1. **編碼前思考**（消除錯誤假設）
+2. **簡潔優先**（對抗過度複雜化）
+3. **精準修改**（只碰必須碰的部分）
+4. **目標驅動執行**（聲明式目標 + 循環驗證）
+實測：6 週、30 個代碼庫，返工率從 41% 降至 11%（來自 [[2026-05-30_karpathy_ai編程陷阱]]）
+
+> 「2026 年是行業消化 AI 編程新能力的高能量年份。」—— Karpathy
+
 ## 相關來源
 - [[2026-05-24_karpathy_how_i_use_llms]]
 - [[2026-05-24_karpathy_deep_dive_llms]]
 - [[2026-05-24_karpathy_intro_llms_1hr]]
 - [[2026-05-24_karpathy_筆記術_claude_code]]
+- [[2026-05-30_karpathy_ai編程陷阱]]

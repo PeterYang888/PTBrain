@@ -25,16 +25,18 @@
 
 ### Organizations
 - [[Anthropic]] — AI 公司，Claude 系列與 Claude Code 的開發商；ARR $30B 於 2026-04 超越 OpenAI
-- [[OpenAI]] — ChatGPT / GPT 系列開發商，B2C 策略為主；ARR $24B（2026-04）
+- [[OpenAI]] — ChatGPT / GPT 系列開發商；ARR $24B（2026-04）；產品線含 Codex 辦公助理
 - [[Apple]] — 全球最大科技公司之一；2026-09 CEO 換帥（Cook → Ternus），策略轉向 AI + 硬體
 - [[AMI_Labs]] — Yann LeCun 創辦，押注世界模型/JEPA；2026-03 融資 $10.3 億，估值 $35 億
-- [[Google]] — Alphabet 旗下核心事業；Gemini 系列模型；2026 I/O 宣告 Agent 時代
+- [[Google]] — Alphabet 旗下核心事業；Gemini 系列模型；2026 I/O 宣告 Agent 時代；AI 眼鏡與 EssilorLuxottica 合作
+- [[Meta]] — Facebook 母公司；AI 智慧眼鏡市場領導者（八成市佔）；Ray-Ban 系列定價 299 美元
 
 ### Drugs / Products
 - [[Semaglutide]] — Ozempic / Wegovy，GLP-1 受體激動劑，Novo Nordisk 出品
 
 ### Tools
 - [[Claude_Code]] — Anthropic 的 agentic 程式開發工具（CLI + 桌面 app）
+- [[OpenAI_Codex]] — OpenAI 的通用辦公自動化 AI 助理；Plugins/Skills/AGENTS.md/Computer Use
 - [[Claude_Cowork]] — Anthropic 的 agentic 功能（資訊仍少，stub）
 - [[Claude_Opus_4.6]] — 旗艦模型，最強推理，1M context
 - [[Claude_Sonnet_4.6]] — 日常主力，智慧+速度平衡
@@ -49,6 +51,7 @@ _（尚未建立）_
 ## Concepts
 
 ### AI 架構與研究
+- [[AI智慧眼鏡]] — 後手機計算平台；2030 預估 5000 萬副，CAGR 58%；Meta/Google/Apple 三強爭生態系
 - [[AGI]] — 通用人工智慧；LLM 路線 vs 世界模型路線之爭
 - [[JEPA]] — Yann LeCun 提出的聯合嵌入預測架構；物理直覺 vs 生成式 AI
 - [[世界模型]] — LeCun 的 AGI 哲學：AI 必須能預測行動後的物理後果
@@ -97,6 +100,13 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-05-30_ai眼鏡時代]] — AI 智慧眼鏡市場：CAGR 58%，三強鼎立，2030 出貨 5000 萬副（YouTube，2026-05-30）
+- [[2026-05-30_ai_ppt_codex]] — 邏輯分離法則：Codex + Presentations 插件 8 分鐘生成 10 頁 PPT（YouTube，2026-05-30）
+- [[2026-05-30_codex_office全包辦]] — AGENTS.md + Computer Use：Codex 辦公全流程示範（YouTube，2026-05-30）
+- [[2026-05-30_codex_零基礎入門]] — Codex 入門：Plugins/Skills/NCP，非工程師也能用（YouTube，2026-05-30）
+- [[2026-05-30_karpathy_ai編程陷阱]] — claud.md 四條規則：返工率 41%→11%（YouTube，2026-05-30）
+- [[2026-05-30_股癌_ep659_生理科技心智]] — AI 硬體輪動 + AI Slop 風險 + 生理優化（YouTube，2026-05-30）
+- [[2026-05-30_ai_agent_goal功能]] — /goal 功能：AI agent 連跑 27 小時的 Rubric 框架（YouTube，2026-05-30）
 - [[2026-05-24_ai_裁員_經理vs個人貢獻者]] — AI 大裁員時代：經理 vs IC 職涯風險分析（YouTube，2026-05-24）
 - [[2026-05-24_google_io_2026]] — Google I/O 2026：智慧眼鏡上市 + Agent 時代宣告（YouTube，2026-05-24）
 - [[2026-05-24_printingpress_cli]] — PrintingPress：把任何網站變成 Claude Code 能用的 CLI（YouTube，2026-05-24）
@@ -132,9 +142,9 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-- Sources: 31
-- Entities: 21（+Andrej_Karpathy, Google）
-- Concepts: 34（+推理模型, Vibe_Coding, RLHF, MTS）
+- Sources: 38（+7：/goal, 股癌EP659, Karpathy陷阱, Codex×3, AI眼鏡）
+- Entities: 23（+Meta, +OpenAI_Codex）
+- Concepts: 35（+AI智慧眼鏡）
 - Topics: 4
 - Syntheses: 1
-- 最近活動: 2026-05-24 · ingest 7 支 ai-tooling 影片（Karpathy ×4 + PrintingPress + Google I/O + AI裁員）
+- 最近活動: 2026-05-30 · ingest 7 支 ai-tooling 影片（/goal + 股癌EP659 + Karpathy陷阱 + Codex×3 + AI眼鏡）
