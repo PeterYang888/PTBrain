@@ -6,20 +6,16 @@
       {
         "id": "29d9891c6c6ddad3",
         "type": "tabs",
-        "dimension": 48.651399491094146,
+        "dimension": 81.57760814249365,
         "children": [
           {
             "id": "5a56a59ccccc528c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/transcripts/Stanford_Diffusion_Lecture4_transcript.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Stanford_Diffusion_Lecture4_transcript"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
             }
           }
         ]
@@ -27,7 +23,7 @@
       {
         "id": "bd095794c3a36416",
         "type": "tabs",
-        "dimension": 51.348600508905854,
+        "dimension": 18.422391857506362,
         "children": [
           {
             "id": "466cddfce3d49cf2",
@@ -66,7 +62,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "終端：✳ Process inbox.md file"
+              "title": "終端：✳ Processing inbox.md videos with NotebookLM skill"
             }
           }
         ]
@@ -231,6 +227,35 @@
   },
   "active": "5a56a59ccccc528c",
   "lastOpenFiles": [
+    "README.md",
+    "inbox.md.tmp.25692.80ea24bed01c",
+    "index.md.tmp.25692.7b9272382592",
+    "index.md.tmp.25692.7f46c23d6240",
+    "index.md.tmp.25692.ba0945a21eb3",
+    "index.md.tmp.25692.2f379bf3f246",
+    "index.md.tmp.25692.29c6257b53cb",
+    "log.md.tmp.25692.afef1e430f51",
+    "wiki/concepts/Agentic_Workflow.md.tmp.25692.b87134d6a59f",
+    "wiki/concepts/Agentic_Workflow.md.tmp.25692.4019264a2f58",
+    "wiki/entities/Google.md.tmp.25692.252584e80455",
+    "wiki/concepts/AI智慧眼鏡.md",
+    "wiki/entities/Meta.md",
+    "wiki/entities/OpenAI_Codex.md",
+    "wiki/sources/2026-05-30_ai眼鏡時代.md",
+    "wiki/sources/2026-05-30_ai_ppt_codex.md",
+    "wiki/sources/2026-05-30_codex_office全包辦.md",
+    "wiki/sources/2026-05-30_codex_零基礎入門.md",
+    "wiki/sources/2026-05-30_karpathy_ai編程陷阱.md",
+    "wiki/sources/2026-05-30_股癌_ep659_生理科技心智.md",
+    "wiki/sources/2026-05-30_ai_agent_goal功能.md",
+    "raw/transcripts/2026-05-30_ai眼鏡時代.md",
+    "raw/transcripts/2026-05-30_ai_ppt_codex.md",
+    "raw/transcripts/2026-05-30_codex_office全包辦.md",
+    "raw/transcripts/2026-05-30_codex_零基礎入門.md",
+    "raw/transcripts/2026-05-30_karpathy_ai編程陷阱.md",
+    "raw/transcripts/2026-05-30_股癌_ep659_notebooklm.md",
+    "raw/transcripts/2026-05-30_ai_agent_goal功能.md",
+    "raw/transcripts/Stanford_Diffusion_Lecture4_transcript.md",
     "raw/transcripts/tmp_karpathy_筆記術_claude_code.md",
     "raw/transcripts/tmp_karpathy_how_i_use_llms.md",
     "raw/transcripts/tmp_karpathy_intro_llms_1hr.md",
@@ -238,35 +263,6 @@
     "raw/transcripts/Claude_Code_人物蒸餾_transcript.md",
     "raw/transcripts/NotebookLM_簡報模板_transcript.md",
     "raw/transcripts/Stanford_AI系統課程_Agentic_transcript.md",
-    "raw/transcripts/tmp_ai_裁員_經理vs個人貢獻者.md",
-    "raw/transcripts/2026-05-16_stanford_diffusion_lecture4.md",
-    "raw/transcripts/2026-05-16_claude_code_obsidian_知識庫.md",
-    "raw/transcripts/2026-05-16_ai前沿週報_ep6_claude勒索.md",
-    "raw/transcripts/tmp_karpathy_deep_dive_llms.md",
-    "wiki/concepts/MTS.md",
-    "wiki/concepts/RLHF.md",
-    "wiki/concepts/Vibe_Coding.md",
-    "wiki/concepts/推理模型.md",
-    "wiki/entities/Google.md",
-    "wiki/entities/Andrej_Karpathy.md",
-    "wiki/sources/2026-05-24_ai_裁員_經理vs個人貢獻者.md",
-    "wiki/sources/2026-05-24_google_io_2026.md",
-    "wiki/sources/2026-05-24_printingpress_cli.md",
-    "wiki/sources/2026-05-24_karpathy_筆記術_claude_code.md",
-    "wiki/sources/2026-05-24_karpathy_intro_llms_1hr.md",
-    "wiki/sources/2026-05-24_karpathy_deep_dive_llms.md",
-    "wiki/sources/2026-05-24_karpathy_how_i_use_llms.md",
-    "raw/transcripts/tmp_google_io_2026.md",
-    "raw/transcripts/tmp_ai_裁員_經理vs個人貢獻者.json",
-    "raw/transcripts/tmp_google_io_2026.json",
-    "raw/transcripts/tmp_printingpress_cli.json",
-    "raw/transcripts/tmp_karpathy_筆記術_claude_code.json",
-    "raw/transcripts/tmp_karpathy_intro_llms_1hr.json",
-    "raw/transcripts/tmp_karpathy_deep_dive_llms.json",
-    "raw/transcripts/tmp_karpathy_how_i_use_llms.json",
-    "log.md.tmp.3180.9671b9241016",
-    "index.md.tmp.3180.4912ec46da18",
-    "index.md.tmp.3180.d779fd81c169",
     "未命名.canvas",
     "未命名 3.canvas",
     "未命名 2.canvas",

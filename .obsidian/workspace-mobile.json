@@ -158,11 +158,17 @@
       "daily-notes:開啟今天的每日筆記": false,
       "templates:插入模板": false,
       "command-palette:開啟命令面板": false,
-      "bases:建立新的 base": false
+      "bases:建立新的 base": false,
+      "terminal:Open terminal": false
     }
   },
   "active": "603a1dd54f00a60e",
   "lastOpenFiles": [
+    "wiki/entities/Anthropic.md",
+    "wiki/entities/Elon_Musk.md",
+    "wiki/concepts/自適應思考.md",
+    "wiki/concepts/Flow流暢感.md",
+    "index.md",
     "未命名"
   ]
 }

@@ -50,7 +50,10 @@
       "Bash(PYTHONIOENCODING=utf-8 notebooklm ask *)",
       "Bash(cmd *)",
       "PowerShell(notebooklm ask *)",
-      "Bash(notebooklm auth *)"
+      "Bash(notebooklm auth *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
