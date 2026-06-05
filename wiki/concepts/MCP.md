@@ -3,7 +3,7 @@ type: concept
 tags: [AI架構, Agent, 協議, Agentic_Workflow]
 created: 2026-05-20
 updated: 2026-05-20
-sources: [2026-05-16_stanford_ai系統課程_agentic]
+sources: [2026-05-16_stanford_ai系統課程_agentic, 2026-06-06_human_sop_agentic_workflow]
 ---
 
 # MCP（模型上下文協議）
@@ -22,7 +22,8 @@ Agent → MCP Server → 後端服務 API
 ```
 - Agent 只需與 MCP Server 溝通（統一接口）
 - MCP Server 負責與各後端服務打交道
-- 比喻：通用插頭 — 以前每個國家插座規格不同需帶轉接頭，MCP 讓一個插頭全通
+- 比喻：**AI 世界的 USB-C**——讓不同 AI 主機（Claude / ChatGPT / Cursor）以統一方式調用外部工具
+- 治理：Anthropic 已將 MCP 協議移交 Linux Foundation 旗下的 **Agentic AI Foundation**，確保長期開放維護
 
 ## Agent-to-Agent 通信
 MCP 更大的想像：

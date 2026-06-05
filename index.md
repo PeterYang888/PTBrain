@@ -73,7 +73,10 @@ _（尚未建立）_
 - [[CLIP]] — 對比語言-圖像預訓練；圖文語義對齊，文生圖的條件編碼器
 - [[CFG]] — Classifier-Free Guidance；主流文生圖引導機制，強化生成與 prompt 的對齊
 
-### Claude 功能
+### AI 工作流
+- [[AI組織變革]] — 科斯交易成本理論 × AI：中型公司空洞化，超級個體崛起，好萊塢模式
+- [[理解成本]] — AI 時代新瓶頸：產出成本→0，判斷 AI 產出的能力成稀缺；HTML > Markdown
+- [[Dynamic_Workflows]] — Claude Code JS 腳本驅動 agent 流水線；16 並行，75 萬行遷移案例
 - [[routines]] — Claude Code 雲端自動化（2026-04-14 研究預覽）
 - [[side_question]] — Claude Code 桌面 app `/btw` 側邊提問
 - [[延伸思考]] — Claude 三款模型皆支援的推理增強
@@ -100,6 +103,11 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-06-06_ai_掏空中型公司]] — 科斯理論 × AI：中型公司空洞化，超級個體崛起（YouTube，2026-06-06）
+- [[2026-06-06_human_sop_agentic_workflow]] — Human SOP → Agentic Workflow 四部曲：RFC2119 + JSON串接 + MCP（YouTube，2026-06-06）
+- [[2026-06-06_anthropic_棄_markdown_改用_html]] — 理解成本：HTML > Markdown，AI 時代判斷力 > 產出力（YouTube，2026-06-06）
+- [[2026-06-06_claude_code_1000_agent_dynamic_workflows]] — Dynamic Workflows：1000 agent、對抗式驗證、Bun 99.8% 通過率（YouTube，2026-06-06）
+- [[2026-06-06_11天_claude_code_dynamic_workflows]] — Dynamic Workflows：JS 腳本 16 並行 Agent，75 萬行遷移（YouTube，2026-06-06）
 - [[2026-05-30_ai眼鏡時代]] — AI 智慧眼鏡市場：CAGR 58%，三強鼎立，2030 出貨 5000 萬副（YouTube，2026-05-30）
 - [[2026-05-30_ai_ppt_codex]] — 邏輯分離法則：Codex + Presentations 插件 8 分鐘生成 10 頁 PPT（YouTube，2026-05-30）
 - [[2026-05-30_codex_office全包辦]] — AGENTS.md + Computer Use：Codex 辦公全流程示範（YouTube，2026-05-30）
@@ -142,9 +150,9 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-- Sources: 38（+7：/goal, 股癌EP659, Karpathy陷阱, Codex×3, AI眼鏡）
-- Entities: 23（+Meta, +OpenAI_Codex）
-- Concepts: 35（+AI智慧眼鏡）
+- Sources: 43（+5：Dynamic Workflows×2, Anthropic HTML, SOP→Workflow, AI掏空中型公司）
+- Entities: 23
+- Concepts: 38（+Dynamic_Workflows, +理解成本, +AI組織變革）
 - Topics: 4
 - Syntheses: 1
-- 最近活動: 2026-05-30 · ingest 7 支 ai-tooling 影片（/goal + 股癌EP659 + Karpathy陷阱 + Codex×3 + AI眼鏡）
+- 最近活動: 2026-06-06 · ingest 5 支 ai-tooling 影片（Dynamic Workflows×2, HTML, SOP, 中型公司）

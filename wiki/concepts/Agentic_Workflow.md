@@ -3,7 +3,7 @@ type: concept
 tags: [AI架構, Agent, LLM, 多智能體, 系統設計]
 created: 2026-05-16
 updated: 2026-05-16
-sources: [2026-05-16_stanford_ai系統課程_agentic, 2026-05-16_harness_engineering_ai職涯, 2026-05-30_ai_agent_goal功能, 2026-05-30_codex_office全包辦]
+sources: [2026-05-16_stanford_ai系統課程_agentic, 2026-05-16_harness_engineering_ai職涯, 2026-05-30_ai_agent_goal功能, 2026-05-30_codex_office全包辦, 2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-06_human_sop_agentic_workflow]
 ---
 
 # Agentic Workflow
@@ -26,6 +26,14 @@ Agentic Workflow 的核心思維轉變：從「精確控制每一行代碼（Mic
 - **科層制（Hierarchical）**：統籌者（Orchestrator）派工，結構清晰
 - **扁平制（Flat）**：智能體之間直接互通
 - **MCP（Model Context Protocol）**：通用協議層，讓 Agent 不需認識每個 API
+- **[[Dynamic_Workflows]]**（Claude Code）：JS 腳本定義流水線，主 context 只存最終結果；16 個 Agent 並行，適合大規模確定性任務（遷移、掃描）
+
+## Human SOP → Agentic Workflow 四部曲
+非技術人員導入 AI 的方法論（見 [[2026-06-06_human_sop_agentic_workflow]]）：
+1. **格式標準化**：參數化（避免寫死數值）+ RFC2119 規範（MUST/SHOULD/MAY 定義規則強度）
+2. **任務拆解**：每個節點有明確 Input/Output，用 JSON 工件（Artifacts）串接，節點獨立可修
+3. **雙向開發**：先跑粗糙版 SOP → 實戰中發現踩坑 → 補強規則 → 再跑；不追求房間裡想出完美 SOP
+4. **[[MCP]] 整合**：連接真實工具；高風險決策點設置 Human-in-the-Loop Checkpoint
 
 ## 評估體系
 Agentic Workflow 上線的命脈是**評估（Evaluation）**：整體 vs 組件、客觀 vs 主觀（LLM-as-judge）、定量 vs 定性

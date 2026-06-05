@@ -31,17 +31,18 @@ PTBrain/
 
 **三層的角色（核心原則，不可違反）**
 
-| 層 | 誰寫？ | 修改規則 |
-|---|------|--------|
-| raw/ | 使用者 | **不可變**。你只讀，絕不改動任何 raw 檔案內容 |
-| wiki/ | 你 | 你擁有這層。建立、更新、合併、重構都由你主動執行 |
-| schema（CLAUDE.md / index.md） | 使用者 + 你（協作） | 需徵得使用者同意後才能修改 schema 約定 |
+| 層                            | 誰寫？         | 修改規則                        |
+| ---------------------------- | ----------- | --------------------------- |
+| raw/                         | 使用者         | **不可變**。你只讀，絕不改動任何 raw 檔案內容 |
+| wiki/                        | 你           | 你擁有這層。建立、更新、合併、重構都由你主動執行    |
+| schema（CLAUDE.md / index.md） | 使用者 + 你（協作） | 需徵得使用者同意後才能修改 schema 約定     |
 
 ---
 
 ## 2. 檔案命名與連結規範
 
 ### 命名
+
 - **用底線 `_` 而非空白**：`Vannevar_Bush.md`，不要 `Vannevar Bush.md`
 - **中英混雜允許**：`大型語言模型.md`、`RAG_系統.md` 都可以
 - **小寫英文、首字大寫中文**：`rag_systems.md`、`知識管理.md`（看哪個讀起來自然）
@@ -51,12 +52,14 @@ PTBrain/
 - **syntheses 用「主題_分析類型」**：`rag_vs_wiki_比較.md`
 
 ### 連結
+
 - 一律使用 Obsidian wiki-link 語法 `[[檔名]]` 或 `[[檔名|顯示文字]]`
 - **盡量豐富地連結**。每個實體、概念第一次出現時務必加連結
 - 反向連結會自動形成，不必手動維護
 - 如果連結到的頁面還不存在，**也要加上連結**（stub link），之後再補頁面
 
 ### Frontmatter（YAML）
+
 每個 wiki 頁面開頭加上 frontmatter，以便 Obsidian Dataview 查詢：
 
 ```yaml
@@ -106,6 +109,7 @@ source_date: 2026-04-02                              # 僅 source 頁面
 當使用者說「lint」或「健檢」：
 
 檢查項目：
+
 - [ ] **矛盾**：不同頁面對同一事實說法不同？列出並建議修正
 - [ ] **過時聲明**：較新的 source 已經蓋過舊結論？
 - [ ] **孤立頁面**：沒有任何 inbound link 的頁面（graph view 裡會浮出來）
@@ -122,6 +126,7 @@ source_date: 2026-04-02                              # 僅 source 頁面
 ## 4. 頁面模板
 
 ### 4.1 Source 頁（wiki/sources/）
+
 ```markdown
 ---
 type: source
@@ -157,6 +162,7 @@ source_type: article | paper | transcript | note
 ```
 
 ### 4.2 Entity 頁（wiki/entities/）
+
 ```markdown
 ---
 type: entity
@@ -188,6 +194,7 @@ sources: [...]
 ```
 
 ### 4.3 Concept 頁（wiki/concepts/）
+
 ```markdown
 ---
 type: concept
@@ -222,9 +229,11 @@ sources: [...]
 ```
 
 ### 4.4 Topic 頁（wiki/topics/）
+
 頂層主題，像 wiki 的導航樞紐。列出屬於這個主題的所有 entities / concepts / syntheses。
 
 ### 4.5 Synthesis 頁（wiki/syntheses/）
+
 使用者提問後值得保留的分析。比較表、時間軸、立場盤點、新發現的連結都適合放這。
 
 ---
@@ -326,8 +335,17 @@ sources: [...]
 ## 11. 啟動檢查
 
 每次 session 開始，先看：
+
 1. `index.md` — 目前有什麼
 2. `log.md` 最後 5 筆 — 最近做了什麼
 3. `raw/` 有沒有新檔案還沒 ingest
 
 然後等使用者指示。
+
+
+
+
+
+## 12. 快捷指令
+
+- **`ingest inbox`**：讀 `_meta/prompts/inbox_ingest.md`，執行其中的完整流程

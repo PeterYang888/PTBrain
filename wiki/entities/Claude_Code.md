@@ -3,8 +3,8 @@ type: entity
 entity_type: product
 tags: [anthropic, ai-dev-tool, agent]
 created: 2026-04-17
-updated: 2026-05-16
-sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_claude_code_代理工具, 2026-05-16_claude_code_obsidian_知識庫, 2026-05-16_claude_code_人物蒸餾]
+updated: 2026-06-06
+sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_claude_code_代理工具, 2026-05-16_claude_code_obsidian_知識庫, 2026-05-16_claude_code_人物蒸餾, 2026-06-06_11天_claude_code_dynamic_workflows]
 ---
 
 # Claude Code
@@ -40,6 +40,13 @@ sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模�
 
 ## 知識庫整合
 - **Claude Code + [[Obsidian]]**：以結構化 Wiki + index 取代傳統 [[RAG]] 碎片化檢索，Token 用量減少 95%。AI 讀「書」而非「碎紙片」，能理解頁面間的交叉引用關係。見 [[2026-05-16_claude_code_obsidian_知識庫]]。
+
+## Dynamic Workflows（JS 驅動工作流）
+- **核心機制**：以 JavaScript 腳本取代 Prompt 協調多個 Sub-agent；中間數據封裝於 JS 變數，主 context 只存最終結果，大幅節省 Token
+- **規模**：最多 16 個 Agent 並行；官方案例：11 天 75 萬行 C++ → Rust 遷移
+- **觸發方式**：`deep-search`（內建）、`workflow` 關鍵字（可存 JS 檔）、Ultra Code 模式（自動撰寫）
+- **監控**：`/workflows` 或 `wf` 查看進度，按 `s` 儲存腳本供重用
+- 詳見 [[Dynamic_Workflows]]、[[2026-06-06_11天_claude_code_dynamic_workflows]]
 
 ## 進階應用
 - **[[人物蒸餾]]**：用 Claude Code + GitHub Skill（Queen Skill）提取名人（Naval Ravikant、Elon Musk 等）的公開資料，建構具有其三層思維結構的 AI 顧問。見 [[2026-05-16_claude_code_人物蒸餾]]。

@@ -144,3 +144,30 @@
 - 更新：[[index]]（+7 sources, +2 entities, +4 concepts，統計更新）
 - inbox.md：7 支全部處理完畢，移至已處理區
 - stub links 留待補頁：[[Gemini]]、[[Few-shot_Prompting]]、[[PrintingPress]]（工具頁）、[[Token效率]]、[[DeepSeek]]、[[知識管理]]
+
+## [2026-06-06] ingest | 11 天寫 75 萬行程式碼！Claude Code Dynamic Workflows（YouTube）
+- source 頁：[[2026-06-06_11天_claude_code_dynamic_workflows]]
+- 新建 concepts：[[Dynamic_Workflows]]
+- 更新：[[Claude_Code]]（新增 Dynamic Workflows 段落），[[Agentic_Workflow]]（補充多智能體協作模式）
+- 更新：[[index]]
+
+## [2026-06-06] ingest | Claude Code 同時跑 1000 個 agent：Dynamic Workflows（YouTube）
+- source 頁：[[2026-06-06_claude_code_1000_agent_dynamic_workflows]]
+- 更新 concepts：[[Dynamic_Workflows]]（補充對抗式驗證機制、Zig→Rust 案例、版本規格）
+- 更新：[[index]]
+
+## [2026-06-06] ingest | Anthropic 工程師為什麼拋棄 Markdown 改用 HTML 跟 AI 工作？（YouTube）
+- source 頁：[[2026-06-06_anthropic_棄_markdown_改用_html]]
+- 新建 concepts：[[理解成本]]
+- 更新 concepts：[[Vibe_Coding]]（補充理解成本風險段落）
+- 更新：[[index]]
+
+## [2026-06-06] ingest | AI 時代非技術人最該學的設計能力：把 Human SOP 變成 Agentic Workflow（YouTube）
+- source 頁：[[2026-06-06_human_sop_agentic_workflow]]
+- 更新 concepts：[[Agentic_Workflow]]（補充 SOP 四部曲）、[[MCP]]（USB-C 比喻 + Agentic AI Foundation 治理）
+- 更新：[[index]]
+
+## [2026-06-06] ingest | AI 正在掏空中型公司（YouTube）
+- source 頁：[[2026-06-06_ai_掏空中型公司]]
+- 新建 concepts：[[AI組織變革]]
+- 更新：[[index]]
