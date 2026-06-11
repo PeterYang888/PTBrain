@@ -3,8 +3,8 @@ type: entity
 entity_type: product
 tags: [anthropic, ai-dev-tool, agent]
 created: 2026-04-17
-updated: 2026-06-06
-sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_claude_code_代理工具, 2026-05-16_claude_code_obsidian_知識庫, 2026-05-16_claude_code_人物蒸餾, 2026-06-06_11天_claude_code_dynamic_workflows]
+updated: 2026-06-12
+sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_claude_code_代理工具, 2026-05-16_claude_code_obsidian_知識庫, 2026-05-16_claude_code_人物蒸餾, 2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_graphify_claude_code]
 ---
 
 # Claude Code
@@ -37,6 +37,7 @@ sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模�
 
 ## 代理工具 / 開源生態
 - **Free Claude Code**（2026-05）：開源代理工具（GitHub 萬星），讓不同 IDE 和 Claude Code 互通，解決官方版本鎖定問題。見 [[2026-05-16_claude_code_代理工具]]。
+- **[[Graphify]]**（2026-06）：開源知識圖譜工具。透過 Tree-sitter + Faster Whisper + LLM 三階段建立 repo 的知識地圖，取代 grep 盲搜；實測 Token 節省 60%（200K→80K）。`graphify hook install` 在每次 commit 後自動重建圖譜，零 API 成本。見 [[2026-06-12_graphify_claude_code]]。
 
 ## 知識庫整合
 - **Claude Code + [[Obsidian]]**：以結構化 Wiki + index 取代傳統 [[RAG]] 碎片化檢索，Token 用量減少 95%。AI 讀「書」而非「碎紙片」，能理解頁面間的交叉引用關係。見 [[2026-05-16_claude_code_obsidian_知識庫]]。

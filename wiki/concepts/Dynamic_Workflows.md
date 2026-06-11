@@ -2,8 +2,8 @@
 type: concept
 tags: [claude-code, workflow, javascript, agent, parallel]
 created: 2026-06-06
-updated: 2026-06-06
-sources: [2026-06-06_11天_claude_code_dynamic_workflows]
+updated: 2026-06-12
+sources: [2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_dynamic_workflow_解析]
 ---
 
 # Dynamic Workflows
@@ -31,6 +31,21 @@ sources: [2026-06-06_11天_claude_code_dynamic_workflows]
 - `/workflows` 或 `wf`：查看當前運行 Agent 狀態
 - 監控介面按 `s`：存成 JS 檔供未來重用
 - `Enter`：查看 Agent 的 Prompt；`J/K`：滾動查看輸出
+
+## 4 層功能階梯（何時該用？）
+| 層級 | 工具 | 控制權歸屬 | Context 影響 |
+| :--- | :--- | :--- | :--- |
+| 基礎 | 直接對話 | 使用者 | 正常 |
+| 執行層 | Subagent | 模型隨機 | 可能塞滿 |
+| 溝通層 | Agent Team | 模型間互動 | 較多 |
+| 指揮層 | **Dynamic Workflow** | **腳本/程式碼** | **極低** |
+
+**何時別用**：任務前置依賴強（一步接一步）、修改數行程式碼、日常查詢——殺雞用牛刀。
+
+## 成本控制三招
+1. **模型分級**：撒網/蒐集階段用 Haiku，收斂推理階段用 Opus
+2. **預算硬上限**：下指令時明定 Token 上限，觸及即停
+3. **小範圍先測試**：先對單一資料夾跑，確認腳本邏輯與成本再放大規模
 
 ## 與其他模式的差別
 - 跟 **Agent Team** 的差別：Agent Team 讓 agent 直接互通（動態決策）；Dynamic Workflows 是腳本定義的流水線（確定性強），適合大規模移植與掃描

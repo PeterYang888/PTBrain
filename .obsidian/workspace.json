@@ -4,31 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "29d9891c6c6ddad3",
-        "type": "tabs",
-        "dimension": 81.57760814249365,
-        "children": [
-          {
-            "id": "5a56a59ccccc528c",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "關聯圖檢視"
-            }
-          }
-        ]
-      },
-      {
         "id": "bd095794c3a36416",
         "type": "tabs",
-        "dimension": 18.422391857506362,
+        "dimension": 59.8677517802645,
         "children": [
           {
             "id": "466cddfce3d49cf2",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "terminal:terminal",
               "state": {
@@ -60,9 +42,35 @@
                   "serial": null
                 }
               },
-              "pinned": true,
               "icon": "terminal",
-              "title": "終端：✳ Processing inbox.md videos with NotebookLM skill"
+              "title": "終端：⠂ ingest inbox"
+            }
+          },
+          {
+            "id": "8469585156852e4c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c74593b39506c77e",
+        "type": "tabs",
+        "dimension": 40.13224821973551,
+        "children": [
+          {
+            "id": "16554408b9a80910",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
             }
           }
         ]
@@ -122,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 550.5
+    "width": 264.5
   },
   "right": {
     "id": "d092f24178142c66",
@@ -225,44 +233,44 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "5a56a59ccccc528c",
+  "active": "466cddfce3d49cf2",
   "lastOpenFiles": [
-    "README.md",
-    "inbox.md.tmp.25692.80ea24bed01c",
-    "index.md.tmp.25692.7b9272382592",
-    "index.md.tmp.25692.7f46c23d6240",
-    "index.md.tmp.25692.ba0945a21eb3",
-    "index.md.tmp.25692.2f379bf3f246",
-    "index.md.tmp.25692.29c6257b53cb",
-    "log.md.tmp.25692.afef1e430f51",
-    "wiki/concepts/Agentic_Workflow.md.tmp.25692.b87134d6a59f",
-    "wiki/concepts/Agentic_Workflow.md.tmp.25692.4019264a2f58",
-    "wiki/entities/Google.md.tmp.25692.252584e80455",
-    "wiki/concepts/AI智慧眼鏡.md",
-    "wiki/entities/Meta.md",
-    "wiki/entities/OpenAI_Codex.md",
-    "wiki/sources/2026-05-30_ai眼鏡時代.md",
-    "wiki/sources/2026-05-30_ai_ppt_codex.md",
-    "wiki/sources/2026-05-30_codex_office全包辦.md",
-    "wiki/sources/2026-05-30_codex_零基礎入門.md",
-    "wiki/sources/2026-05-30_karpathy_ai編程陷阱.md",
-    "wiki/sources/2026-05-30_股癌_ep659_生理科技心智.md",
-    "wiki/sources/2026-05-30_ai_agent_goal功能.md",
-    "raw/transcripts/2026-05-30_ai眼鏡時代.md",
-    "raw/transcripts/2026-05-30_ai_ppt_codex.md",
-    "raw/transcripts/2026-05-30_codex_office全包辦.md",
-    "raw/transcripts/2026-05-30_codex_零基礎入門.md",
-    "raw/transcripts/2026-05-30_karpathy_ai編程陷阱.md",
-    "raw/transcripts/2026-05-30_股癌_ep659_notebooklm.md",
-    "raw/transcripts/2026-05-30_ai_agent_goal功能.md",
-    "raw/transcripts/Stanford_Diffusion_Lecture4_transcript.md",
-    "raw/transcripts/tmp_karpathy_筆記術_claude_code.md",
-    "raw/transcripts/tmp_karpathy_how_i_use_llms.md",
-    "raw/transcripts/tmp_karpathy_intro_llms_1hr.md",
-    "raw/transcripts/tmp_printingpress_cli.md",
-    "raw/transcripts/Claude_Code_人物蒸餾_transcript.md",
-    "raw/transcripts/NotebookLM_簡報模板_transcript.md",
-    "raw/transcripts/Stanford_AI系統課程_Agentic_transcript.md",
+    "inbox.md.tmp.20200.303164e62dd4",
+    "index.md.tmp.20200.f82dc30a6d18",
+    "index.md.tmp.20200.121e75a5fb96",
+    "index.md.tmp.20200.8eb0315f5385",
+    "index.md.tmp.20200.75d152ad71d4",
+    "wiki/entities/Anthropic.md.tmp.20200.8c0eee2af72e",
+    "wiki/entities/Anthropic.md.tmp.20200.c1972fd922aa",
+    "wiki/concepts/Agentic_Workflow.md.tmp.20200.8b4b5c56fc95",
+    "wiki/concepts/AI組織變革.md.tmp.20200.9ba07c85c9cc",
+    "wiki/concepts/AI組織變革.md.tmp.20200.3ad557532860",
+    "wiki/concepts/Dynamic_Workflows.md.tmp.20200.72c2583c424b",
+    "wiki/entities/Claude_Fable_5.md",
+    "wiki/concepts/AIOS.md",
+    "wiki/sources/2026-06-12_ai_原生組織底層邏輯.md",
+    "wiki/sources/2026-06-12_claude_fable5.md",
+    "wiki/sources/2026-06-12_ai_operating_system.md",
+    "wiki/sources/2026-06-12_dynamic_workflow_解析.md",
+    "raw/transcripts/2026-06-12_ai_原生組織底層邏輯.md",
+    "raw/transcripts/2026-06-12_claude_fable5.md",
+    "raw/transcripts/2026-06-12_ai_operating_system.md",
+    "raw/transcripts/2026-06-12_dynamic_workflow_解析.md",
+    "raw/transcripts/tmp_ai_native_org.md",
+    "raw/transcripts/tmp_claude_fable5.md",
+    "raw/transcripts/tmp_ai_operating_system.md",
+    "raw/transcripts/tmp_dynamic_workflow_解析.md",
+    "wiki/concepts/Graphify.md",
+    "wiki/sources/2026-06-12_graphify_claude_code.md",
+    "raw/transcripts/2026-06-12_graphify_claude_code.md",
+    "raw/transcripts/tmp_graphify_claude_code.md",
+    "inbox (1).md",
+    "wiki/concepts/AI組織變革.md",
+    "wiki/sources/2026-06-06_ai_掏空中型公司.md",
+    "raw/transcripts/2026-06-06_ai_掏空中型公司.md",
+    "wiki/sources/2026-06-06_human_sop_agentic_workflow.md",
+    "raw/transcripts/2026-06-06_human_sop_agentic_workflow.md",
+    "wiki/concepts/理解成本.md",
     "未命名.canvas",
     "未命名 3.canvas",
     "未命名 2.canvas",

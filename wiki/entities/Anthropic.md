@@ -3,8 +3,8 @@ type: entity
 entity_type: organization
 tags: [ai-company, llm-vendor]
 created: 2026-04-17
-updated: 2026-05-16
-sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_anthropic_超越_openai, 2026-05-16_ai前沿週報_ep6_claude勒索]
+updated: 2026-06-12
+sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_anthropic_超越_openai, 2026-05-16_ai前沿週報_ep6_claude勒索, 2026-06-12_claude_fable5]
 ---
 
 # Anthropic
@@ -12,7 +12,7 @@ sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模�
 > AI 公司。[[Claude]] 系列大型語言模型與 [[Claude_Code]]、[[Claude_Cowork]] 等 agentic 產品的開發商。核心設計理念為可信賴、安全、高階推理（[[合憲_AI]]）。
 
 ## 產品線（目前 wiki 收錄）
-- 模型：[[Claude_Opus_4.6]]、[[Claude_Sonnet_4.6]]、[[Claude_Haiku_4.5]]
+- 模型：[[Claude_Fable_5]]（Mythos-class，最新旗艦）、[[Claude_Opus_4.6]]、[[Claude_Sonnet_4.6]]、[[Claude_Haiku_4.5]]
 - Agentic 產品：[[Claude_Code]]、[[Claude_Cowork]]
 - 自動化功能：[[routines]]
 

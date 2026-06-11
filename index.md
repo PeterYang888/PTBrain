@@ -36,6 +36,8 @@
 
 ### Tools
 - [[Claude_Code]] — Anthropic 的 agentic 程式開發工具（CLI + 桌面 app）
+- [[Graphify]] — 開源知識圖譜工具，三階段分析 repo，Claude Code Token 節省 60%
+- [[Claude_Fable_5]] — Anthropic Mythos-class 旗艦模型，高度自主性，含安全重定向機制
 - [[OpenAI_Codex]] — OpenAI 的通用辦公自動化 AI 助理；Plugins/Skills/AGENTS.md/Computer Use
 - [[Claude_Cowork]] — Anthropic 的 agentic 功能（資訊仍少，stub）
 - [[Claude_Opus_4.6]] — 旗艦模型，最強推理，1M context
@@ -74,7 +76,8 @@ _（尚未建立）_
 - [[CFG]] — Classifier-Free Guidance；主流文生圖引導機制，強化生成與 prompt 的對齊
 
 ### AI 工作流
-- [[AI組織變革]] — 科斯交易成本理論 × AI：中型公司空洞化，超級個體崛起，好萊塢模式
+- [[AIOS]] — AI Operating System；4Cs 框架（Context/Connections/Capabilities/Cadence），把 AI 變成個人代理
+- [[AI組織變革]] — 科斯交易成本理論 × AI：中型公司空洞化，超級個體崛起，好萊塢模式；串行瓶頸/並行網路
 - [[理解成本]] — AI 時代新瓶頸：產出成本→0，判斷 AI 產出的能力成稀缺；HTML > Markdown
 - [[Dynamic_Workflows]] — Claude Code JS 腳本驅動 agent 流水線；16 並行，75 萬行遷移案例
 - [[routines]] — Claude Code 雲端自動化（2026-04-14 研究預覽）
@@ -103,6 +106,11 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-06-12_ai_原生組織底層邏輯]] — 串行瓶頸/並行網路；人類 5 大關鍵能力；三代組織演進（YouTube，2026-06-12）
+- [[2026-06-12_claude_fable5]] — Claude Fable 5（Mythos-class）：極高自主性 + Opus 4.8 安全重定向（YouTube，2026-06-12）
+- [[2026-06-12_ai_operating_system]] — AIOS 4Cs 框架：Context/Connections/Capabilities/Cadence（YouTube，2026-06-12）
+- [[2026-06-12_dynamic_workflow_解析]] — Dynamic Workflow 4 層階梯：何時用/不用，成本三招（YouTube，2026-06-12）
+- [[2026-06-12_graphify_claude_code]] — Graphify：知識圖譜取代 grep，Claude Code Token 節省 60%（YouTube，2026-06-12）
 - [[2026-06-06_ai_掏空中型公司]] — 科斯理論 × AI：中型公司空洞化，超級個體崛起（YouTube，2026-06-06）
 - [[2026-06-06_human_sop_agentic_workflow]] — Human SOP → Agentic Workflow 四部曲：RFC2119 + JSON串接 + MCP（YouTube，2026-06-06）
 - [[2026-06-06_anthropic_棄_markdown_改用_html]] — 理解成本：HTML > Markdown，AI 時代判斷力 > 產出力（YouTube，2026-06-06）
@@ -150,9 +158,9 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-- Sources: 43（+5：Dynamic Workflows×2, Anthropic HTML, SOP→Workflow, AI掏空中型公司）
-- Entities: 23
-- Concepts: 38（+Dynamic_Workflows, +理解成本, +AI組織變革）
+- Sources: 49（+5：Graphify, Dynamic Workflow 解析, AIOS, Claude Fable 5, AI原生組織）
+- Entities: 24（+Claude_Fable_5）
+- Concepts: 41（+Graphify, +AIOS）
 - Topics: 4
 - Syntheses: 1
-- 最近活動: 2026-06-06 · ingest 5 支 ai-tooling 影片（Dynamic Workflows×2, HTML, SOP, 中型公司）
+- 最近活動: 2026-06-12 · ingest 5 支 ai-tooling 影片（全批完成）

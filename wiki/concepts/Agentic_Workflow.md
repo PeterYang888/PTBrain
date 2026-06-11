@@ -46,6 +46,18 @@ Agentic Workflow 上線的命脈是**評估（Evaluation）**：整體 vs 組件
 - 對應 [[Vibe_Coding]] 的「人類定義目標，AI 自主執行到完成」理念
 → 詳見 [[2026-05-30_ai_agent_goal功能]]
 
+## AIOS 個人化實作模式（2026-06-12 補充）
+[[AIOS]]（AI Operating System）是 Agentic Workflow 的個人/小團隊具體實作：
+- 4Cs 框架：Context（漸進式加載文件）→ Connections（API/MCP/Playwright）→ Capabilities（模組化 .md Skills）→ Cadence（排程/Routines）
+- `.claud/` 資料夾結構；`/setup-aios` 引導式設定
+- 見 [[2026-06-12_ai_operating_system]]
+
+## AI 原生組織中的角色（2026-06-12 補充）
+AI 原生組織以「壓縮串行瓶頸」為核心目標，Agentic Workflow 是執行工具：
+- 將傳統串行流程重構為 Agent 並行網路
+- 人類升級為「設計師 + 標準定義者 + 最終決策者」
+- 見 [[AI組織變革]]、[[2026-06-12_ai_原生組織底層邏輯]]
+
 ## 應用 / 實例
 - 在 [[Claude_Code]] 中：Claude Code 是 Agentic Workflow 的商業化產品
 - 在 [[OpenAI_Codex]] 中：AGENTS.md + Skills/Plugins + Computer Use 的 Office 自動化

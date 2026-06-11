@@ -28,7 +28,9 @@ sources: [2026-05-16_claude_code_obsidian_知識庫, 2026-05-16_stanford_ai系�
 
 ## 應用 / 實例
 - 在 [[Claude_Code]] + [[Obsidian]] 知識庫中：以結構化 Wiki + index 取代碎片化 RAG，可節省 95% Token 用量
+- [[Graphify]]：針對程式碼庫的 RAG-lite；不需要 embedding，以確定性 Tree-sitter 解析為主，LLM 語義分析為輔；實測 Token 節省 60%
 
 ## 來源
 - [[2026-05-16_claude_code_obsidian_知識庫]]
 - [[2026-05-16_stanford_ai系統課程_agentic]]
+- [[2026-06-12_graphify_claude_code]]

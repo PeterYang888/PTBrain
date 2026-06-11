@@ -171,3 +171,31 @@
 - source 頁：[[2026-06-06_ai_掏空中型公司]]
 - 新建 concepts：[[AI組織變革]]
 - 更新：[[index]]
+
+## [2026-06-12] ingest | Graphify：解決 Claude Code 記憶與成本問題的開源知識圖譜工具（YouTube）
+- source 頁：[[2026-06-12_graphify_claude_code]]
+- 新建：[[Graphify]]（concepts）
+- 更新：[[Claude_Code]]（新增 Graphify 段落）、[[RAG]]（新增 Graphify 作為 RAG-lite 應用）、[[index]]
+
+## [2026-06-12] ingest | Claude Dynamic Workflow 解析，什麼時候該用、什麼時候別碰？（YouTube）
+- source 頁：[[2026-06-12_dynamic_workflow_解析]]
+- 更新：[[Dynamic_Workflows]]（新增 4 層階梯表、成本三招、更新時間戳）
+- 更新：[[Agentic_Workflow]]（新增 AI 原生組織角色）
+- 更新：[[index]]
+
+## [2026-06-12] ingest | 什麼是 AI Operating System？一套能讓 AI 替你工作的系統（YouTube）
+- source 頁：[[2026-06-12_ai_operating_system]]
+- 新建：[[AIOS]]（concepts）
+- 更新：[[Agentic_Workflow]]（新增 AIOS 實作模式）
+- 更新：[[index]]
+
+## [2026-06-12] ingest | Introducing Claude Fable 5（YouTube）
+- source 頁：[[2026-06-12_claude_fable5]]
+- 新建：[[Claude_Fable_5]]（entities）
+- 更新：[[Anthropic]]（產品線新增 Fable 5、更新 sources）
+- 更新：[[index]]
+
+## [2026-06-12] ingest | AI 原生組織的底層邏輯（YouTube）
+- source 頁：[[2026-06-12_ai_原生組織底層邏輯]]
+- 更新：[[AI組織變革]]（新增串行瓶頸/並行網路框架、三代演進、5 大人類能力）
+- 更新：[[index]]
