@@ -23,6 +23,7 @@ LLM 本身像「超級聰明但失憶且沒有手腳的大腦」，Harness Engin
 ## 與其他概念的差別
 - 跟 [[Prompt_Engineering]] 的差別：Prompt Engineering 是「怎麼問醫生」，Harness Engineering 是「建一整間醫院」
 - 跟 [[Agentic_Workflow]] 的關係：Harness 是 Agentic Workflow 的系統實現層；Agentic Workflow 是概念，Harness 是工程架構
+- 跟 [[Loop_Engineering]] 的關係：在工程化階梯中為 **Prompt → [[Context_工程|Context]] → Harness → Loop**。Harness 提供執行環境、工具反饋與權限框架；Loop Engineering 在其上設計自我迭代的閉環，是進入 Loop 前的必要基礎（見 [[2026-06-19_loop_engineering]]）
 
 ## 兩大流派（2026 年）
 - **OpenCloud（Gateway First）**：連接廣度，擁有約 4.4 萬個 Skills 市集
@@ -37,3 +38,4 @@ LLM 本身像「超級聰明但失憶且沒有手腳的大腦」，Harness Engin
 ## 來源
 - [[2026-05-16_harness_engineering_ai職涯]]
 - [[2026-05-16_stanford_ai系統課程_agentic]]
+- [[2026-06-19_loop_engineering]]（Harness → Loop 的工程化階梯）

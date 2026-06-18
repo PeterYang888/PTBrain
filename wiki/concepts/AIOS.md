@@ -2,8 +2,8 @@
 type: concept
 tags: [ai, claude-code, workflow, agent, context-management, automation]
 created: 2026-06-12
-updated: 2026-06-12
-sources: [2026-06-12_ai_operating_system]
+updated: 2026-06-19
+sources: [2026-06-12_ai_operating_system, 2026-06-19_claude_code_500小時心得, 2026-06-19_notebooklm整座圖書館]
 ---
 
 # AIOS（AI Operating System，AI 作業系統）
@@ -69,6 +69,11 @@ Project_Folder/
 - 跟 [[Agentic_Workflow]]：AIOS 是一套具體的個人化實作模式，Agentic Workflow 是更廣泛的系統架構概念
 - 跟 [[Harness_Engineering]]：Harness Engineering 是組織/企業層面的 AI 架構，AIOS 是個人/小團隊層面
 - 跟 [[Dynamic_Workflows]]：AIOS 是靜態配置框架，Dynamic Workflows 是單次大規模任務的動態執行引擎
+- 跟 [[Context_工程]]：AIOS 的 C1（Context）就是 Context 工程的個人化落地（漸進式載入、設定檔承接背景）
+
+## 延伸（2026-06-19）
+- **「AI as OS」趨勢**：[[2026-06-19_notebooklm整座圖書館]] 指出 Apple Intelligence 等讓 AI 成為有「個人情境感知」的系統核心，原生跨郵件/照片/帳單操作——是 AIOS 理念在消費端的體現
+- **視覺化設計**：實務上可用 Miro / Excalidraw 畫出 AIOS 的 Agent / Memory / Productivity 區塊，再交 AI 依架構執行（見 [[2026-06-19_claude_code_500小時心得]]）
 
 ## 應用場景
 - 個人品牌：自動排程發文、腳本生成、分析

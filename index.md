@@ -22,6 +22,8 @@
 - [[George_Kalmpourtzis]] — 《Educational Game Design Fundamentals》作者
 - [[Tynan_Sylvester]] — 《Designing Games》作者（stub）
 - [[Jesse_Schell]] — 《The Art of Game Design》作者（stub）
+- [[Boris_Cherny]] — Anthropic Claude Code 負責人，「My job is writing loop」
+- [[Peter_Steinberger]] — OpenClaw 創始人，Agent 工程化代表人物（stub）
 
 ### Organizations
 - [[Anthropic]] — AI 公司，Claude 系列與 Claude Code 的開發商；ARR $30B 於 2026-04 超越 OpenAI
@@ -43,6 +45,8 @@
 - [[Claude_Opus_4.6]] — 旗艦模型，最強推理，1M context
 - [[Claude_Sonnet_4.6]] — 日常主力，智慧+速度平衡
 - [[Claude_Haiku_4.5]] — 最快最便宜，200K context，無自適應思考
+- [[NotebookLM]] — Google 的 AI 研究/筆記工具；50 來源、80+ 語言、生成音訊/簡報（PTBrain ingest 即用它）
+- [[RayNeo_X3_Pro]] — 全彩光波導 AR+AI 眼鏡，內建 Gemini，AI 智慧眼鏡實機樣本
 
 ### Places
 _（尚未建立）_
@@ -77,6 +81,10 @@ _（尚未建立）_
 
 ### AI 工作流
 - [[AIOS]] — AI Operating System；4Cs 框架（Context/Connections/Capabilities/Cadence），把 AI 變成個人代理
+- [[Loop_Engineering]] — 循環工程；Agent 槓桿從 Prompt 移到 Loop，5+1 模塊閉環（Automation/Worktree/Skill/Connector/Sub-agents/Memory）
+- [[Context_工程]] — Context Engineering；漸進式載入、CLI>API>MCP，省 Token 換準度
+- [[工具無關性]] — Tool Agnosticism；建任何 AI 都能讀的智能系統，Claude Code↔Codex 互轉
+- [[定義任務]] — Task Briefing；五欄位法（目標/背景/素材/邊界/完成定義），把 AI 當資深合夥人
 - [[AI組織變革]] — 科斯交易成本理論 × AI：中型公司空洞化，超級個體崛起，好萊塢模式；串行瓶頸/並行網路
 - [[理解成本]] — AI 時代新瓶頸：產出成本→0，判斷 AI 產出的能力成稀缺；HTML > Markdown
 - [[Dynamic_Workflows]] — Claude Code JS 腳本驅動 agent 流水線；16 並行，75 萬行遷移案例
@@ -106,6 +114,13 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-06-19_claude_code_500小時心得]] — 500hr Claude Code 心法：Context 管理、CLI>MCP、Claude/Codex 分工（YouTube，2026-06-19）
+- [[2026-06-19_claude_code轉codex]] — 工具無關性：Claude Code↔Codex 無痛互轉（.md→.toml）（YouTube，2026-06-19）
+- [[2026-06-19_loop_engineering]] — Loop Engineering：槓桿從 Prompt 移到 Loop，5+1 模塊（YouTube，2026-06-19）
+- [[2026-06-19_prompt定義任務]] — 定義任務五欄位法：把 AI 當資深合夥人（YouTube，2026-06-19）
+- [[2026-06-19_notebooklm整座圖書館]] — NotebookLM 封神 + AI as OS + Apple Intelligence（YouTube，2026-06-19）
+- [[2026-06-19_ai復活老遊戲]] — Claude Code 逆向工程復刻老遊戲，Opus/Sonnet 雙模型（YouTube，2026-06-19）
+- [[2026-06-19_rayneo_x3_pro_ar眼鏡]] — RayNeo X3 Pro 全彩 AR+Gemini 智慧眼鏡實測（YouTube，2026-06-19）
 - [[2026-06-12_ai_原生組織底層邏輯]] — 串行瓶頸/並行網路；人類 5 大關鍵能力；三代組織演進（YouTube，2026-06-12）
 - [[2026-06-12_claude_fable5]] — Claude Fable 5（Mythos-class）：極高自主性 + Opus 4.8 安全重定向（YouTube，2026-06-12）
 - [[2026-06-12_ai_operating_system]] — AIOS 4Cs 框架：Context/Connections/Capabilities/Cadence（YouTube，2026-06-12）
@@ -158,9 +173,9 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-- Sources: 49（+5：Graphify, Dynamic Workflow 解析, AIOS, Claude Fable 5, AI原生組織）
-- Entities: 24（+Claude_Fable_5）
-- Concepts: 41（+Graphify, +AIOS）
+- Sources: 56（+7：2026-06-19 ai-tooling 批次）
+- Entities: 28（+NotebookLM, +RayNeo_X3_Pro, +Boris_Cherny, +Peter_Steinberger）
+- Concepts: 45（+Loop_Engineering, +Context_工程, +工具無關性, +定義任務）
 - Topics: 4
 - Syntheses: 1
-- 最近活動: 2026-06-12 · ingest 5 支 ai-tooling 影片（全批完成）
+- 最近活動: 2026-06-19 · ingest 7 支 ai-tooling 影片（全批完成）

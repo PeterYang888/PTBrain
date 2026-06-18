@@ -208,3 +208,14 @@
   `tmp_<slug>` → `2026-05-24_<slug>`（google_io_2026 / printingpress_cli / ai_裁員_經理vs個人貢獻者 / karpathy_intro_llms_1hr / karpathy_deep_dive_llms / karpathy_how_i_use_llms / karpathy_筆記術_claude_code）
 - 未碰：`tmp_briefings/` 10 個 NotebookLM 中間檔（另一種結構）
 - 無 wiki 頁面內容變動
+
+## [2026-06-19] ingest | 批次處理 7 支 ai-tooling YouTube 影片（NotebookLM 繁中 briefing）
+- 來源：inbox.md「待處理」7 支；用 notebooklm `ask` 產 6 段式繁中 briefing，存 `raw/transcripts/2026-06-19_*.md`（含 frontmatter）
+- source 頁（7）：[[2026-06-19_claude_code_500小時心得]], [[2026-06-19_claude_code轉codex]], [[2026-06-19_loop_engineering]], [[2026-06-19_prompt定義任務]], [[2026-06-19_notebooklm整座圖書館]], [[2026-06-19_ai復活老遊戲]], [[2026-06-19_rayneo_x3_pro_ar眼鏡]]
+- 新建 concepts（4）：[[Loop_Engineering]], [[Context_工程]], [[工具無關性]], [[定義任務]]
+- 新建 entities（4）：[[NotebookLM]], [[RayNeo_X3_Pro]], [[Boris_Cherny]], [[Peter_Steinberger]]
+- 更新 entities/concepts：[[Claude_Code]]（心法+工具分工+Loop+逆向工程）, [[OpenAI_Codex]]（互轉+推理強度+Maker/Tracker）, [[MCP]]（Token 成本+Connector）, [[AIOS]]（AI as OS+Context_工程）, [[Harness_Engineering]]（Harness→Loop 階梯）, [[AI智慧眼鏡]]（RayNeo 實機）, [[Claude_Opus_4.6]]（架構師）, [[Claude_Sonnet_4.6]]（執行者+Artifacts）, [[遊戲設計]]（AI 復活老遊戲）
+- 更新 [[index]]（People/Tools/Concepts/Sources/統計）
+- inbox.md：7 筆從「待處理」移到「已處理」
+- 待追蹤：Addy 全名、OpenClaw、Grok 2000萬 token/Apple AFM3 規格查證、復刻遊戲版權
+- 注意：source_date 暫用 ingest 日（2026-06-19），非影片實際發布日（沿用 2026-06-12 批慣例）

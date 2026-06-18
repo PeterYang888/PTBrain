@@ -46,11 +46,18 @@ User → Orchestrator Agent
 - LangChain：Python 框架，提供各種 Agent/Chain 的抽象
 - MCP：協議層（Protocol），與語言和框架無關，更底層、更通用
 
+## Token 成本考量與在 Loop 中的角色（2026-06-19）
+- **Token 效率最低的選項**：實務上 Token 效率 CLI > API > MCP。MCP 光是載入背景（未開始任務）就可能消耗約 **4,300 tokens**（`/context` 可觀察）；CLI 輸出最乾淨、無冗餘 metadata（見 [[2026-06-19_claude_code_500小時心得]]、[[Context_工程]]）
+- **Loop 的 Connector 模塊**：在 [[Loop_Engineering]] 的 5+1 框架中，MCP 是「Connector（連接器）」核心，讓 Agent 取得收發郵件、剪輯、生成等泛化能力（見 [[2026-06-19_loop_engineering]]）
+- **多模態調度精神**：AR 眼鏡（[[RayNeo_X3_Pro]]）整合視覺+語義、Apple 跨模型呼叫 Gemini，皆呼應 MCP 的跨能力調度理念
+
 ## 相關資源
 - Anthropic 開源 MCP 規範
 
 ## 來源
 - [[2026-05-16_stanford_ai系統課程_agentic]]
+- [[2026-06-19_claude_code_500小時心得]]（MCP Token 成本）
+- [[2026-06-19_loop_engineering]]（Connector 模塊）
 
 ## 相關概念
 - [[Agentic_Workflow]]（使用 MCP 的系統）

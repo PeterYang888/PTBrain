@@ -3,8 +3,8 @@ type: entity
 entity_type: product
 tags: [anthropic, ai-dev-tool, agent]
 created: 2026-04-17
-updated: 2026-06-12
-sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_claude_code_代理工具, 2026-05-16_claude_code_obsidian_知識庫, 2026-05-16_claude_code_人物蒸餾, 2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_graphify_claude_code]
+updated: 2026-06-19
+sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_claude_code_代理工具, 2026-05-16_claude_code_obsidian_知識庫, 2026-05-16_claude_code_人物蒸餾, 2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_graphify_claude_code, 2026-06-19_claude_code_500小時心得, 2026-06-19_claude_code轉codex, 2026-06-19_loop_engineering, 2026-06-19_ai復活老遊戲]
 ---
 
 # Claude Code
@@ -51,6 +51,12 @@ sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模�
 
 ## 進階應用
 - **[[人物蒸餾]]**：用 Claude Code + GitHub Skill（Queen Skill）提取名人（Naval Ravikant、Elon Musk 等）的公開資料，建構具有其三層思維結構的 AI 顧問。見 [[2026-05-16_claude_code_人物蒸餾]]。
+
+## 進階使用心法與工具分工（2026-06-19）
+- **500 小時實戰心法**（[[2026-06-19_claude_code_500小時心得]]）：核心是 [[Context_工程]]——漸進式載入、CLI 優先於 API 與 [[MCP]]（MCP 光載入背景就耗 ~4,300 tokens）、實作前先要 5 個方案、大型專案用 Superpowers/Brainstorming Skill 引導
+- **雙工具互補**：Claude Code 做「開發/架構/風格模仿」，[[OpenAI_Codex|Codex]] 做「Debug/既有代碼優化」；可無痛互轉（[[工具無關性]]，見 [[2026-06-19_claude_code轉codex]]）
+- **[[Loop_Engineering]] 實踐者**：負責人 [[Boris_Cherny]]「My job is writing loop」；Claude Code 具備心跳/Skill/Worktree 等完備 Loop 組件
+- **逆向工程能力**：用 Opus（架構師）+ Sonnet（執行者）雙模型，20 天復刻老遊戲、20 萬行代碼；Jon 一個週末重建消失 27 年的文字遊戲（見 [[2026-06-19_ai復活老遊戲]]）
 
 ## 相關來源
 - [[2026-04-15_claude_code_desktop_routines改版]]

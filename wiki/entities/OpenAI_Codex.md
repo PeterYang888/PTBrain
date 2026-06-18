@@ -3,8 +3,8 @@ type: entity
 entity_type: product
 tags: [openai, ai-tool, automation, agentic]
 created: 2026-05-30
-updated: 2026-05-30
-sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 2026-05-30_ai_ppt_codex]
+updated: 2026-06-19
+sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 2026-05-30_ai_ppt_codex, 2026-06-19_claude_code轉codex, 2026-06-19_loop_engineering]
 ---
 
 # OpenAI Codex
@@ -27,6 +27,11 @@ sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 20
 - PPT 生成：約 8 分鐘生成 10 頁可編輯 PPT，含自我截圖視覺檢查（來自 [[2026-05-30_ai_ppt_codex]]）
 - Gmail 整合：自動分類、摘要、批次回覆郵件
 - 被定位為 2026 年「AI 做 PPT 最優選」（來自 [[2026-05-30_ai_ppt_codex]]）
+
+## 與 Claude Code 的互補與互轉（2026-06-19）
+- **雙引擎策略**：Codex 強在複雜 App / 後端邏輯與深度推理（提供 Low / Medium / High 三檔推理強度）；[[Claude_Code]] 強在開發/風格/快速 Debug
+- **無痛互轉（[[工具無關性]]）**：Skills 格式兩邊相同可直接複製；Agents 在 Claude Code 用 `.md`、Codex 用 `.toml`（轉移建 `.agent` 資料夾）；Codex 內輸入 `/` 呼叫 Skill。可在 VS Code / Antigravity / Cursor 用 Extension。見 [[2026-06-19_claude_code轉codex]]
+- **[[Loop_Engineering]] 角色**：常擔任 Maker（執行者），由 Claude Code/GPT 當 Tracker（審核者）做觀察反思，避免過擬合
 
 ## 與其他頁的關係
 - 屬於 [[OpenAI]] 的產品
