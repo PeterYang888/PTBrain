@@ -199,3 +199,12 @@
 - source 頁：[[2026-06-12_ai_原生組織底層邏輯]]
 - 更新：[[AI組織變革]]（新增串行瓶頸/並行網路框架、三代演進、5 大人類能力）
 - 更新：[[index]]
+
+## [2026-06-19] lint | 清理 raw/transcripts 殘留 tmp_ 暫存檔
+- 起因：hook 提示 `tmp_ai_native_org.md` 未 ingest；驗證後確認內容早已 ingest（屬 2026-06-12 批）
+- 刪除 5 個未追蹤殘留重複檔（2026-06-12 批，已有正式 `2026-06-12_*.md` + source 頁）：
+  tmp_ai_native_org / tmp_ai_operating_system / tmp_claude_fable5 / tmp_dynamic_workflow_解析 / tmp_graphify_claude_code
+- 正名 7 組已 commit 的 raw 逐字稿（.md + .json，2026-05-24 批；原 tmp_ 命名是該批 source 頁唯一原始檔）：
+  `tmp_<slug>` → `2026-05-24_<slug>`（google_io_2026 / printingpress_cli / ai_裁員_經理vs個人貢獻者 / karpathy_intro_llms_1hr / karpathy_deep_dive_llms / karpathy_how_i_use_llms / karpathy_筆記術_claude_code）
+- 未碰：`tmp_briefings/` 10 個 NotebookLM 中間檔（另一種結構）
+- 無 wiki 頁面內容變動
