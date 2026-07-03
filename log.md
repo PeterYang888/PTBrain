@@ -219,3 +219,33 @@
 - inbox.md：7 筆從「待處理」移到「已處理」
 - 待追蹤：Addy 全名、OpenClaw、Grok 2000萬 token/Apple AFM3 規格查證、復刻遊戲版權
 - 注意：source_date 暫用 ingest 日（2026-06-19），非影片實際發布日（沿用 2026-06-12 批慣例）
+
+## [2026-06-27] ingest | 批次處理 12 支 ai-tooling YouTube 影片（NotebookLM 繁中 briefing）
+- 來源：inbox.md「待處理」12 支；用 notebooklm `ask -s` 產 6 段式繁中 briefing，存 `raw/transcripts/2026-06-27_*.md`（含 frontmatter）
+- 三個子主題群：AI 眼鏡（Even G2，3 支）、ComfyUI 教學（4 支）、其餘各 1（FLUX.2 / Codex PPT / Google Omni / RPA / Gemini Spark）
+- source 頁（12）：[[2026-06-27_even_g2_claude_code]], [[2026-06-27_even_g2_創辦人訪談]], [[2026-06-27_even_realities_g2_36g]], [[2026-06-27_comfyui_保姆級安裝]], [[2026-06-27_comfyui_v8整合包]], [[2026-06-27_comfyui_系統教程前言]], [[2026-06-27_comfyui_基礎教學ep1]], [[2026-06-27_flux2_klein]], [[2026-06-27_image2_codex_可編輯ppt]], [[2026-06-27_google_omni_影片模型]], [[2026-06-27_rpa_要沒了]], [[2026-06-27_gemini_spark]]
+- 新建 entities（6）：[[Even_Realities_G2]], [[ComfyUI]], [[Stable_Diffusion]], [[FLUX]], [[Gemini_Spark]], [[Gemini_Omni]]（+ [[Will_Fan]] stub）
+- 新建 concepts（2）：[[寧靜技術]], [[RPA]]
+- 更新 entities/concepts：[[AI智慧眼鏡]]（Even G2 無相機路線 + 三產品光譜表）, [[OpenAI_Codex]]（record-and-replay 取代 RPA + Image2 PPT Master）, [[Google]]（Gemini Omni 影片模型 + Gemini Spark 代理人）
+- 更新 [[index]]（Tools/People/Concepts/Sources/統計：Sources 56→68）
+- notebooklm 註記：加來源時 S4uYjG_AzXU（Image2+Codex PPT）首次「API returned no data」，重試成功；其餘 11 支一次成功
+- 待追蹤：三家「個人/企業 AI 自動化 OS」（Codex record-and-replay / [[Gemini_Spark]] / Claude [[routines]]）可做 synthesis；FLUX.2 vs SDXL 編輯場景比較
+- 注意：source_date 沿用 ingest 日（2026-06-27），非影片實際發布日
+
+## [2026-06-27] query | 三家 AI 自動化 OS 是否同構？
+- 問題：Codex record-and-replay / [[Gemini_Spark]] / Claude [[routines]]+`/goal` 三家自動化框架的異同
+- 參考頁面：[[2026-06-27_rpa_要沒了]], [[2026-06-27_gemini_spark]], [[2026-05-30_ai_agent_goal功能]], [[routines]], [[AIOS]]
+- 產出：[[ai自動化os_三家比較]]（synthesis）——歸納「目標 + 觸發 + 技能 + 監控驗證」四要素同構骨架；指出 Claude 的 Rubric 驗證最深、Spark 結果驗證最弱、MCP 成跨生態連接標準
+- 更新 [[index]]（Syntheses 1→2 + 統計）
+
+## [2026-07-04] ingest | 批次處理 5 支影片（ai-tooling ×4、thinking ×1，NotebookLM 繁中 briefing）
+- 來源：inbox.md「待處理」5 支；用 notebooklm `ask -s` 產結構化繁中 briefing，存 `raw/transcripts/2026-07-04_*.md`（含 frontmatter）；thinking 主題首次使用，新建 notebook「thinking-methods」
+- source 頁（5）：[[2026-07-04_claude_codex_互審]], [[2026-07-04_codex_geo]], [[2026-07-04_comfyui_零基礎ep01]], [[2026-07-04_running_train_擬真遊戲]], [[2026-07-04_馬斯克_清醒演講]]
+- 新建 entities（2）：[[Gary_Chen]]（Claude/Codex stopHook 互審 Harness 實踐者）, [[黃一河]]（Netpe 創辦人，GEO 實踐者）
+- 新建 concepts（1）：[[GEO]]（Generative Engine Optimization，與 [[理解成本]] 方向相反但呼應）
+- 更新 entities/concepts：[[Harness_Engineering]]（新增個人開發者 stopHook 互審實例）, [[OpenAI_Codex]]（新增審稿人角色 + GEO 執行引擎兩節）, [[Claude_Code]]（新增 stopHook 跨模型互審機制）, [[ComfyUI]]（新增命令列手動安裝路線）, [[Elon_Musk]]（新增 2008 生死抉擇、理性接納失敗機率）, [[第一性原理]]（新增馬斯克案例）, [[理解成本]]（新增 GEO 反向視角交叉連結）
+- 更新 [[遊戲設計]]（topic，新增「極致寫實案例（非 AI）」一節：《Running Train》對照 AI 生成內容的以假亂真路徑）
+- 更新 [[index]]（Entities/Concepts/Sources/統計：Sources 68→73，Entities 34→36，Concepts 47→48）
+- inbox.md：5 筆從「待處理」移到「已處理」
+- 注意：`raw/transcripts/2026-06-27_*` 批次（12 支）與對應 wiki 頁面在 ingest 前已存在（上次 session 完成但未 commit），本次未重複處理，僅確認無 URL 重複
+- 待追蹤：codex review skill 是否可公開取用；Netpe/TypeOS 商業模式；「AI 比核武危險」論述細節；ComfyUI 命令列版與既有保姆級安裝教學的路線比較

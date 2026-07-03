@@ -24,6 +24,9 @@
 - [[Jesse_Schell]] — 《The Art of Game Design》作者（stub）
 - [[Boris_Cherny]] — Anthropic Claude Code 負責人，「My job is writing loop」
 - [[Peter_Steinberger]] — OpenClaw 創始人，Agent 工程化代表人物（stub）
+- [[Will_Fan]] — Even Realities 創辦人，前 Apple Watch 團隊（stub）
+- [[Gary_Chen]] — AI 工作流專家，提出 Claude/Codex stopHook 互審 Harness 實踐
+- [[黃一河]] — Netpe 社群創辦人，用 Codex 實踐 GEO 內容策略
 
 ### Organizations
 - [[Anthropic]] — AI 公司，Claude 系列與 Claude Code 的開發商；ARR $30B 於 2026-04 超越 OpenAI
@@ -47,6 +50,12 @@
 - [[Claude_Haiku_4.5]] — 最快最便宜，200K context，無自適應思考
 - [[NotebookLM]] — Google 的 AI 研究/筆記工具；50 來源、80+ 語言、生成音訊/簡報（PTBrain ingest 即用它）
 - [[RayNeo_X3_Pro]] — 全彩光波導 AR+AI 眼鏡，內建 Gemini，AI 智慧眼鏡實機樣本
+- [[Even_Realities_G2]] — 前 Apple Watch 團隊的無相機智慧眼鏡（36g/48hr），可終端連 Claude Code
+- [[ComfyUI]] — 開源節點式 AIGC 工作流工具，Stable Diffusion/FLUX 的進階介面
+- [[Stable_Diffusion]] — 開源文生圖模型家族，ComfyUI/WebUI 的底層
+- [[FLUX]] — 黑森林實驗室開源文生圖/編輯模型；FLUX.2 Klein 性價比小鋼砲
+- [[Gemini_Spark]] — Google 24/7 雲端 AI 代理人（Tasks/Skills/Schedules + MCP）
+- [[Gemini_Omni]] — Google Flow 的多模態生成模型（OmniFlash 圖生影）
 
 ### Places
 _（尚未建立）_
@@ -92,11 +101,14 @@ _（尚未建立）_
 - [[side_question]] — Claude Code 桌面 app `/btw` 側邊提問
 - [[延伸思考]] — Claude 三款模型皆支援的推理增強
 - [[自適應思考]] — 僅 Opus / Sonnet 支援的動態思考深度
+- [[RPA]] — 機器人流程自動化；指令式 vs AI agent 目標式，正被 Codex record-and-replay 取代
+- [[GEO]] — 生成式引擎優化；降低模型理解你的成本，Wiki 結構優於單篇部落格
 
 ### 思維方法
 - [[第一性原理]] — 底層思考法，剝除假設從基礎事實重建
 - [[類比思維]] — 複製既有成功模式，與第一性原理對立
 - [[語義樹]] — Elon Musk 的學習框架（先建原則樹幹，再掛細節樹葉）
+- [[寧靜技術]] — Quiet Technology：技術不奪取注意力，只在需要時輕輕靠近（穿戴設計哲學）
 
 ### 醫學 / 生理
 - [[GLP-1受體激動劑]] — 瘦瘦針的作用機制、藥物世代、跨系統效果與風險
@@ -111,9 +123,27 @@ _（尚未建立）_
 
 ## Syntheses
 - [[第一性原理_x_AI工具選擇]] — 用第一性原理四步法選 AI 模型，橋接兩條主線（2026-04-22）
+- [[ai自動化os_三家比較]] — Codex / Gemini Spark / Claude Code 三家 AI 自動化 OS 同構框架對比（2026-06-27）
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-07-04_claude_codex_互審]] — Claude/Codex stopHook 互審 Harness 最小實踐（YouTube，2026-07-04）
+- [[2026-07-04_codex_geo]] — 用 Codex 做 GEO：內容資產轉 AI 友善 Wiki（YouTube，2026-07-04）
+- [[2026-07-04_comfyui_零基礎ep01]] — ComfyUI 命令列手動安裝路線（Python/Git/venv）（YouTube，2026-07-04）
+- [[2026-07-04_running_train_擬真遊戲]] — 獨立遊戲《Running Train》以假亂真技術展示（YouTube，2026-07-04）
+- [[2026-07-04_馬斯克_清醒演講]] — 馬斯克 2008 生死抉擇、理性接納失敗機率（YouTube，2026-07-04）
+- [[2026-06-27_even_g2_claude_code]] — Even G2 終端模式連 Claude Code，隨處工作（YouTube，2026-06-27）
+- [[2026-06-27_even_g2_創辦人訪談]] — Even Realities 創辦人 Will Fan 設計哲學（YouTube，2026-06-27）
+- [[2026-06-27_even_realities_g2_36g]] — Even G2 36g/48hr 評測，寧靜技術（YouTube，2026-06-27）
+- [[2026-06-27_comfyui_保姆級安裝]] — ComfyUI 保姆級安裝、硬體門檻、AIGC 入門（YouTube，2026-06-27）
+- [[2026-06-27_comfyui_v8整合包]] — ComfyUI V8 多模態整合包，GLM-5 Vibe Coding 重寫 UI（YouTube，2026-06-27）
+- [[2026-06-27_comfyui_系統教程前言]] — 帆哥 ComfyUI 系統教學前言，7 級規劃（YouTube，2026-06-27）
+- [[2026-06-27_comfyui_基礎教學ep1]] — ComfyUI Desktop 版上手，節點如樂高（YouTube，2026-06-27）
+- [[2026-06-27_flux2_klein]] — FLUX.2 Klein 性價比文生圖/編輯模型，4–6 步出圖（YouTube，2026-06-27）
+- [[2026-06-27_image2_codex_可編輯ppt]] — Codex + PPT Master + GPT Image 2 做可編輯 PPT（YouTube，2026-06-27）
+- [[2026-06-27_google_omni_影片模型]] — Google Flow + Gemini Omni（OmniFlash）圖生影（YouTube，2026-06-27）
+- [[2026-06-27_rpa_要沒了]] — Codex record-and-replay 目標式自動化取代 RPA（YouTube，2026-06-27）
+- [[2026-06-27_gemini_spark]] — Gemini Spark 24/7 AI 代理人，Tasks/Skills/Schedules（YouTube，2026-06-27）
 - [[2026-06-19_claude_code_500小時心得]] — 500hr Claude Code 心法：Context 管理、CLI>MCP、Claude/Codex 分工（YouTube，2026-06-19）
 - [[2026-06-19_claude_code轉codex]] — 工具無關性：Claude Code↔Codex 無痛互轉（.md→.toml）（YouTube，2026-06-19）
 - [[2026-06-19_loop_engineering]] — Loop Engineering：槓桿從 Prompt 移到 Loop，5+1 模塊（YouTube，2026-06-19）
@@ -173,9 +203,9 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-- Sources: 56（+7：2026-06-19 ai-tooling 批次）
-- Entities: 28（+NotebookLM, +RayNeo_X3_Pro, +Boris_Cherny, +Peter_Steinberger）
-- Concepts: 45（+Loop_Engineering, +Context_工程, +工具無關性, +定義任務）
+- Sources: 73（+5：2026-07-04 批次）
+- Entities: 36（+Gary_Chen, +黃一河）
+- Concepts: 48（+GEO）
 - Topics: 4
-- Syntheses: 1
-- 最近活動: 2026-06-19 · ingest 7 支 ai-tooling 影片（全批完成）
+- Syntheses: 2
+- 最近活動: 2026-07-04 · ingest 5 支影片（Claude/Codex 互審、Codex GEO、ComfyUI 手動安裝、Running Train 擬真展示、馬斯克演講）

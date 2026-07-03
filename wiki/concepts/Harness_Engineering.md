@@ -2,8 +2,8 @@
 type: concept
 tags: [AI架構, Agent, 系統設計, AI職涯]
 created: 2026-05-16
-updated: 2026-05-16
-sources: [2026-05-16_harness_engineering_ai職涯, 2026-05-16_stanford_ai系統課程_agentic]
+updated: 2026-07-04
+sources: [2026-05-16_harness_engineering_ai職涯, 2026-05-16_stanford_ai系統課程_agentic, 2026-07-04_claude_codex_互審]
 ---
 
 # Harness Engineering
@@ -31,6 +31,7 @@ LLM 本身像「超級聰明但失憶且沒有手腳的大腦」，Harness Engin
 
 ## 應用 / 實例
 - 在 [[Claude_Code]] 中：Claude Code 本身就是 Harness 的典型實現（記憶、工具、規劃、評估）
+- **個人開發者最小實踐（[[Gary_Chen]]，2026-07-04）**：用 `stopHook` 攔截 Claude Code 的結束流程，強制 Claude 與 [[OpenAI_Codex|Codex]] 跨模型互審，直到雙方達成共識（而非固定輪數）才放行；把「評估」模組具象化成「兩個 AI 互相審核」，用系統取代人為紀律。見 [[2026-07-04_claude_codex_互審]]
 
 ## 職涯資訊
 矽谷 Harness Engineer 底薪 22-38 萬美元，含股票總報酬超過 50 萬美元（需同時具備系統設計、LLM 特性、分散式系統、評估方法論四維能力）
@@ -39,3 +40,4 @@ LLM 本身像「超級聰明但失憶且沒有手腳的大腦」，Harness Engin
 - [[2026-05-16_harness_engineering_ai職涯]]
 - [[2026-05-16_stanford_ai系統課程_agentic]]
 - [[2026-06-19_loop_engineering]]（Harness → Loop 的工程化階梯）
+- [[2026-07-04_claude_codex_互審]]（個人開發者 stopHook 互審實踐）
