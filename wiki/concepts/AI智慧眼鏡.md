@@ -2,8 +2,8 @@
 type: concept
 tags: [hardware, AR, AI-glasses, platform, next-gen-computing]
 created: 2026-05-30
-updated: 2026-06-19
-sources: [2026-05-30_ai眼鏡時代, 2026-06-19_rayneo_x3_pro_ar眼鏡]
+updated: 2026-06-27
+sources: [2026-05-30_ai眼鏡時代, 2026-06-19_rayneo_x3_pro_ar眼鏡, 2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 2026-06-27_even_realities_g2_36g]
 ---
 
 # AI 智慧眼鏡
@@ -51,6 +51,21 @@ AI 智慧眼鏡的核心價值在於「解放雙手與視線」：不需低頭�
 - 痛點：高亮度高耗電，重度使用僅約 1 小時，需外接電源（尿袋式）
 - 體驗比喻：「很像在跟鋼鐵人的 Jarvis 聊天」——印證「從被動查詢轉向隨身 Agent」
 - 詳見 [[2026-06-19_rayneo_x3_pro_ar眼鏡]]
+
+## 代表產品實測：[[Even_Realities_G2]]（2026-06-27，3 支來源）
+與 RayNeo 全彩 AR 路線正好對立的「**無相機 + 寧靜技術**」生產力派：
+- [[Will_Fan]]（前 Apple Watch 團隊）2023 創立，自比「智慧眼鏡界的 Tesla / OpenAI」
+- 36 克、綠色單色波導 1200 nits、**48 小時**續航（vs RayNeo 76 克、約 1 小時）——以「捨相機 + 單色」換來極致輕量與長續航
+- **算力放手機端**（藍牙連線），對比 RayNeo 的本機 Gemini
+- 主打 [[寧靜技術]]：AI 在背景做對話摘要/待辦，不奪取注意力，與 [[Meta]] 相機/社群路線相反
+- **終端模式**可遠端連桌機 [[Claude_Code]]/[[OpenAI_Codex]]，把眼鏡變成 AI Agent 的行動介面（詳見 [[2026-06-27_even_g2_claude_code]]）
+
+## 路線光譜小結
+| 產品 | 顯示 | 重量/續航 | 算力 | 定位 |
+|------|------|----------|------|------|
+| [[RayNeo_X3_Pro]] | 全彩光波導 | 76g / ~1hr | 本機 Gemini | 全彩 AR 隨身 Agent |
+| [[Even_Realities_G2]] | 綠色單色 | 36g / 48hr | 手機端 | 無相機生產力工具 |
+| [[Meta]] Ray-Ban | 無顯示為主 | 輕 | 雲端 | 相機/社群 SNS |
 
 ## 與其他概念的差別
 - vs 手機：手機需要「低頭看」，眼鏡是「抬頭感知」
