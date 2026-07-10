@@ -2,8 +2,8 @@
 type: concept
 tags: [claude-code, workflow, javascript, agent, parallel]
 created: 2026-06-06
-updated: 2026-06-12
-sources: [2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_dynamic_workflow_解析]
+updated: 2026-07-10
+sources: [2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_dynamic_workflow_解析, 2026-07-10_agent_teams_協作模式]
 ---
 
 # Dynamic Workflows
@@ -36,11 +36,22 @@ sources: [2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_dynamic_wor
 | 層級 | 工具 | 控制權歸屬 | Context 影響 |
 | :--- | :--- | :--- | :--- |
 | 基礎 | 直接對話 | 使用者 | 正常 |
-| 執行層 | Subagent | 模型隨機 | 可能塞滿 |
-| 溝通層 | Agent Team | 模型間互動 | 較多 |
+| 執行層 | [[Subagent]] | 模型隨機 | 可能塞滿 |
+| 溝通層 | [[Agent_Teams|Agent Team]] | 模型間互動 | 較多 |
 | 指揮層 | **Dynamic Workflow** | **腳本/程式碼** | **極低** |
 
 **何時別用**：任務前置依賴強（一步接一步）、修改數行程式碼、日常查詢——殺雞用牛刀。
+
+## 多 Agent 的效能與成本陷阱（[[2026-07-10_agent_teams_協作模式]]）
+更多 Agent 不等於更強。[[Kelly_Tsai]] 提出的風險指標：
+- 結構不良的系統會把錯誤**放大 17 倍**
+- 循序漸進式（逐步推理）任務中，多 Agent 效能可能**退步至 70%**
+- 生產環境的多 Agent 系統**失敗率常過半**
+- 因工具重算與訊息往返，成本可達單一 Agent 的**三倍以上**
+
+> 「問題出在系統設計，不在模型本身。」
+
+**設計原則**：以 Context 分工（誰需要看到哪些資料），而非以角色頭銜分工——後者會造成「傳話遊戲」式的資訊丟失。見 [[Context_工程]]。
 
 ## 成本控制三招
 1. **模型分級**：撒網/蒐集階段用 Haiku，收斂推理階段用 Opus
@@ -48,8 +59,10 @@ sources: [2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_dynamic_wor
 3. **小範圍先測試**：先對單一資料夾跑，確認腳本邏輯與成本再放大規模
 
 ## 與其他模式的差別
-- 跟 **Agent Team** 的差別：Agent Team 讓 agent 直接互通（動態決策）；Dynamic Workflows 是腳本定義的流水線（確定性強），適合大規模移植與掃描
+- 跟 **[[Agent_Teams|Agent Team]]** 的差別：Agent Team 讓 agent 直接互通（動態決策）；Dynamic Workflows 是腳本定義的流水線（確定性強），適合大規模移植與掃描
 - 跟 [[Vibe_Coding]] 的關係：都是「人類定義目標，AI 自主執行」，但 Dynamic Workflows 在執行層更結構化
+- 跟 **N8N** 的差別：N8N 是固定式（Fixed）自動化流程；Dynamic Workflows 的路徑可隨任務進展動態調整
+- 跟 [[Replit]] 的差別：Replit 以 Git 分支/合併語意組織多 agent（Pro 並行 10 個），並行度遠低於 Dynamic Workflows 的 16 並行 / 上限 1000
 
 ## 對抗式驗證機制（Adversarial Verification）
 設計靈感源自 GAN（生成對抗網絡）：
@@ -66,3 +79,4 @@ sources: [2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_dynamic_wor
 ## 來源
 - [[2026-06-06_11天_claude_code_dynamic_workflows]]
 - [[2026-06-06_claude_code_1000_agent_dynamic_workflows]]
+- [[2026-07-10_agent_teams_協作模式]]

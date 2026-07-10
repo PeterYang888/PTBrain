@@ -14,7 +14,7 @@ sources: [2026-05-16_ai教父_agi內幕]
 ## 背景
 - 紐約大學教授（兼任）
 - 在 Meta 工作超過 10 年，於 2025 年底宣布離職自行創業
-- 2018 年與 Geoffrey Hinton、Yoshua Bengio 共同獲得圖靈獎
+- 2018 年與 [[Geoffrey_Hinton]]、Yoshua Bengio 共同獲得圖靈獎
 - 以卷積神經網路（LeNet）在深度學習奠基工作聞名
 
 ## 關鍵事實

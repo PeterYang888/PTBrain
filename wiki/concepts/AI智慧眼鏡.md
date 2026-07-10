@@ -2,8 +2,8 @@
 type: concept
 tags: [hardware, AR, AI-glasses, platform, next-gen-computing]
 created: 2026-05-30
-updated: 2026-06-27
-sources: [2026-05-30_ai眼鏡時代, 2026-06-19_rayneo_x3_pro_ar眼鏡, 2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 2026-06-27_even_realities_g2_36g]
+updated: 2026-07-10
+sources: [2026-05-30_ai眼鏡時代, 2026-06-19_rayneo_x3_pro_ar眼鏡, 2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 2026-06-27_even_realities_g2_36g, 2026-07-10_六月_ai_更新彙整]
 ---
 
 # AI 智慧眼鏡
@@ -30,6 +30,7 @@ AI 智慧眼鏡的核心價值在於「解放雙手與視線」：不需低頭�
 
 ## 競爭格局（三強鼎立）
 - **[[Meta]]**（市場領導者）：Ray-Ban AI 眼鏡，299 美元，八成市佔；與 EssilorLuxottica 合作
+  - 規格補充（[[2026-07-10_六月_ai_更新彙整]]）：**26 種**款式；單次續航 **8 小時**、搭充電盒達 **40 小時**；內建 Meta AI（Llama Spark），支援免手持拍攝與環境辨識
 - **[[Google]]**：與 EssilorLuxottica + Magic Leap 合作，Google I/O 2026 發布語音型 AI 眼鏡
 - **[[Apple]]**：內部研發中，生態系閉環優勢待展現
 - 其他：三星、高通（Snapdragon XR 平台）、中國品牌（供應鏈優勢）
@@ -72,4 +73,4 @@ AI 智慧眼鏡的核心價值在於「解放雙手與視線」：不需低頭�
 - vs VR 頭盔：眼鏡不阻隔現實，是 AR 疊加而非 VR 沉浸
 
 ## 來源
-- [[2026-05-30_ai眼鏡時代]]
+- [[2026-05-30_ai眼鏡時代]] · [[2026-06-19_rayneo_x3_pro_ar眼鏡]] · [[2026-06-27_even_g2_claude_code]] · [[2026-07-10_六月_ai_更新彙整]]

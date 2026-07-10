@@ -7,15 +7,7 @@
 
 ## 待處理
 
-_（目前無待處理項目）_
-
----
-
-## ❓ 待你確認
-
-- https://www.youtube.com/watch?v=wO7Xi6ogaWI | ai-tooling
-  > Google Maps 結合 Gemini AI 旅遊應用：東京找餐廳不踩雷
-  > （Gemini 產品應用，與 slot 設計關聯低，視你對 Google AI 產品策略的興趣決定）
+<!-- 貼新連結到這裡，格式：- URL | notebook標記 -->
 
 ---
 
@@ -23,19 +15,16 @@ _（目前無待處理項目）_
 
 <!-- 處理完的連結會自動移到這裡 -->
 
-### 2026-07-04 完成
+### 2026-07-10
 
-- https://www.youtube.com/watch?v=xzrvAERmvRk | ai-tooling
-  > 個人 Harness 的最小實踐教學：讓 Claude 和 Codex 自動互審 → [[2026-07-04_claude_codex_互審]]
+- https://www.youtube.com/watch?v=4dom8ne0hg0 | ai-tooling ✅ 2026-07-10
+  > 矽谷科技圈爆紅的 Agent Teams 怎麼運作？真的比較強嗎？｜Kelly Tsai
+  > → [[2026-07-10_agent_teams_協作模式]]
 
-- https://www.youtube.com/watch?v=mR0eqJ2qVs4 | ai-tooling
-  > 用 Codex 做 GEO → [[2026-07-04_codex_geo]]
+- https://www.youtube.com/watch?v=vnA9IfqVSHc | ai-tooling ✅ 2026-07-10
+  > 影片生成、自動駕駛、即時翻譯、AI 同事全來了｜六月 AI 更新完整整理
+  > → [[2026-07-10_六月_ai_更新彙整]]
 
-- https://www.youtube.com/watch?v=yMA1MpbaGEs | ai-tooling
-  > ComfyUI 零基礎上手第01集：保母級教學（繁中） → [[2026-07-04_comfyui_零基礎ep01]]
-
-- https://www.youtube.com/watch?v=SoEydAShW2A | ai-tooling
-  > RUNNING TRAIN｜AI 生成影像與實景混淆的技術展示 → [[2026-07-04_running_train_擬真遊戲]]
-
-- https://www.youtube.com/watch?v=oDaoz7hL0vQ | thinking
-  > 馬斯克最清醒的演講：他10年前說的全是對的（中英字幕） → [[2026-07-04_馬斯克_清醒演講]]
+- https://www.youtube.com/watch?v=LF9sd-2jCoY | ai-tooling ✅ 2026-07-10
+  > 漫士科普：90 分鐘深度，一口氣看懂人工智慧和神經網路
+  > → [[2026-07-10_神經網路_漫士科普]]

@@ -27,6 +27,10 @@
 - [[Will_Fan]] — Even Realities 創辦人，前 Apple Watch 團隊（stub）
 - [[Gary_Chen]] — AI 工作流專家，提出 Claude/Codex stopHook 互審 Harness 實踐
 - [[黃一河]] — Netpe 社群創辦人，用 Codex 實踐 GEO 內容策略
+- [[Geoffrey_Hinton]] — 深度學習奠基者，1986 推廣反向傳播；堅持神經網路 40 年
+- [[Kelly_Tsai]] — CKY channel 主講者，提出 Agent 協作三級分類與「以 Context 分工」原則
+- [[漫士]] — AI 深度科普創作者（清華姚班、AI 博士），主張「智慧即函數」
+- [[Ava_凜]] — YouTube 頻道，按月彙整 AI 產業更新
 
 ### Organizations
 - [[Anthropic]] — AI 公司，Claude 系列與 Claude Code 的開發商；ARR $30B 於 2026-04 超越 OpenAI
@@ -35,6 +39,7 @@
 - [[AMI_Labs]] — Yann LeCun 創辦，押注世界模型/JEPA；2026-03 融資 $10.3 億，估值 $35 億
 - [[Google]] — Alphabet 旗下核心事業；Gemini 系列模型；2026 I/O 宣告 Agent 時代；AI 眼鏡與 EssilorLuxottica 合作
 - [[Meta]] — Facebook 母公司；AI 智慧眼鏡市場領導者（八成市佔）；Ray-Ban 系列定價 299 美元
+- [[xAI]] — Elon Musk 的 AI 公司；Grok 系列；Colossus 超算 + 5 萬顆 NVIDIA GPU 驅動影片生成
 
 ### Drugs / Products
 - [[Semaglutide]] — Ozempic / Wegovy，GLP-1 受體激動劑，Novo Nordisk 出品
@@ -56,6 +61,7 @@
 - [[FLUX]] — 黑森林實驗室開源文生圖/編輯模型；FLUX.2 Klein 性價比小鋼砲
 - [[Gemini_Spark]] — Google 24/7 雲端 AI 代理人（Tasks/Skills/Schedules + MCP）
 - [[Gemini_Omni]] — Google Flow 的多模態生成模型（OmniFlash 圖生影）
+- [[Replit]] — 雲端開發平台；多 Agent 並行編碼（Pro 10 個），協作類比 Git 分支合併
 
 ### Places
 _（尚未建立）_
@@ -88,6 +94,15 @@ _（尚未建立）_
 - [[CLIP]] — 對比語言-圖像預訓練；圖文語義對齊，文生圖的條件編碼器
 - [[CFG]] — Classifier-Free Guidance；主流文生圖引導機制，強化生成與 prompt 的對齊
 
+### 深度學習基礎（原理）
+- [[神經網路]] — 智慧即函數；1943 MP 模型 → 1957 感知機 → 1986 反向傳播；GPT-3 1750 億參數
+- [[感知機]] — 最早的神經網路單元；XOR 問題與 1969 年 AI 寒冬的導火線
+- [[梯度下降]] — 沿損失函數梯度反方向調參；「大霧中下山」比喻
+- [[反向傳播]] — 鏈式法則把誤差層層回傳；1986 Hinton 等人推廣，多層網路可訓練
+- [[泛化]] — 舉一反三的能力；擬合底層規律而非死記樣本
+- [[聯結主義]] — 從資料學特徵，對立於符號主義的人工邏輯規則
+- [[對抗樣本]] — 微小噪點讓模型把熊貓誤認為烏龜；泛化的另一面
+
 ### AI 工作流
 - [[AIOS]] — AI Operating System；4Cs 框架（Context/Connections/Capabilities/Cadence），把 AI 變成個人代理
 - [[Loop_Engineering]] — 循環工程；Agent 槓桿從 Prompt 移到 Loop，5+1 模塊閉環（Automation/Worktree/Skill/Connector/Sub-agents/Memory）
@@ -97,6 +112,8 @@ _（尚未建立）_
 - [[AI組織變革]] — 科斯交易成本理論 × AI：中型公司空洞化，超級個體崛起，好萊塢模式；串行瓶頸/並行網路
 - [[理解成本]] — AI 時代新瓶頸：產出成本→0，判斷 AI 產出的能力成稀缺；HTML > Markdown
 - [[Dynamic_Workflows]] — Claude Code JS 腳本驅動 agent 流水線；16 並行，75 萬行遷移案例
+- [[Agent_Teams]] — 有群組溝通的多 agent 協作；結構不良會放大錯誤 17 倍
+- [[Subagent]] — 各自獨立執行、不互相溝通的多 agent 執行層
 - [[routines]] — Claude Code 雲端自動化（2026-04-14 研究預覽）
 - [[side_question]] — Claude Code 桌面 app `/btw` 側邊提問
 - [[延伸思考]] — Claude 三款模型皆支援的推理增強
@@ -127,6 +144,9 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-07-10_agent_teams_協作模式]] — Subagent/Agent Teams/Dynamic Workflows 三級；錯誤放大 17 倍（YouTube，2026-07-10）
+- [[2026-07-10_六月_ai_更新彙整]] — 六月 AI 更新：影片生成、AI 同事、即時翻譯、Ray-Ban Meta（YouTube，2026-07-10）
+- [[2026-07-10_神經網路_漫士科普]] — 90 分鐘看懂神經網路：智慧即函數、反向傳播、泛化（YouTube，2026-07-10）
 - [[2026-07-04_claude_codex_互審]] — Claude/Codex stopHook 互審 Harness 最小實踐（YouTube，2026-07-04）
 - [[2026-07-04_codex_geo]] — 用 Codex 做 GEO：內容資產轉 AI 友善 Wiki（YouTube，2026-07-04）
 - [[2026-07-04_comfyui_零基礎ep01]] — ComfyUI 命令列手動安裝路線（Python/Git/venv）（YouTube，2026-07-04）
@@ -203,9 +223,10 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-- Sources: 73（+5：2026-07-04 批次）
-- Entities: 36（+Gary_Chen, +黃一河）
-- Concepts: 48（+GEO）
-- Topics: 4
+_以下為 2026-07-10 實際檔案數（先前統計與實際檔案數有偏差，已校正）。_
+- Sources: 75（+3：2026-07-10 批次）
+- Entities: 42（+Geoffrey_Hinton, +Kelly_Tsai, +漫士, +Ava_凜, +xAI, +Replit）
+- Concepts: 54（+Agent_Teams, +Subagent, +神經網路, +感知機, +梯度下降, +反向傳播, +泛化, +聯結主義, +對抗樣本）
+- Topics: 3（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
 - Syntheses: 2
-- 最近活動: 2026-07-04 · ingest 5 支影片（Claude/Codex 互審、Codex GEO、ComfyUI 手動安裝、Running Train 擬真展示、馬斯克演講）
+- 最近活動: 2026-07-10 · ingest 3 支影片（Agent Teams 協作模式、六月 AI 更新彙整、漫士神經網路科普）

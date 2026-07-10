@@ -249,3 +249,24 @@
 - inbox.md：5 筆從「待處理」移到「已處理」
 - 注意：`raw/transcripts/2026-06-27_*` 批次（12 支）與對應 wiki 頁面在 ingest 前已存在（上次 session 完成但未 commit），本次未重複處理，僅確認無 URL 重複
 - 待追蹤：codex review skill 是否可公開取用；Netpe/TypeOS 商業模式；「AI 比核武危險」論述細節；ComfyUI 命令列版與既有保姆級安裝教學的路線比較
+
+## [2026-07-10] ingest | 批次處理 3 支影片（ai-tooling，NotebookLM 繁中 briefing）
+
+**來源**：inbox.md 待處理 3 支 YouTube → NotebookLM notebook `ai-tooling`（40e24946）
+
+- source 頁（新建 3）：
+  - [[2026-07-10_agent_teams_協作模式]] — Kelly Tsai / CKY channel
+  - [[2026-07-10_六月_ai_更新彙整]] — Ava - 凜
+  - [[2026-07-10_神經網路_漫士科普]] — 漫士
+- raw 檔（新建 3）：`raw/transcripts/2026-07-10_*.md`
+- 新建 entities（6）：[[Kelly_Tsai]], [[Replit]], [[Ava_凜]], [[漫士]], [[Geoffrey_Hinton]], [[xAI]]
+- 新建 concepts（9）：[[Agent_Teams]], [[Subagent]], [[神經網路]], [[感知機]], [[梯度下降]], [[反向傳播]], [[泛化]], [[聯結主義]], [[對抗樣本]]
+- 更新（9）：[[Dynamic_Workflows]]（補多 agent 效能陷阱、Replit/N8N 對照、Subagent/Agent_Teams 連結）、[[Context_工程]]（補「以 Context 分工不以角色分工」）、[[AI智慧眼鏡]]（補 Ray-Ban Meta 規格）、[[RPA]]（補 Record and Reply 抗變化原理、同代競品）、[[OpenAI_Codex]]、[[Claude_Cowork]]（補「Claude Tech」推測）、[[Meta]]、[[Yann_LeCun]]（Hinton 補連結）、[[index]]
+
+**待核實（標為推測，未當事實寫入）**：
+- 第 2 支影片的「Cedce 2.5」「Claude Tech」「Gemini 3.5」「Diffusion Spec」疑為語音辨識誤植或非官方名稱
+- 第 1 支影片的「錯誤放大 17 倍」「退步至 70%」「失敗率過半」未點名原始研究出處
+
+**lint 發現（本次未修）**：
+- [[Yann_LeCun]] 頁連向 `[[World_Models]]`，但實際頁名為 `世界模型` → 斷鏈
+- index.md 統計數字先前與實際檔案數有偏差（73/36/48 vs 實際 72/36/45），本次已校正為實際值
