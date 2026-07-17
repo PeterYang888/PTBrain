@@ -3,8 +3,8 @@ type: entity
 entity_type: product
 tags: [anthropic, claude, model, ai-safety, autonomous-agent]
 created: 2026-06-12
-updated: 2026-06-12
-sources: [2026-06-12_claude_fable5]
+updated: 2026-07-18
+sources: [2026-06-12_claude_fable5, 2026-07-18_大模型吃掉skills]
 ---
 
 # Claude Fable 5
@@ -29,6 +29,9 @@ Fable 5 的前身 Claude Mythos preview 在測試中被發現能識別數千個�
 - 前代：Claude Opus 4.6（旗艦，最強推理，1M context）
 - Fable 5：Mythos-class，強調長程自主執行而非單次最強推理
 - 安全降級：Fable 5 → [[Claude_Opus_4.6]]（Opus 4.8 = 更新的安全降級選項）
+
+## 實測案例（2026-07-18）
+- [[黃一河]] 實測：不用 PPT skill、只給清晰需求，Fable 5 自主規劃並手搓 Python 腳本，10 分鐘產出 10 頁視覺邏輯連貫的 PPT——作為「模型越強、越多通用能力被吃掉」（[[Skill_輕量化]]）的論據（見 [[2026-07-18_大模型吃掉skills]]）
 
 ## 待補充
 - ? 正式發布時間與模型 ID

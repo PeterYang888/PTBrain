@@ -2,8 +2,8 @@
 type: concept
 tags: [ai, claude-code, context, workflow]
 created: 2026-06-19
-updated: 2026-07-10
-sources: [2026-06-19_claude_code_500小時心得, 2026-06-19_loop_engineering, 2026-06-19_notebooklm整座圖書館, 2026-07-10_agent_teams_協作模式]
+updated: 2026-07-18
+sources: [2026-06-19_claude_code_500小時心得, 2026-06-19_loop_engineering, 2026-06-19_notebooklm整座圖書館, 2026-07-10_agent_teams_協作模式, 2026-07-18_google_agentic_engineering_day1]
 ---
 
 # Context 工程（Context Engineering）
@@ -19,6 +19,13 @@ LLM 的輸出品質幾乎完全取決於 context 的質量；但 context window 
 - **設定檔承接背景**：用 `CLAUDE.md` 等專案設定檔固化偏好與限制，讓每次 session 不從零開始
 - **記憶寫回**：把歷史判斷、行業框架系統化（呼應 [[AI組織變革]] 的「管理上下文能力」）
 
+## Google 課程版分類：Static vs Dynamic（2026-07-18）
+Google Agentic Engineering 課程把 context 分成兩類並給出取捨框架（見 [[2026-07-18_google_agentic_engineering_day1]]）：
+- **Static Context**：每次必載（系統指令、agent.md）——可靠但 Token 成本高
+- **Dynamic Context**：按需載入（RAG 撈取、工具結果）——省錢但有抓取失敗風險
+- **Progressive Disclosure**：Agent 啟動只讀 Skill metadata 一行，任務匹配才載入完整指令——與上方「漸進式載入」同一原則的官方版本
+- **Token 經濟學（Capex/Opex）**：前期整理 Context 是資本支出，靠提高一次成功率降低長期 Token 燃燒率；Context Engineering 被明示為取代 Prompt Engineering 的核心技能
+
 ## 延伸：以 Context 分工，不以角色分工
 在多 Agent 系統中，Context 工程直接決定任務切分方式。[[Kelly_Tsai]] 的判準是問「**誰需要看到哪些資料**」，而非指派角色頭銜（Role）：
 
@@ -33,4 +40,4 @@ LLM 的輸出品質幾乎完全取決於 context 的質量；但 context window 
 - 對比 [[RAG]]：RAG 是動態檢索補 context 的一種手段
 
 ## 來源
-- [[2026-06-19_claude_code_500小時心得]] · [[2026-06-19_loop_engineering]] · [[2026-06-19_notebooklm整座圖書館]] · [[2026-07-10_agent_teams_協作模式]]
+- [[2026-06-19_claude_code_500小時心得]] · [[2026-06-19_loop_engineering]] · [[2026-06-19_notebooklm整座圖書館]] · [[2026-07-10_agent_teams_協作模式]] · [[2026-07-18_google_agentic_engineering_day1]]

@@ -2,8 +2,8 @@
 type: concept
 tags: [ai, claude-code, workflow, agent, context-management, automation]
 created: 2026-06-12
-updated: 2026-06-19
-sources: [2026-06-12_ai_operating_system, 2026-06-19_claude_code_500小時心得, 2026-06-19_notebooklm整座圖書館]
+updated: 2026-07-18
+sources: [2026-06-12_ai_operating_system, 2026-06-19_claude_code_500小時心得, 2026-06-19_notebooklm整座圖書館, 2026-07-18_aios_儀表板]
 ---
 
 # AIOS（AI Operating System，AI 作業系統）
@@ -75,6 +75,12 @@ Project_Folder/
 - **「AI as OS」趨勢**：[[2026-06-19_notebooklm整座圖書館]] 指出 Apple Intelligence 等讓 AI 成為有「個人情境感知」的系統核心，原生跨郵件/照片/帳單操作——是 AIOS 理念在消費端的體現
 - **視覺化設計**：實務上可用 Miro / Excalidraw 畫出 AIOS 的 Agent / Memory / Productivity 區塊，再交 AI 依架構執行（見 [[2026-06-19_claude_code_500小時心得]]）
 
+## 延伸（2026-07-18）：從架構到視覺化儀表板
+[[Jay_JayLuxAI]] 在 [[2026-07-18_aios_儀表板]] 把 AIOS 從 CLI 架構推進到團隊共享的視覺化儀表板：
+- **四層命名微調**：Context / **Skills** / **Connectors** / Cadence（對應本頁 4Cs 的 Capabilities → Skills、Connections → Connectors，框架同構）
+- **實作路徑**：Claude Design（claude.ai/design）出原型 → [[Claude_Code]]（Agent SDK）讀本地代碼庫實作 → VPS 部署團隊共享；前端 Vite+React+TS、後端 FastAPI，設計到可用約 10–15 分鐘
+- **口號**：「AIOS 不是一個 App，它是一個讓 AI 真正幫你做事的架構」「地基沒打好，儀表板只是好看」
+
 ## 應用場景
 - 個人品牌：自動排程發文、腳本生成、分析
 - 職場：自動處理重複性報告、溝通摘要
@@ -82,3 +88,4 @@ Project_Folder/
 
 ## 來源
 - [[2026-06-12_ai_operating_system]]
+- [[2026-07-18_aios_儀表板]]

@@ -2,8 +2,8 @@
 type: concept
 tags: [AI架構, Agent, 系統設計, AI職涯]
 created: 2026-05-16
-updated: 2026-07-04
-sources: [2026-05-16_harness_engineering_ai職涯, 2026-05-16_stanford_ai系統課程_agentic, 2026-07-04_claude_codex_互審]
+updated: 2026-07-18
+sources: [2026-05-16_harness_engineering_ai職涯, 2026-05-16_stanford_ai系統課程_agentic, 2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1]
 ---
 
 # Harness Engineering
@@ -25,6 +25,17 @@ LLM 本身像「超級聰明但失憶且沒有手腳的大腦」，Harness Engin
 - 跟 [[Agentic_Workflow]] 的關係：Harness 是 Agentic Workflow 的系統實現層；Agentic Workflow 是概念，Harness 是工程架構
 - 跟 [[Loop_Engineering]] 的關係：在工程化階梯中為 **Prompt → [[Context_工程|Context]] → Harness → Loop**。Harness 提供執行環境、工具反饋與權限框架；Loop Engineering 在其上設計自我迭代的閉環，是進入 Loop 前的必要基礎（見 [[2026-06-19_loop_engineering]]）
 
+## Google 官方定義：Harness 六大組件（2026-07-18）
+Google 五天 AI 開發課 Day 1 給出正式版拆解（**Agent = Model + Harness**），與上表四模組互補（見 [[2026-07-18_google_agentic_engineering_day1]]）：
+1. `rules files`（agent.md / claude.md：身分、價值觀、禁忌）
+2. `tools`（可呼叫功能與 [[MCP]] servers）
+3. `sandbox`（讀寫權限限制）
+4. `orchestration`（[[Subagent]] 調度、模型路由）
+5. `hooks`（生命週期固定點的確定性程式碼）
+6. `observability`（logs / traces / evals / 成本監控）
+
+配套數據（依該課程說法）：某團隊只優化 Harness 不換模型，bench 排名從 30 名外進前 5；「大部分的 agent 失敗都是因為 configuration」——缺工具、規則模糊、少 guardrail、context 塞滿雜訊。另見 [[Agentic_Engineering]]。
+
 ## 兩大流派（2026 年）
 - **OpenCloud（Gateway First）**：連接廣度，擁有約 4.4 萬個 Skills 市集
 - **Harness Agent（Agent First）**：記憶與學習的深度，執行-評估-萃取-改進-檢索的學習閉環
@@ -41,3 +52,4 @@ LLM 本身像「超級聰明但失憶且沒有手腳的大腦」，Harness Engin
 - [[2026-05-16_stanford_ai系統課程_agentic]]
 - [[2026-06-19_loop_engineering]]（Harness → Loop 的工程化階梯）
 - [[2026-07-04_claude_codex_互審]]（個人開發者 stopHook 互審實踐）
+- [[2026-07-18_google_agentic_engineering_day1]]（Google 官方六大組件定義）

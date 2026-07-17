@@ -3,8 +3,8 @@ type: entity
 entity_type: person
 tags: [ai, claude-code, codex, harness-engineering]
 created: 2026-07-04
-updated: 2026-07-04
-sources: [2026-07-04_claude_codex_互審]
+updated: 2026-07-18
+sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎]
 ---
 
 # Gary Chen
@@ -20,5 +20,13 @@ sources: [2026-07-04_claude_codex_互審]
 - 實踐 [[Harness_Engineering]] 的個人開發者案例
 - 與 [[Boris_Cherny]]（Loop Engineering）同為 AI Agent 工程化的個人實踐者
 
+## 內容主軸（2026-07-18 批次）
+- 解讀 Google 官方五天 AI 開發課，推廣 [[Agentic_Engineering]]（Agent = Model + Harness、工廠模型、Token 經濟學）
+- 教學 [[OpenAI_Codex]] 進階功能（Record & Replay、Fork、Side Chat、手機遠端）
+- 面向非技術人員的 [[Git_版本控制]] 教學：Git 是指揮 Agent 的語言，Vibe Coder 的價值在決策而非指令
+
 ## 相關來源
 - [[2026-07-04_claude_codex_互審]]
+- [[2026-07-18_google_agentic_engineering_day1]] — Google Agentic Engineering 課 Day 1
+- [[2026-07-18_codex_record_replay_fork]] — Codex Record & Replay / Fork / 遠端操控
+- [[2026-07-18_git_github_vibe_coding基礎]] — 非技術人員的 Git/GitHub 教學

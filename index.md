@@ -31,6 +31,8 @@
 - [[Kelly_Tsai]] — CKY channel 主講者，提出 Agent 協作三級分類與「以 Context 分工」原則
 - [[漫士]] — AI 深度科普創作者（清華姚班、AI 博士），主張「智慧即函數」
 - [[Ava_凜]] — YouTube 頻道，按月彙整 AI 產業更新
+- [[李廠長]] — 「李廠長來了」主講者，AI 工具職場實戰教學；NotebookLM 2.0 解析
+- [[Jay_JayLuxAI]] — AIOS 框架推廣者，Claude Code 儀表板實作教學
 
 ### Organizations
 - [[Anthropic]] — AI 公司，Claude 系列與 Claude Code 的開發商；ARR $30B 於 2026-04 超越 OpenAI
@@ -62,6 +64,7 @@
 - [[Gemini_Spark]] — Google 24/7 雲端 AI 代理人（Tasks/Skills/Schedules + MCP）
 - [[Gemini_Omni]] — Google Flow 的多模態生成模型（OmniFlash 圖生影）
 - [[Replit]] — 雲端開發平台；多 Agent 並行編碼（Pro 10 個），協作類比 Git 分支合併
+- [[Grok_4.5]] — xAI 旗艦模型；agentic 編程 + 80 tokens/秒，對標 Claude Code / Codex
 
 ### Places
 _（尚未建立）_
@@ -120,6 +123,10 @@ _（尚未建立）_
 - [[自適應思考]] — 僅 Opus / Sonnet 支援的動態思考深度
 - [[RPA]] — 機器人流程自動化；指令式 vs AI agent 目標式，正被 Codex record-and-replay 取代
 - [[GEO]] — 生成式引擎優化；降低模型理解你的成本，Wiki 結構優於單篇部落格
+- [[多AI研究裁決]] — 三家 deep research 差異化分工平行跑，Claude 當裁判裁共識/矛盾/盲點
+- [[Agentic_Engineering]] — Google 官方框架：Agent = Model + Harness；工廠模型；Token 經濟學
+- [[Skill_輕量化]] — 模型越強越多能力被吃掉；Skill 價值轉向判斷力固化，五種存留類型
+- [[Git_版本控制]] — AI 協作視角的 Git：commit 存檔點、branch 風險隔離、worktree 多 Agent 並行
 
 ### 思維方法
 - [[第一性原理]] — 底層思考法，剝除假設從基礎事實重建
@@ -144,6 +151,14 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-07-18_notebooklm_2_0_更新]] — NotebookLM 2.0：Studio 九大工具、agentic 缺口偵測（YouTube，2026-07-18）
+- [[2026-07-18_大模型吃掉skills]] — 模型吃掉 Skills：判斷力固化、五種存留類型（YouTube，2026-07-18）
+- [[2026-07-18_google_agentic_engineering_day1]] — Google 開發課 Day 1：Agent = Model + Harness（YouTube，2026-07-18）
+- [[2026-07-18_codex_record_replay_fork]] — Codex：Record & Replay、Fork、手機遠端操控（YouTube，2026-07-18）
+- [[2026-07-18_git_github_vibe_coding基礎]] — 非技術人員 Git/GitHub：commit/branch/worktree（YouTube，2026-07-18）
+- [[2026-07-18_aios_儀表板]] — AIOS 四層 + Claude Design/Code 做團隊儀表板（YouTube，2026-07-18）
+- [[2026-07-18_grok_4_5_發布]] — Grok 4.5：agentic 編程、80 tokens/秒（YouTube，2026-07-18）
+- [[2026-07-16_多ai研究裁決_prompt組]] — 多 AI Deep Research → Claude 裁決 prompt 組（使用者筆記，2026-07-16）
 - [[2026-07-10_agent_teams_協作模式]] — Subagent/Agent Teams/Dynamic Workflows 三級；錯誤放大 17 倍（YouTube，2026-07-10）
 - [[2026-07-10_六月_ai_更新彙整]] — 六月 AI 更新：影片生成、AI 同事、即時翻譯、Ray-Ban Meta（YouTube，2026-07-10）
 - [[2026-07-10_神經網路_漫士科普]] — 90 分鐘看懂神經網路：智慧即函數、反向傳播、泛化（YouTube，2026-07-10）
@@ -223,10 +238,10 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-_以下為 2026-07-10 實際檔案數（先前統計與實際檔案數有偏差，已校正）。_
-- Sources: 75（+3：2026-07-10 批次）
-- Entities: 42（+Geoffrey_Hinton, +Kelly_Tsai, +漫士, +Ava_凜, +xAI, +Replit）
-- Concepts: 54（+Agent_Teams, +Subagent, +神經網路, +感知機, +梯度下降, +反向傳播, +泛化, +聯結主義, +對抗樣本）
+_以下為 2026-07-18 實際檔案數。_
+- Sources: 83（+7：2026-07-18 批次 YouTube 影片）
+- Entities: 46（+李廠長、Jay_JayLuxAI、Grok_4.5，另 NotebookLM 等 8 頁更新）
+- Concepts: 58（+Agentic_Engineering、Skill_輕量化、Git_版本控制）
 - Topics: 3（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
 - Syntheses: 2
-- 最近活動: 2026-07-10 · ingest 3 支影片（Agent Teams 協作模式、六月 AI 更新彙整、漫士神經網路科普）
+- 最近活動: 2026-07-18 · ingest 批次 7 支影片（ai-tooling ×7；competitor-intel ×1 失敗）

@@ -270,3 +270,15 @@
 **lint 發現（本次未修）**：
 - [[Yann_LeCun]] 頁連向 `[[World_Models]]`，但實際頁名為 `世界模型` → 斷鏈
 - index.md 統計數字先前與實際檔案數有偏差（73/36/48 vs 實際 72/36/45），本次已校正為實際值
+
+## [2026-07-16] ingest | 多 AI Deep Research → Claude 裁決 Prompt 組（使用者筆記）
+- source 頁：[[2026-07-16_多ai研究裁決_prompt組]]
+- 新建：[[多AI研究裁決]]（concept）
+- 更新：[[Google]], [[OpenAI]], [[xAI]]（三家 deep research 分工定位）, [[定義任務]]（五欄位同構交叉連結）, [[index]]
+- 備註：raw 檔已正名移至 `raw/notes/2026-07-16_多ai研究裁決_prompt組.md`；stub link：[[Pragmatic_Play]], [[Gates_of_Olympus]]
+
+## [2026-07-18] ingest | 批次處理 7 支影片（ai-tooling，NotebookLM 繁中 briefing）
+- source 頁：[[2026-07-18_notebooklm_2_0_更新]], [[2026-07-18_大模型吃掉skills]], [[2026-07-18_google_agentic_engineering_day1]], [[2026-07-18_codex_record_replay_fork]], [[2026-07-18_git_github_vibe_coding基礎]], [[2026-07-18_aios_儀表板]], [[2026-07-18_grok_4_5_發布]]
+- 新建：[[Agentic_Engineering]], [[Skill_輕量化]], [[Git_版本控制]], [[Grok_4.5]], [[Jay_JayLuxAI]], [[李廠長]]
+- 更新：[[NotebookLM]], [[黃一河]], [[Gary_Chen]], [[OpenAI_Codex]], [[Harness_Engineering]], [[Context_工程]], [[Vibe_Coding]], [[AIOS]], [[xAI]], [[Claude_Fable_5]], [[index]]
+- 失敗：competitor-intel「Treasures of Aztec — PG Soft 大獎實錄」（W-5vaMiUlKQ）NotebookLM 兩次回報 API returned no data，已在 inbox.md 標註

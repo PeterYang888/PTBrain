@@ -3,8 +3,8 @@ type: entity
 entity_type: product
 tags: [openai, ai-tool, automation, agentic]
 created: 2026-05-30
-updated: 2026-07-10
-sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 2026-05-30_ai_ppt_codex, 2026-06-19_claude_code轉codex, 2026-06-19_loop_engineering, 2026-06-27_image2_codex_可編輯ppt, 2026-06-27_rpa_要沒了, 2026-07-04_claude_codex_互審, 2026-07-04_codex_geo, 2026-07-10_六月_ai_更新彙整]
+updated: 2026-07-18
+sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 2026-05-30_ai_ppt_codex, 2026-06-19_claude_code轉codex, 2026-06-19_loop_engineering, 2026-06-27_image2_codex_可編輯ppt, 2026-06-27_rpa_要沒了, 2026-07-04_claude_codex_互審, 2026-07-04_codex_geo, 2026-07-10_六月_ai_更新彙整, 2026-07-18_codex_record_replay_fork]
 ---
 
 # OpenAI Codex
@@ -24,6 +24,14 @@ sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 20
 - **自動化排程**：可設定定時任務（如每日 8 點摘要 AI 新聞）
 - **record and replay（2026-06-27）**：在 AI 面前操作一遍即學成可編輯 Skill，把自動化從「指令式」轉為「目標式」，被視為傳統 [[RPA]] 的替代品；整合 Goal / Automations / Heartbeat / Skills 朝 [[AIOS]] 企業作業系統演進（見 [[2026-06-27_rpa_要沒了]]）
   - **抗變化原理（2026-07-10）**：在 **Mac** 上觀測工作流程，記錄的是「**你為什麼要這麼做**」而非座標，因此介面微幅變動時流程仍可執行而不失效。錄下的 Skill 可共享，成為公司數位資產（見 [[2026-07-10_六月_ai_更新彙整]]）
+
+## Session 管理與遠端操控（2026-07-18）
+持續性 Agent Workspace 的四組新能力（見 [[2026-07-18_codex_record_replay_fork]]）：
+- **懸浮導覽 + Fork**：長對話左側橫線滑動預覽跳轉；每則回覆可分叉出帶完整上下文的平行對話線，從任何歷史節點重試而不污染主線
+- **Side Chat（`/side` 或 `/by`）+ Steering**：理解性問題走側邊對話、修正性指令用 `comment + enter` 即時介入——任務分流防上下文污染（對應 [[Claude_Code]] 的 [[side_question|/btw]]）
+- **Record & Replay 細節**：外掛安裝；最長錄 30 分鐘；基於 Computer Use（每步思考 10 幾秒），適合固定重複流程、不適合搶票類即時任務
+- **手機遠端操控**：QR code 連線；支援進度查看、File Previews、inline review comments；開發者角色從編碼者轉向「移動中的決策者」
+- **跨 AI 代理鏈範例**：`Gemini（分析影像）→ Claude（改寫創意）→ Codex（自動化上傳與表格化）`
 
 ## 關鍵事實
 - PPT 生成：約 8 分鐘生成 10 頁可編輯 PPT，含自我截圖視覺檢查（來自 [[2026-05-30_ai_ppt_codex]]）
@@ -57,3 +65,4 @@ sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 20
 - [[2026-07-04_claude_codex_互審]] — 跨模型互審：Codex 當審稿人守最後一關
 - [[2026-07-04_codex_geo]] — GEO 六步驟 SOP：內容資產轉 AI 友善 Wiki
 - [[2026-07-10_六月_ai_更新彙整]] — Record and Reply 的抗變化原理與 Skill 數位資產化
+- [[2026-07-18_codex_record_replay_fork]] — Fork / Side Chat / Steering / 手機遠端操控
