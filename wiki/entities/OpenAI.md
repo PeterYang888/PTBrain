@@ -3,8 +3,8 @@ type: entity
 entity_type: organization
 tags: [AI公司, LLM, ChatGPT, B2C]
 created: 2026-05-16
-updated: 2026-05-16
-sources: [2026-05-16_anthropic_超越_openai, 2026-05-16_ai前沿週報_ep6_claude勒索, 2026-05-16_ai教父_agi內幕, 2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 2026-05-30_ai_ppt_codex]
+updated: 2026-07-16
+sources: [2026-05-16_anthropic_超越_openai, 2026-05-16_ai前沿週報_ep6_claude勒索, 2026-05-16_ai教父_agi內幕, 2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 2026-05-30_ai_ppt_codex, 2026-07-16_多ai研究裁決_prompt組]
 ---
 
 # OpenAI
@@ -21,6 +21,7 @@ sources: [2026-05-16_anthropic_超越_openai, 2026-05-16_ai前沿週報_ep6_clau
 - 2026 年 4 月 ARR 約 240 億美元，被 Anthropic 的 300 億美元超越
 - 對 Anthropic ARR 數字提出質疑：若以「淨額」計算，Anthropic 核心收入可能僅 40 億美元
 - GPT Real-Time API：支援 70 語言即時語音、128K context、邊想邊說，語音成為主要界面（來自 [[2026-05-16_ai前沿週報_ep6_claude勒索]]）
+- **ChatGPT Deep Research** 在 [[多AI研究裁決]] 工作流中被定位為「機制拆解＋設計邏輯」線：強項是沿一條推理鏈多跳深挖、把多來源綜合成連貫因果模型（來自 [[2026-07-16_多ai研究裁決_prompt組]]，使用者定位）
 
 ## 產品：OpenAI Codex（2026 年主力生產力工具）
 Codex 已從程式碼 API 演進為全功能桌面端 AI 助理，可執行 Gmail 管理、PPT 製作、網站開發、Computer Use 等任務（來自 [[2026-05-30_codex_零基礎入門]]）：
@@ -41,3 +42,4 @@ Codex 已從程式碼 API 演進為全功能桌面端 AI 助理，可執行 Gmai
 - [[2026-05-30_codex_零基礎入門]]
 - [[2026-05-30_codex_office全包辦]]
 - [[2026-05-30_ai_ppt_codex]]
+- [[2026-07-16_多ai研究裁決_prompt組]] — ChatGPT Deep Research 在多 AI 研究分工中的定位
