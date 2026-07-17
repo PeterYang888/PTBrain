@@ -2,7 +2,7 @@
 
 ## 目前狀態
 - 最後更新：2026-07-18
-- 目前焦點：ingest 2026-07-18 批次（inbox 8 支影片）——7 支完成，1 支失敗保留待重試；僅剩 commit 待指示
+- 目前焦點：ingest 2026-07-18 批次已完成並 commit（f6aa698 補 07-16 批、0913466 本批）；剩 1 支失敗件待重試
 
 ## 已完成
 - [x] ingest 2026-07-18 批次 7 支 ai-tooling 影片（NotebookLM 繁中 briefing）— raw/transcripts/ 新增 7 檔、wiki/sources/ 新增 7 頁；新建 concepts `Agentic_Engineering`、`Skill_輕量化`、`Git_版本控制` 與 entities `Grok_4.5`、`Jay_JayLuxAI`、`李廠長`；更新 `NotebookLM`、`OpenAI_Codex`、`Harness_Engineering`、`Context_工程`、`Vibe_Coding`、`AIOS`、`xAI`、`Claude_Fable_5`、`黃一河`、`Gary_Chen`；index.md（統計 83 sources／46 entities／58 concepts）、log.md（append 一筆）、inbox.md（7 筆移入已處理）
@@ -12,9 +12,8 @@
 - （無）
 
 ## 待辦（依優先序）
-1. （視使用者指示）commit 本次 ingest：`ingest: 2026-07-18 批次 7 支影片（ai-tooling）`；注意 2026-07-16 批次的變更也尚未 commit，可一併或分開
-2. competitor-intel「Treasures of Aztec — PG Soft 大獎實錄」（W-5vaMiUlKQ）ingest 失敗待重試（見 D-004）
-3. ingest `raw/notes/2026-07-16_GitEasyLearning.md`（使用者手寫筆記，與 `Git_版本控制` concept 主題重疊，屆時合併觀點）
+1. competitor-intel「Treasures of Aztec — PG Soft 大獎實錄」（W-5vaMiUlKQ）ingest 失敗待重試（見 D-004）
+2. ingest `raw/notes/2026-07-16_GitEasyLearning.md`（使用者手寫筆記，與 `Git_版本控制` concept 主題重疊，屆時合併觀點）
 
 ## 重要決策與假設（D-001 起編號，永不刪除）
 - D-001：inbox「待處理」為空時，`ingest` 指令的對象是 raw/ 中未 ingest 的新檔案（本次即 `00_brief_多AI研究裁決.md`；另兩篇 raw 根目錄文章已有對應 source 頁）
