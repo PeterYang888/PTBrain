@@ -1,8 +1,8 @@
 # PROGRESS
 
 ## 目前狀態
-- 最後更新：2026-07-25 08:38
-- 目前焦點：ingest inbox 2026-07-25 批次（3 支 ai-tooling）已全數完成並同步 index/log/inbox，待 commit
+- 最後更新：2026-07-25 08:42
+- 目前焦點：ingest inbox 2026-07-25 批次（3 支 ai-tooling）已完成並 commit（a283c4f）
 
 ## 已完成
 - [x] ingest 2026-07-25 批次 3 支 ai-tooling 影片 — raw/transcripts/ 新增 3 檔、wiki/sources/ 新增 3 頁；新建 [[Matt_Pocock]]、[[Corey_McClain]]、[[示範式自動化]]；更新 [[Claude_Cowork]]（stub 補實）、[[RPA]]、[[Skill_輕量化]]、[[Vibe_Coding]]、[[Gary_Chen]]、[[Google]]、[[2026-07-18_codex_record_replay_fork]]（待追蹤回填）；index.md（86/47/59）、log.md、inbox.md 已同步
@@ -31,7 +31,6 @@
 - [[ai自動化os_三家比較]] synthesis 可能需擴充：Grok 4.5 入局後 agentic 編程成三強格局
 
 ## 下次接續點
-- 本批已完成，建議 commit（訊息慣例：`ingest: 2026-07-25 批次 3 支影片（ai-tooling）`）
 - 注意：inbox.md 待處理區已不見 W-5vaMiUlKQ 失敗件（與待辦 1 的描述不一致，重試時以 notebook 直加路徑為準）
 - 待使用者裁決的建議：是否做「AI 簡報生成工具比較」synthesis（Codex／NotebookLM／Gemini in Slides 三路線 source 已齊，見 [[2026-07-25_gemini_slides_簡報]] 待追蹤）
 - 若有新 ingest：先查 `inbox.md` 待處理區，再查 `raw/` untracked 檔案（`git status --short raw/`）
