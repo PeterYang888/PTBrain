@@ -3,8 +3,8 @@ type: entity
 entity_type: person
 tags: [ai, claude-code, codex, harness-engineering]
 created: 2026-07-04
-updated: 2026-07-18
-sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎]
+updated: 2026-07-25
+sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock]
 ---
 
 # Gary Chen
@@ -30,3 +30,4 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 - [[2026-07-18_google_agentic_engineering_day1]] — Google Agentic Engineering 課 Day 1
 - [[2026-07-18_codex_record_replay_fork]] — Codex Record & Replay / Fork / 遠端操控
 - [[2026-07-18_git_github_vibe_coding基礎]] — 非技術人員的 Git/GitHub 教學
+- [[2026-07-25_grill_me_matt_pocock]] — 拆解 [[Matt_Pocock]] 的 /grill-me 極簡 Skill 工作流

@@ -33,6 +33,8 @@
 - [[Ava_凜]] — YouTube 頻道，按月彙整 AI 產業更新
 - [[李廠長]] — 「李廠長來了」主講者，AI 工具職場實戰教學；NotebookLM 2.0 解析
 - [[Jay_JayLuxAI]] — AIOS 框架推廣者，Claude Code 儀表板實作教學
+- [[Matt_Pocock]] — TypeScript 專家；/grill-me 系列極簡 Skill，16 萬星、700 萬次下載
+- [[Corey_McClain]] — 同名頻道主，AI 生產力短影片；Claude record a skill 示範
 
 ### Organizations
 - [[Anthropic]] — AI 公司，Claude 系列與 Claude Code 的開發商；ARR $30B 於 2026-04 超越 OpenAI
@@ -127,6 +129,7 @@ _（尚未建立）_
 - [[Agentic_Engineering]] — Google 官方框架：Agent = Model + Harness；工廠模型；Token 經濟學
 - [[Skill_輕量化]] — 模型越強越多能力被吃掉；Skill 價值轉向判斷力固化，五種存留類型
 - [[Git_版本控制]] — AI 協作視角的 Git：commit 存檔點、branch 風險隔離、worktree 多 Agent 並行
+- [[示範式自動化]] — 示範一遍即成 Skill；Codex Record & Replay 與 Claude record a skill 對照
 
 ### 思維方法
 - [[第一性原理]] — 底層思考法，剝除假設從基礎事實重建
@@ -151,6 +154,9 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-07-25_claude_record_a_skill]] — Claude co-work「record a skill」：錄螢幕+語音即成 Skill（YouTube，2026-07-25）
+- [[2026-07-25_grill_me_matt_pocock]] — Matt Pocock /grill-me 極簡 Skill 工作流拆解（YouTube，2026-07-25）
+- [[2026-07-25_gemini_slides_簡報]] — Gemini in Google Slides 自動生成品牌簡報（YouTube，2026-07-25）
 - [[2026-07-18_notebooklm_2_0_更新]] — NotebookLM 2.0：Studio 九大工具、agentic 缺口偵測（YouTube，2026-07-18）
 - [[2026-07-18_大模型吃掉skills]] — 模型吃掉 Skills：判斷力固化、五種存留類型（YouTube，2026-07-18）
 - [[2026-07-18_google_agentic_engineering_day1]] — Google 開發課 Day 1：Agent = Model + Harness（YouTube，2026-07-18）
@@ -238,10 +244,10 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-_以下為 2026-07-18 實際檔案數。_
-- Sources: 83（+7：2026-07-18 批次 YouTube 影片）
-- Entities: 46（+李廠長、Jay_JayLuxAI、Grok_4.5，另 NotebookLM 等 8 頁更新）
-- Concepts: 58（+Agentic_Engineering、Skill_輕量化、Git_版本控制）
+_以下為 2026-07-25 實際檔案數。_
+- Sources: 86（+3：2026-07-25 批次 YouTube 影片）
+- Entities: 47（+Matt_Pocock、Corey_McClain；前值 46 與實際數有 1 筆偏差，已按實測校正）
+- Concepts: 59（+示範式自動化）
 - Topics: 3（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
 - Syntheses: 2
-- 最近活動: 2026-07-18 · ingest 批次 7 支影片（ai-tooling ×7；competitor-intel ×1 失敗）
+- 最近活動: 2026-07-25 · ingest 批次 3 支影片（ai-tooling ×3）

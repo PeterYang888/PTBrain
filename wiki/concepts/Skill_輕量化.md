@@ -2,8 +2,8 @@
 type: concept
 tags: [ai, skills, claude-code, workflow]
 created: 2026-07-18
-updated: 2026-07-18
-sources: [2026-07-18_大模型吃掉skills]
+updated: 2026-07-25
+sources: [2026-07-18_大模型吃掉skills, 2026-07-25_grill_me_matt_pocock]
 ---
 
 # Skill 輕量化（判斷力固化）
@@ -27,6 +27,9 @@ sources: [2026-07-18_大模型吃掉skills]
 
 ## 邊界：什麼不能外包
 > 「如果你外包的是審美判斷、問題的定義和價值排序……你就是在一點一點地放棄自己的主體性。」
+
+## 佐證案例：[[Matt_Pocock]] 的 /grill-me 系列（2026-07-25）
+獨立來源得出同一結論：MPO 的開源 Skill（16 萬星、700 萬次下載）走「樂高式隨插即用」路線，對比 Superpowers 式寫死九步驟的重型框架——聰明模型（Claude Fable 5 / GPT-5.6 世代）不需要保姆級防呆，需要的是把專家判斷力（TDD 順序、壞味道診斷、深模組原則）固化成可插拔模組。正是「方法論型 Skill」的實例。見 [[2026-07-25_grill_me_matt_pocock]]
 
 ## 與其他概念的關係
 - 與 [[Context_工程]]：同一省 Token 邏輯——Progressive Disclosure 載入輕量 metadata，正是輕量化 Skill 的載入機制

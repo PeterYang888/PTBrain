@@ -43,3 +43,4 @@ source_type: transcript
 
 ## 我的問題 / 待追蹤
 - Claude Code 是否會跟進 Record & Replay 式的示範學習？
+  → 已跟進：[[Claude_Cowork]] co-work 模式推出「record a skill」（[[2026-07-25_claude_record_a_skill]]），對比見 [[示範式自動化]]

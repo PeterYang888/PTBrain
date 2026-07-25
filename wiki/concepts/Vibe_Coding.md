@@ -26,6 +26,7 @@ Karpathy 展示：用 Cursor + Claude 3.7，一分鐘內開發出帶特效的井
 - 批評：代碼品質不可控，技術債難以管理
 - 支持：加速個人開發者生產力
 - **[[理解成本]] 風險（2026-06）**：不求甚解的 Vibe Coding 讓系統在架構調整時無法維護；AI 時代的稀缺能力是「判斷力」而非「產出力」
+- **決策權外包批判（2026-07-25）**：[[Matt_Pocock]] 陣營定義 Vibe Coding 為「把模糊想法丟給 AI 憑感覺做」＝把幾百個微觀決定外包給黑盒子；`/grill-me` 強制 AI 反向拷問即為反制。見 [[2026-07-25_grill_me_matt_pocock]]
 
 ## 演進：從 Vibe Coding 到 Agentic Engineering（2026-07-18）
 - Google 官方課程將 Vibe Coding 定位為「直覺式」起點，正式化的下一階段是 [[Agentic_Engineering]]——加上結構、驗證機制與 Harness 設計（「你跟 CTO 說我們在 Vibe Coding 付款系統，他可能臉都綠了」）。見 [[2026-07-18_google_agentic_engineering_day1]]

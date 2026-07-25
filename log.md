@@ -282,3 +282,13 @@
 - 新建：[[Agentic_Engineering]], [[Skill_輕量化]], [[Git_版本控制]], [[Grok_4.5]], [[Jay_JayLuxAI]], [[李廠長]]
 - 更新：[[NotebookLM]], [[黃一河]], [[Gary_Chen]], [[OpenAI_Codex]], [[Harness_Engineering]], [[Context_工程]], [[Vibe_Coding]], [[AIOS]], [[xAI]], [[Claude_Fable_5]], [[index]]
 - 失敗：competitor-intel「Treasures of Aztec — PG Soft 大獎實錄」（W-5vaMiUlKQ）NotebookLM 兩次回報 API returned no data，已在 inbox.md 標註
+
+## [2026-07-25] ingest | 批次處理 3 支影片（ai-tooling，NotebookLM 繁中 briefing）
+- source 頁：[[2026-07-25_claude_record_a_skill]], [[2026-07-25_grill_me_matt_pocock]], [[2026-07-25_gemini_slides_簡報]]
+- raw 檔（新建 3）：`raw/transcripts/2026-07-25_*.md`
+- 新建 entities（2）：[[Matt_Pocock]], [[Corey_McClain]]
+- 新建 concepts（1）：[[示範式自動化]]（Codex Record & Replay × Claude record a skill 對照表）
+- 更新（7）：[[Claude_Cowork]]（stub 補實：co-work/chat 模式、record a skill）、[[RPA]]（同代競品補 Claude）、[[Skill_輕量化]]（MPO 樂高式 Skill 第二來源佐證）、[[Vibe_Coding]]（決策權外包批判）、[[Gary_Chen]]、[[Google]]（Gemini in Slides）、[[2026-07-18_codex_record_replay_fork]]（待追蹤回填：Claude 已跟進示範學習）、[[index]]
+- 待核實（標為推測，未當事實寫入）：grill-me 影片中「生模組」疑為「深模組（Deep Modules）」語音誤植；MPO 專案 GitHub repo 名稱未在影片中出現；「GPT-5.6」為影片口述名稱
+- stub link 保留未建頁：[[深模組]]
+- 備註：本批開工時 NotebookLM 認證過期，使用者重新 login 後續跑；index 統計 entities 前值 46 與實測 47 有 1 筆偏差，已按實測校正

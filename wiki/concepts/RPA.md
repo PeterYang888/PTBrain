@@ -2,8 +2,8 @@
 type: concept
 tags: [automation, rpa, agent, enterprise]
 created: 2026-06-27
-updated: 2026-07-10
-sources: [2026-06-27_rpa_要沒了, 2026-07-10_六月_ai_更新彙整]
+updated: 2026-07-25
+sources: [2026-06-27_rpa_要沒了, 2026-07-10_六月_ai_更新彙整, 2026-07-25_claude_record_a_skill]
 ---
 
 # RPA（機器人流程自動化）
@@ -39,6 +39,7 @@ Codex 在 **Mac** 上觀測使用者的實際工作流程（如上傳 YouTube、
 - **Microsoft Scout**：連接 Outlook / OneDrive / SharePoint 管理行程
 - **Microsoft Copilot Coworker**：自主串接工具完成資料分析與報告產出
 - **Claude Tech**（推測指 [[Claude_Cowork]]）：整合 Slack，具 Ambience 環境感知模式
+- **[[Claude_Cowork]] record a skill**（2026-07-25 確認）：co-work 模式錄螢幕 + 語音示範即成 Skill，與 Codex Record & Replay 同屬 [[示範式自動化]]
 
 ## 來源
 - [[2026-06-27_rpa_要沒了]] · [[2026-07-10_六月_ai_更新彙整]]

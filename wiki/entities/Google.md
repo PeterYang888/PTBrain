@@ -3,8 +3,8 @@ type: entity
 entity_type: organization
 tags: [科技公司, AI, Gemini, Google_IO]
 created: 2026-05-24
-updated: 2026-07-16
-sources: [2026-05-24_google_io_2026, 2026-05-30_ai眼鏡時代, 2026-06-27_google_omni_影片模型, 2026-06-27_gemini_spark, 2026-07-16_多ai研究裁決_prompt組]
+updated: 2026-07-25
+sources: [2026-05-24_google_io_2026, 2026-05-30_ai眼鏡時代, 2026-06-27_google_omni_影片模型, 2026-06-27_gemini_spark, 2026-07-16_多ai研究裁決_prompt組, 2026-07-25_gemini_slides_簡報]
 ---
 
 # Google
@@ -24,6 +24,7 @@ sources: [2026-05-24_google_io_2026, 2026-05-30_ai眼鏡時代, 2026-06-27_googl
 - **[[Gemini_Omni]] 影片模型**：Google Flow 平台上 OmniFlash 文生圖→圖生影，免費每日 50 點（來自 [[2026-06-27_google_omni_影片模型]]）
 - **[[Gemini_Spark]]**：24/7 雲端 AI 代理人，Tasks/Skills/Schedules + [[MCP]]，Beta 限美國 AI Ultra（來自 [[2026-06-27_gemini_spark]]）
 - **Gemini Deep Research** 在 [[多AI研究裁決]] 工作流中被定位為「廣度掃描＋官方一手＋學術/專利」線：強項是大範圍檢索、官方文件、產業報告與專利資料（來自 [[2026-07-16_多ai研究裁決_prompt組]]，使用者定位）
+- **Gemini in Google Slides**：Drive 多檔案 → 大綱 → 一鍵成品牌風格簡報（`slides.new`；可設 deck length / tone；主動推薦相關檔案）（來自 [[2026-07-25_gemini_slides_簡報]]，官方行銷示範）
 
 ## 與其他頁的關係
 - 競爭對手：[[OpenAI]]、[[Anthropic]]
@@ -35,3 +36,4 @@ sources: [2026-05-24_google_io_2026, 2026-05-30_ai眼鏡時代, 2026-06-27_googl
 - [[2026-06-27_google_omni_影片模型]] — Gemini Omni / OmniFlash 影片模型
 - [[2026-06-27_gemini_spark]] — Gemini Spark 24/7 AI 代理人
 - [[2026-07-16_多ai研究裁決_prompt組]] — Gemini Deep Research 在多 AI 研究分工中的定位
+- [[2026-07-25_gemini_slides_簡報]] — Gemini in Google Slides 簡報自動生成（官方示範）

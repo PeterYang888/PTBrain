@@ -1,10 +1,11 @@
 # PROGRESS
 
 ## 目前狀態
-- 最後更新：2026-07-18
-- 目前焦點：ingest 2026-07-18 批次已完成並 commit（f6aa698 補 07-16 批、0913466 本批）；剩 1 支失敗件待重試
+- 最後更新：2026-07-25 08:38
+- 目前焦點：ingest inbox 2026-07-25 批次（3 支 ai-tooling）已全數完成並同步 index/log/inbox，待 commit
 
 ## 已完成
+- [x] ingest 2026-07-25 批次 3 支 ai-tooling 影片 — raw/transcripts/ 新增 3 檔、wiki/sources/ 新增 3 頁；新建 [[Matt_Pocock]]、[[Corey_McClain]]、[[示範式自動化]]；更新 [[Claude_Cowork]]（stub 補實）、[[RPA]]、[[Skill_輕量化]]、[[Vibe_Coding]]、[[Gary_Chen]]、[[Google]]、[[2026-07-18_codex_record_replay_fork]]（待追蹤回填）；index.md（86/47/59）、log.md、inbox.md 已同步
 - [x] ingest 2026-07-18 批次 7 支 ai-tooling 影片（NotebookLM 繁中 briefing）— raw/transcripts/ 新增 7 檔、wiki/sources/ 新增 7 頁；新建 concepts `Agentic_Engineering`、`Skill_輕量化`、`Git_版本控制` 與 entities `Grok_4.5`、`Jay_JayLuxAI`、`李廠長`；更新 `NotebookLM`、`OpenAI_Codex`、`Harness_Engineering`、`Context_工程`、`Vibe_Coding`、`AIOS`、`xAI`、`Claude_Fable_5`、`黃一河`、`Gary_Chen`；index.md（統計 83 sources／46 entities／58 concepts）、log.md（append 一筆）、inbox.md（7 筆移入已處理）
 - [x]（前次）ingest「多 AI Deep Research → Claude 裁決 Prompt 組」＋ raw 檔正名歸位（詳見 log.md 2026-07-16）
 
@@ -30,6 +31,9 @@
 - [[ai自動化os_三家比較]] synthesis 可能需擴充：Grok 4.5 入局後 agentic 編程成三強格局
 
 ## 下次接續點
-- 若有新 ingest：先查 `inbox.md` 待處理區（現有 1 支失敗件），再查 `raw/` untracked 檔案（`git status --short raw/`）
+- 本批已完成，建議 commit（訊息慣例：`ingest: 2026-07-25 批次 3 支影片（ai-tooling）`）
+- 注意：inbox.md 待處理區已不見 W-5vaMiUlKQ 失敗件（與待辦 1 的描述不一致，重試時以 notebook 直加路徑為準）
+- 待使用者裁決的建議：是否做「AI 簡報生成工具比較」synthesis（Codex／NotebookLM／Gemini in Slides 三路線 source 已齊，見 [[2026-07-25_gemini_slides_簡報]] 待追蹤）
+- 若有新 ingest：先查 `inbox.md` 待處理區，再查 `raw/` untracked 檔案（`git status --short raw/`）
 - 失敗件重試路徑：`notebooklm source add "https://www.youtube.com/watch?v=W-5vaMiUlKQ" -n c8bcfd26`（competitor-intel notebook）；若仍失敗，改走手動逐字稿或跳過
 - 若實跑多 AI 研究：從 `raw/notes/2026-07-16_多ai研究裁決_prompt組.md` 取 prompt，產出存 `research-runs/<日期_主題>/`，裁決結果可考慮歸檔為 synthesis
