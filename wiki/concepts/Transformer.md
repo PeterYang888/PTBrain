@@ -10,6 +10,8 @@ sources: [2026-08-01_llm如何工作_transformer架構, 2026-07-10_神經網路_
 
 > 2017 年 Google 論文《Attention Is All You Need》提出的架構，用[[注意力機制]]取代循環結構，是當前所有大型語言模型的底層框架。
 
+> 在完整技術主線中的位置見 [[LLM_原理]]。
+
 ## 一次前向運算的完整流程
 1. **Tokenization**：文本 → 整數 ID（GPT 系列用 BPE，LLaMA 系列常用 SentencePiece）
 2. **Embedding**：ID → 具語義特徵的高維向量（7B 模型常見隱藏維度 **4096**）

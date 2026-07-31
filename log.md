@@ -302,3 +302,11 @@
 - 已更正的來源錯誤：briefing 的「Induction Heads＝歸一頭」應為歸納頭（本批保留英文原名）；「Google LLaMDA 事件」正確為 **LaMDA**
 - stub link 保留未建頁：[[Tokenization]], [[前饋網路]], [[GQA]]
 - 備註：本批開工時 NotebookLM 認證失效，根因是 CLI 版本落後（0.3.4 → 0.7.3），非 cookie 問題；升級後即通。tags 未套用 inbox 表格的 ai-tooling 預設值（見 PROGRESS D-007）
+
+## [2026-08-01] lint | LLM 底層原理頁群整合檢查
+- 範圍：22 個原理層 concept 頁 ＋ 8 份原理來源頁（Karpathy ×3、漫士、王木頭、大飛、AGI 內幕、Stanford diffusion）
+- 新建：[[LLM_原理]]（topic 樞紐頁，四層階梯 ＋ 路線之爭 ＋ 四位主講者理解階梯 ＋ 缺口清單）
+- 已修矛盾：[[World_Models]] 斷鏈 3 處（[[JEPA]]、[[Yann_LeCun]]、[[2026-05-16_ai教父_agi內幕]]）→ 改指實際頁名 [[世界模型]]
+- 更新：[[Transformer]]、[[神經網路]]（加樞紐頁回連）、[[index]]（Topics 4）
+- 未修（使用者本輪未選）：[[Transformer]] 對齊敘述把三階段壓成兩階段（與 [[RLHF]] 頁的 SFT 說法不完全一致）；[[潛在空間]] stub 可指向 [[VAE]]
+- 已知缺口（記錄於 [[LLM_原理]]，本輪未建頁）：Tokenization、預訓練、SFT、Scaling Laws、Context Window、前饋網路 FFN

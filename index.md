@@ -4,6 +4,7 @@
 > 每次 ingest 新頁面時更新這份檔案。
 
 ## Topics
+- [[LLM_原理]] — 感知機 → 神經網路 → Transformer → 三階段訓練 → 推理模型的完整階梯（含路線之爭與缺口清單）
 - [[Anthropic_Claude_生態]] — Anthropic 公司、Claude 模型、agentic 產品的樞紐
 - [[第一性原理]] — 底層思考方法，剝除假設從基礎事實重新推導（概念頁）
 - [[遊戲設計]] — 遊戲設計與教育遊戲設計的樞紐頁
@@ -260,6 +261,6 @@ _以下為 2026-08-01 實際檔案數。_
 - Sources: 88（+2：2026-08-01 批次 YouTube 影片）
 - Entities: 49（+大飛、王木頭）
 - Concepts: 65（+Transformer、注意力機制、位置編碼、MoE、萬能逼近定理、激活函數）
-- Topics: 3（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
+- Topics: 4（+LLM_原理；Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
 - Syntheses: 2
 - 最近活動: 2026-08-01 · ingest 批次 2 支影片（ai-tooling ×2，AI 原理類）
