@@ -30,6 +30,8 @@
 - [[Geoffrey_Hinton]] — 深度學習奠基者，1986 推廣反向傳播；堅持神經網路 40 年
 - [[Kelly_Tsai]] — CKY channel 主講者，提出 Agent 協作三級分類與「以 Context 分工」原則
 - [[漫士]] — AI 深度科普創作者（清華姚班、AI 博士），主張「智慧即函數」
+- [[大飛]] — 「最佳拍檔」頻道主講者，論文導向的 LLM 架構科普
+- [[王木頭]] — 「王木頭學科學」主講者，從最小問題推導神經網路，主張保留「腳手架」
 - [[Ava_凜]] — YouTube 頻道，按月彙整 AI 產業更新
 - [[李廠長]] — 「李廠長來了」主講者，AI 工具職場實戰教學；NotebookLM 2.0 解析
 - [[Jay_JayLuxAI]] — AIOS 框架推廣者，Claude Code 儀表板實作教學
@@ -99,8 +101,16 @@ _（尚未建立）_
 - [[CLIP]] — 對比語言-圖像預訓練；圖文語義對齊，文生圖的條件編碼器
 - [[CFG]] — Classifier-Free Guidance；主流文生圖引導機制，強化生成與 prompt 的對齊
 
+### LLM 架構（Transformer 系）
+- [[Transformer]] — 2017《Attention Is All You Need》；分詞→嵌入→位置編碼→注意力→FFN→殘差流
+- [[注意力機制]] — QKV 匹配＋Softmax 權重；多頭／GQA；$O(n^2)$ 瓶頸與 Induction Heads
+- [[位置編碼]] — 注意力沒有順序感；RoPE（2021）與 Lost in the Middle
+- [[MoE]] — 混合專家稀疏激活；Mixtral 8x7B 總參數 467 億、實算 129 億
+
 ### 深度學習基礎（原理）
 - [[神經網路]] — 智慧即函數；1943 MP 模型 → 1957 感知機 → 1986 反向傳播；GPT-3 1750 億參數
+- [[萬能逼近定理]] — 神經元夠多＋非線性即可逼近任何曲線；保證表達力，不保證找得到
+- [[激活函數]] — 非線性的來源；Sigmoid/Softmax/ReLU，Transformer 內 ReLU→GELU→SwiGLU
 - [[感知機]] — 最早的神經網路單元；XOR 問題與 1969 年 AI 寒冬的導火線
 - [[梯度下降]] — 沿損失函數梯度反方向調參；「大霧中下山」比喻
 - [[反向傳播]] — 鏈式法則把誤差層層回傳；1986 Hinton 等人推廣，多層網路可訓練
@@ -154,6 +164,8 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-08-01_llm如何工作_transformer架構]] — LLM 完整拆解：分詞/嵌入/RoPE/注意力/FFN/MoE（YouTube，2026-08-01）
+- [[2026-08-01_神經網路40分鐘_王木頭]] — 從二維分類推導神經網路：萬能逼近、隱藏層抽象、梯度消失（YouTube，2026-08-01）
 - [[2026-07-25_claude_record_a_skill]] — Claude co-work「record a skill」：錄螢幕+語音即成 Skill（YouTube，2026-07-25）
 - [[2026-07-25_grill_me_matt_pocock]] — Matt Pocock /grill-me 極簡 Skill 工作流拆解（YouTube，2026-07-25）
 - [[2026-07-25_gemini_slides_簡報]] — Gemini in Google Slides 自動生成品牌簡報（YouTube，2026-07-25）
@@ -244,10 +256,10 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-_以下為 2026-07-25 實際檔案數。_
-- Sources: 86（+3：2026-07-25 批次 YouTube 影片）
-- Entities: 47（+Matt_Pocock、Corey_McClain；前值 46 與實際數有 1 筆偏差，已按實測校正）
-- Concepts: 59（+示範式自動化）
+_以下為 2026-08-01 實際檔案數。_
+- Sources: 88（+2：2026-08-01 批次 YouTube 影片）
+- Entities: 49（+大飛、王木頭）
+- Concepts: 65（+Transformer、注意力機制、位置編碼、MoE、萬能逼近定理、激活函數）
 - Topics: 3（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
 - Syntheses: 2
-- 最近活動: 2026-07-25 · ingest 批次 3 支影片（ai-tooling ×3）
+- 最近活動: 2026-08-01 · ingest 批次 2 支影片（ai-tooling ×2，AI 原理類）

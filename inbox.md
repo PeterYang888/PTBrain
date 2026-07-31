@@ -7,17 +7,20 @@
 
 ## 待處理
 
+<!-- 新連結貼在這裡：URL | notebook標記，下一行縮排寫說明 -->
+
 ---
 
 ## 已處理
 
 <!-- 處理完的連結會自動移到這裡 -->
 
-### 2026-07-25 批次（ai-tooling ×3）
+### 2026-08-01
 
-- https://www.youtube.com/watch?v=YjXxQ85_PUg | ai-tooling ✅ 2026-07-25 08:36
-  > How to Record Claude Skills In Less Than 2 Minutes
-- https://www.youtube.com/watch?v=aR97E7aKEgg | ai-tooling ✅ 2026-07-25 08:36
-  > 700 萬人下載的 /grill-me，Matt Pocock 到底寫了什麼？
-- https://www.youtube.com/watch?v=LOBexhRgf78 | ai-tooling ✅ 2026-07-25 08:36
-  > How to Create Slide Presentations with Gemini
+- https://www.youtube.com/watch?v=jFuft0mKj7E | ai-tooling ✅ 2026-08-01
+  > 大語言模型是如何工作的：LLM、Transformer、注意力機制、位置編碼、MoE 完整解析
+  > → [[2026-08-01_llm如何工作_transformer架構]]
+
+- https://www.youtube.com/watch?v=pnkCEzwiSog | ai-tooling ✅ 2026-08-01
+  > 學習分享一年，對神經網路的理解全都在這 40 分鐘裡了
+  > → [[2026-08-01_神經網路40分鐘_王木頭]]

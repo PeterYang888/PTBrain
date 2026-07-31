@@ -292,3 +292,13 @@
 - 待核實（標為推測，未當事實寫入）：grill-me 影片中「生模組」疑為「深模組（Deep Modules）」語音誤植；MPO 專案 GitHub repo 名稱未在影片中出現；「GPT-5.6」為影片口述名稱
 - stub link 保留未建頁：[[深模組]]
 - 備註：本批開工時 NotebookLM 認證過期，使用者重新 login 後續跑；index 統計 entities 前值 46 與實測 47 有 1 筆偏差，已按實測校正
+
+## [2026-08-01] ingest | 批次處理 2 支影片（ai-tooling，NotebookLM 繁中 briefing）
+- source 頁：[[2026-08-01_llm如何工作_transformer架構]], [[2026-08-01_神經網路40分鐘_王木頭]]
+- raw 檔（新建 2）：`raw/transcripts/2026-08-01_*.md`
+- 新建 entities（2）：[[大飛]]（最佳拍檔）, [[王木頭]]（王木頭學科學）
+- 新建 concepts（6）：[[Transformer]], [[注意力機制]], [[位置編碼]], [[MoE]], [[萬能逼近定理]], [[激活函數]]
+- 更新（4）：[[神經網路]]（回填 Transformer 專頁 TODO、補萬能逼近／隱藏層抽象／策略假設／量綱）、[[反向傳播]]（補梯度消失）、[[梯度下降]]（回填學習率 TODO、補優化器問題）、[[2026-07-10_神經網路_漫士科普]]（待追蹤回填）、[[index]]
+- 已更正的來源錯誤：briefing 的「Induction Heads＝歸一頭」應為歸納頭（本批保留英文原名）；「Google LLaMDA 事件」正確為 **LaMDA**
+- stub link 保留未建頁：[[Tokenization]], [[前饋網路]], [[GQA]]
+- 備註：本批開工時 NotebookLM 認證失效，根因是 CLI 版本落後（0.3.4 → 0.7.3），非 cookie 問題；升級後即通。tags 未套用 inbox 表格的 ai-tooling 預設值（見 PROGRESS D-007）

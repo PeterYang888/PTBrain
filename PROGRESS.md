@@ -1,10 +1,12 @@
 # PROGRESS
 
 ## 目前狀態
-- 最後更新：2026-07-25 08:42
-- 目前焦點：ingest inbox 2026-07-25 批次（3 支 ai-tooling）已完成並 commit（a283c4f）
+- 最後更新：2026-08-01
+- 目前焦點：ingest inbox 2026-08-01 批次（2 支 ai-tooling，AI 原理類）已完成，尚未 commit
 
 ## 已完成
+- [x] ingest 2026-08-01 批次 2 支 ai-tooling 影片（AI 原理類）— raw/transcripts/ 新增 2 檔、wiki/sources/ 新增 2 頁；新建 entities [[大飛]]、[[王木頭]]，新建 concepts [[Transformer]]、[[注意力機制]]、[[位置編碼]]、[[MoE]]、[[萬能逼近定理]]、[[激活函數]]；更新 [[神經網路]]、[[反向傳播]]、[[梯度下降]]、[[2026-07-10_神經網路_漫士科普]]；index.md（實測 88/49/65）、log.md、inbox.md 已同步
+- [x] 修復 NotebookLM CLI 認證失效 — 根因為版本落後（Python312 環境 0.3.4 → 0.7.3），非 cookie 問題
 - [x] ingest 2026-07-25 批次 3 支 ai-tooling 影片 — raw/transcripts/ 新增 3 檔、wiki/sources/ 新增 3 頁；新建 [[Matt_Pocock]]、[[Corey_McClain]]、[[示範式自動化]]；更新 [[Claude_Cowork]]（stub 補實）、[[RPA]]、[[Skill_輕量化]]、[[Vibe_Coding]]、[[Gary_Chen]]、[[Google]]、[[2026-07-18_codex_record_replay_fork]]（待追蹤回填）；index.md（86/47/59）、log.md、inbox.md 已同步
 - [x] ingest 2026-07-18 批次 7 支 ai-tooling 影片（NotebookLM 繁中 briefing）— raw/transcripts/ 新增 7 檔、wiki/sources/ 新增 7 頁；新建 concepts `Agentic_Engineering`、`Skill_輕量化`、`Git_版本控制` 與 entities `Grok_4.5`、`Jay_JayLuxAI`、`李廠長`；更新 `NotebookLM`、`OpenAI_Codex`、`Harness_Engineering`、`Context_工程`、`Vibe_Coding`、`AIOS`、`xAI`、`Claude_Fable_5`、`黃一河`、`Gary_Chen`；index.md（統計 83 sources／46 entities／58 concepts）、log.md（append 一筆）、inbox.md（7 筆移入已處理）
 - [x]（前次）ingest「多 AI Deep Research → Claude 裁決 Prompt 組」＋ raw 檔正名歸位（詳見 log.md 2026-07-16）
@@ -23,6 +25,9 @@
 - D-004：W-5vaMiUlKQ 加入 NotebookLM 兩次皆回報「API returned no data」，判定為來源端問題（可能無字幕或影片受限），依 inbox prompt 失敗規則標註 ❌ 並保留在待處理區，不中斷整批
 - D-005：Grok 4.5 影片口述的 benchmark 名稱與數字（SWE Bench Pro 60.7 等）語意混亂，僅寫入 source 頁並標「依來源說法、待查證」，不寫入 entity 頁當事實
 - D-006：Jay（JayLuxAI）與 2026-06-12 AIOS 4Cs 影片主講者可能同一人（框架同構），entity 頁標「待確認」，未合併來源
+- D-007：inbox 的 notebook 標記只決定「進哪個 NotebookLM notebook」，不硬套 `_meta/inbox_ingest_prompt.md` 表格的預設 tags。2026-08-01 兩支標記為 ai-tooling 但內容是 AI 原理，tags 依實際內容填（`[ai, llm, transformer, attention, 科普]` / `[ai, neural-network, deep-learning, 科普]`），與既有 [[2026-07-10_神經網路_漫士科普]] 對齊
+- D-008：notebooklm CLI 報 `Authentication expired` 時，先查 `notebooklm --version` 與 PyPI 最新版，再懷疑 cookie。2026-08-01 該錯誤的真因是版本落後（0.3.4 vs 0.7.3）＋Google 網域改為 `notebook.google.com`；重跑 login 無效，升級後即通
+- D-009：這台機器有兩套 Python（PATH 上 `pip` 屬 Python314，但 `notebooklm` 執行檔屬 Python312）。升級 notebooklm-py 必須指定 `/c/Users/user/AppData/Local/Programs/Python/Python312/python -m pip install -U notebooklm-py`，直接下 `pip install` 會裝到錯的環境
 
 ## 已知問題 / 風險
 - [[多AI研究裁決]] 工作流尚無實跑驗證；首次 run 後應回填效果評估到 source 頁「待追蹤」
@@ -31,6 +36,10 @@
 - [[ai自動化os_三家比較]] synthesis 可能需擴充：Grok 4.5 入局後 agentic 編程成三強格局
 
 ## 下次接續點
+- 2026-08-01 批次已完成但**尚未 commit**，工作區有未提交變更（raw 2 檔、wiki 10 檔、index/log/inbox/PROGRESS）
+- 新版 CLI（0.7.3）差異：`-n` 取代 `--notebook`；新增 `--prompt-file`（長 prompt 免跳脫，本批已改用）
+- CLI 輸出有 rich 終端硬換行，raw 檔需經 unwrap 才可用；本批腳本存於 scratchpad `make_raw.py`，下批可重用（規則：結構行另起、標題後另起、非雙 CJK 交界補空格）
+- 可考慮的 synthesis：三支 AI 原理科普（[[漫士]]／[[王木頭]]／[[大飛]]）涵蓋層次互補，可做「神經網路到 LLM 的理解階梯」對照頁
 - 注意：inbox.md 待處理區已不見 W-5vaMiUlKQ 失敗件（與待辦 1 的描述不一致，重試時以 notebook 直加路徑為準）
 - 待使用者裁決的建議：是否做「AI 簡報生成工具比較」synthesis（Codex／NotebookLM／Gemini in Slides 三路線 source 已齊，見 [[2026-07-25_gemini_slides_簡報]] 待追蹤）
 - 若有新 ingest：先查 `inbox.md` 待處理區，再查 `raw/` untracked 檔案（`git status --short raw/`）
