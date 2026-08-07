@@ -2,8 +2,8 @@
 type: concept
 tags: [ai, skills, claude-code, workflow]
 created: 2026-07-18
-updated: 2026-07-25
-sources: [2026-07-18_大模型吃掉skills, 2026-07-25_grill_me_matt_pocock]
+updated: 2026-08-08
+sources: [2026-07-18_大模型吃掉skills, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通]
 ---
 
 # Skill 輕量化（判斷力固化）
@@ -31,7 +31,20 @@ sources: [2026-07-18_大模型吃掉skills, 2026-07-25_grill_me_matt_pocock]
 ## 佐證案例：[[Matt_Pocock]] 的 /grill-me 系列（2026-07-25）
 獨立來源得出同一結論：MPO 的開源 Skill（16 萬星、700 萬次下載）走「樂高式隨插即用」路線，對比 Superpowers 式寫死九步驟的重型框架——聰明模型（Claude Fable 5 / GPT-5.6 世代）不需要保姆級防呆，需要的是把專家判斷力（TDD 順序、壞味道診斷、深模組原則）固化成可插拔模組。正是「方法論型 Skill」的實例。見 [[2026-07-25_grill_me_matt_pocock]]
 
+## 第三方佐證：規則檔那一端（2026-08-08）
+[[Gary_Chen]] 在 [[2026-08-08_claude_md_15分鐘精通]] 從相反方向得到互補結論——本頁講「Skill 本身要輕」，他講「主規則檔要輕、細節外移到 Skill」。他給的三分流判準可直接當作「什麼該進 Skill」的入口規則：
+
+| 知識類型 | 該放哪 |
+|---|---|
+| AI 自己掃得到的客觀資訊 | **不寫**（浪費 [[指令預算]]） |
+| 長且特定任務才需要的流程 | **Skill** |
+| 絕對不能犯的死罪（如 commit API key） | **Hook**（程式強制攔截，不靠模型自覺） |
+| AI 猜不出的隱性知識 | 主規則檔 |
+
+他同時提供了本頁「模型變強→舊 Skill 被吃掉」主張的量化佐證：官方團隊為新模型優化系統提示時刪掉超過 **80%** 的規則而能力未退步（[來源口述，未查證]）。
+
 ## 與其他概念的關係
+- 與 [[指令預算]]：同一主張的兩端——Skill 要輕，主規則檔更要輕
 - 與 [[Context_工程]]：同一省 Token 邏輯——Progressive Disclosure 載入輕量 metadata，正是輕量化 Skill 的載入機制
 - 與 [[Agentic_Engineering]]：Google 課程「大部分 agent 失敗是 configuration 問題」呼應——Skill 太重也是一種 configuration 失敗
 - 與 [[Loop_Engineering]]：Skill 是 5+1 模塊之一；本概念補充「Skill 該多重」的判準

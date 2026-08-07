@@ -3,8 +3,8 @@ type: entity
 entity_type: person
 tags: [ai, claude-code, codex, harness-engineering]
 created: 2026-07-04
-updated: 2026-07-25
-sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock]
+updated: 2026-08-08
+sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通]
 ---
 
 # Gary Chen
@@ -25,9 +25,15 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 - 教學 [[OpenAI_Codex]] 進階功能（Record & Replay、Fork、Side Chat、手機遠端）
 - 面向非技術人員的 [[Git_版本控制]] 教學：Git 是指揮 Agent 的語言，Vibe Coder 的價值在決策而非指令
 
+## 內容主軸（2026-08-08）
+- 提出 [[指令預算]]（Instruction Budget）概念：規則檔的稀缺資源不只是 Token，更是模型的注意力
+- 給出規則的三層放置法（User / Project / Nested）與三分流（不寫／Skill／Hook）
+- 「一份好的 CLAUDE.md 就像一個花園，維護工作只有兩件事：新增與修剪」——與他一貫「系統勝過人為紀律」的主張一致
+
 ## 相關來源
 - [[2026-07-04_claude_codex_互審]]
 - [[2026-07-18_google_agentic_engineering_day1]] — Google Agentic Engineering 課 Day 1
 - [[2026-07-18_codex_record_replay_fork]] — Codex Record & Replay / Fork / 遠端操控
 - [[2026-07-18_git_github_vibe_coding基礎]] — 非技術人員的 Git/GitHub 教學
 - [[2026-07-25_grill_me_matt_pocock]] — 拆解 [[Matt_Pocock]] 的 /grill-me 極簡 Skill 工作流
+- [[2026-08-08_claude_md_15分鐘精通]] — CLAUDE.md 的層級設計、指令預算與花園式維護

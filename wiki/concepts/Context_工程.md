@@ -35,6 +35,7 @@ Google Agentic Engineering 課程把 context 分成兩類並給出取捨框架�
 這是 [[Subagent]] / [[Agent_Teams]] / [[Dynamic_Workflows]] 三種模式共通的設計原則。詳見 [[2026-07-10_agent_teams_協作模式]]。
 
 ## 與其他概念的關係
+- **注意力面向的姊妹概念 [[指令預算]]**：Context 工程管的是 Token 稀缺，指令預算管的是同一份 context 裡「模型能真正顧到幾條規則」的注意力稀缺——規則就算 Token 便宜，存在本身就有成本（見 [[2026-08-08_claude_md_15分鐘精通]]）
 - 是 [[Agentic_Workflow]] 與 [[Loop_Engineering]] 的基礎工程
 - 對比 [[理解成本]]：產出成本趨零後，餵給 AI 的 context 品質與判斷成為瓶頸
 - 對比 [[RAG]]：RAG 是動態檢索補 context 的一種手段

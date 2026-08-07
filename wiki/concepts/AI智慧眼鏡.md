@@ -2,8 +2,8 @@
 type: concept
 tags: [hardware, AR, AI-glasses, platform, next-gen-computing]
 created: 2026-05-30
-updated: 2026-07-10
-sources: [2026-05-30_ai眼鏡時代, 2026-06-19_rayneo_x3_pro_ar眼鏡, 2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 2026-06-27_even_realities_g2_36g, 2026-07-10_六月_ai_更新彙整]
+updated: 2026-08-08
+sources: [2026-05-30_ai眼鏡時代, 2026-06-19_rayneo_x3_pro_ar眼鏡, 2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 2026-06-27_even_realities_g2_36g, 2026-07-10_六月_ai_更新彙整, 2026-08-08_even_g2_開放平台評測, 2026-08-08_even_g2_vs_memomind_one, 2026-08-08_meta三款新眼鏡, 2026-08-08_ocuclaw_even_g2_ai_agent]
 ---
 
 # AI 智慧眼鏡
@@ -61,12 +61,27 @@ AI 智慧眼鏡的核心價值在於「解放雙手與視線」：不需低頭�
 - 主打 [[寧靜技術]]：AI 在背景做對話摘要/待辦，不奪取注意力，與 [[Meta]] 相機/社群路線相反
 - **終端模式**可遠端連桌機 [[Claude_Code]]/[[OpenAI_Codex]]，把眼鏡變成 AI Agent 的行動介面（詳見 [[2026-06-27_even_g2_claude_code]]）
 
-## 路線光譜小結
+## 路線光譜小結（2026-08-08 更新）
 | 產品 | 顯示 | 重量/續航 | 算力 | 定位 |
 |------|------|----------|------|------|
 | [[RayNeo_X3_Pro]] | 全彩光波導 | 76g / ~1hr | 本機 Gemini | 全彩 AR 隨身 Agent |
-| [[Even_Realities_G2]] | 綠色單色 | 36g / 48hr | 手機端 | 無相機生產力工具 |
-| [[Meta]] Ray-Ban | 無顯示為主 | 輕 | 雲端 | 相機/社群 SNS |
+| [[Even_Realities_G2]] | 綠色單色 640×350 / 1200 nits / FOV 27.5° | 36g / 12–48hr（來源衝突） | 手機端 | 無相機 + 可編程平台 |
+| [[MemoMind_One]] | 綠色單色 640×350 / 2000 nits / FOV 25° | 46.6g / 16hr | 手機端 | 無相機 + 有喇叭的平價版 |
+| [[Ray-Ban_Meta]] | 無顯示器 | 53–59g / 8hr | 雲端 | 相機 / POV 內容創作 |
+
+## 品類分歧確立：顯示派 vs 相機派（2026-08-08）
+2026-08-08 批次四支評測讓兩條路線的分野變得清楚，而且**同一位評測者（Steven Sullivan）同時實測了兩派**：
+
+- **無相機顯示派**（[[Even_Realities_G2]]、[[MemoMind_One]]）：有波導顯示器、無相機，定位是「資訊消費 + 隱私」，不做內容創作
+- **有相機無顯示派**（[[Ray-Ban_Meta]]）：有相機無鏡片顯示器，定位是 hands-free POV 記錄與社群
+
+值得注意的三點：
+1. **顯示派已出現價格帶分層**：$399（MemoMind One 早鳥）vs $599（Even G2），不再是單一高階產品
+2. **重量差距正在消失**：MemoMind One 46.6g 比 Ray-Ban Meta 還輕 3–5 克，卻多一塊顯示器
+3. **開放性成為新戰場**：Even 走 Evenhub 零審查側載（社群做出「另外 10,000 個功能」），Meta 走封閉平台——[[2026-08-08_even_g2_開放平台評測]] 總結為「One path treats you as the content, the other hands you the keyboard」
+
+## 眼鏡作為 Agent 終端（2026-08-08）
+[[2026-08-08_ocuclaw_even_g2_ai_agent]] 示範了「算力在 PC 端」架構的完整落地：語音 → 文字 → OcuClaw → 家用電腦上的 [[OpenClaw]] agent → 模型 → 回到眼鏡，中間靠 [[Tailscale]] 打通。與 G2 內建 Terminal 模式直連 [[Claude_Code]] 是同一需求的兩條路線。門檻仍高（PowerShell ＋ 虛擬區網 ＋ API 串接），但驗證了眼鏡不必自己有算力也能當 Agent 的介面。
 
 ## 與其他概念的差別
 - vs 手機：手機需要「低頭看」，眼鏡是「抬頭感知」
@@ -74,3 +89,4 @@ AI 智慧眼鏡的核心價值在於「解放雙手與視線」：不需低頭�
 
 ## 來源
 - [[2026-05-30_ai眼鏡時代]] · [[2026-06-19_rayneo_x3_pro_ar眼鏡]] · [[2026-06-27_even_g2_claude_code]] · [[2026-07-10_六月_ai_更新彙整]]
+- [[2026-08-08_even_g2_開放平台評測]] · [[2026-08-08_even_g2_vs_memomind_one]] · [[2026-08-08_meta三款新眼鏡]] · [[2026-08-08_ocuclaw_even_g2_ai_agent]]

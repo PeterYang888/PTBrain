@@ -7,20 +7,25 @@
 
 ## 待處理
 
-<!-- 新連結貼在這裡：URL | notebook標記，下一行縮排寫說明 -->
+<!-- 貼新連結到這裡，格式：- URL | notebook標記 -->
 
 ---
 
 ## 已處理
 
-<!-- 處理完的連結會自動移到這裡 -->
+### 2026-08-08（ai-tooling，5 支）
 
-### 2026-08-01
+- https://www.youtube.com/watch?v=wj7mHCviMvs | ai-tooling ✅ 2026-08-08
+  > 15 分鐘學完 CLAUDE.md：從入門到精通 → [[2026-08-08_claude_md_15分鐘精通]]
 
-- https://www.youtube.com/watch?v=jFuft0mKj7E | ai-tooling ✅ 2026-08-01
-  > 大語言模型是如何工作的：LLM、Transformer、注意力機制、位置編碼、MoE 完整解析
-  > → [[2026-08-01_llm如何工作_transformer架構]]
+- https://www.youtube.com/watch?v=wXT1Ffi9hys | ai-tooling ✅ 2026-08-08
+  > Run Your Own AI Agent on Even Realities G2（OcuClaw 完整設定教學）→ [[2026-08-08_ocuclaw_even_g2_ai_agent]]
 
-- https://www.youtube.com/watch?v=pnkCEzwiSog | ai-tooling ✅ 2026-08-01
-  > 學習分享一年，對神經網路的理解全都在這 40 分鐘裡了
-  > → [[2026-08-01_神經網路40分鐘_王木頭]]
+- https://www.youtube.com/watch?v=SkO4k81aMJo | ai-tooling ✅ 2026-08-08
+  > Everyone Reviewed These Glasses Wrong｜Even Realities G2 深度評測 → [[2026-08-08_even_g2_開放平台評測]]
+
+- https://www.youtube.com/watch?v=tOeBeW_RuMA | ai-tooling ✅ 2026-08-08
+  > Even G2 VS MemoMind One: Which Should You Buy? → [[2026-08-08_even_g2_vs_memomind_one]]
+
+- https://www.youtube.com/watch?v=AEWhGZSzAX0 | ai-tooling ✅ 2026-08-08
+  > Meta's Three New Glasses Are Actually CRAZY! → [[2026-08-08_meta三款新眼鏡]]

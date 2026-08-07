@@ -62,7 +62,11 @@
 - [[Claude_Haiku_4.5]] — 最快最便宜，200K context，無自適應思考
 - [[NotebookLM]] — Google 的 AI 研究/筆記工具；50 來源、80+ 語言、生成音訊/簡報（PTBrain ingest 即用它）
 - [[RayNeo_X3_Pro]] — 全彩光波導 AR+AI 眼鏡，內建 Gemini，AI 智慧眼鏡實機樣本
-- [[Even_Realities_G2]] — 前 Apple Watch 團隊的無相機智慧眼鏡（36g/48hr），可終端連 Claude Code
+- [[Even_Realities_G2]] — 前 Apple Watch 團隊的無相機智慧眼鏡（36g、$599），Evenhub 零審查側載平台，可連 Claude Code / OpenClaw
+- [[MemoMind_One]] — 對標 Even G2 的無相機顯示眼鏡（46.6g/16hr/2000nits），有喇叭、$399 早鳥
+- [[Ray-Ban_Meta]] — Meta 的有相機無顯示器眼鏡產品線；2026 推出去 Ray-Ban 化的 $299 平價三款
+- [[OpenClaw]] — Peter Steinberger 的自架 AI Agent 系統，可操作本機檔案；skill 擴充 + gateway
+- [[Tailscale]] — mesh VPN，讓穿戴裝置從外面連回家用電腦的那條隧道
 - [[ComfyUI]] — 開源節點式 AIGC 工作流工具，Stable Diffusion/FLUX 的進階介面
 - [[Stable_Diffusion]] — 開源文生圖模型家族，ComfyUI/WebUI 的底層
 - [[FLUX]] — 黑森林實驗室開源文生圖/編輯模型；FLUX.2 Klein 性價比小鋼砲
@@ -141,6 +145,7 @@ _（尚未建立）_
 - [[Skill_輕量化]] — 模型越強越多能力被吃掉；Skill 價值轉向判斷力固化，五種存留類型
 - [[Git_版本控制]] — AI 協作視角的 Git：commit 存檔點、branch 風險隔離、worktree 多 Agent 並行
 - [[示範式自動化]] — 示範一遍即成 Skill；Codex Record & Replay 與 Claude record a skill 對照
+- [[指令預算]] — Instruction Budget；規則檔的稀缺資源是注意力不是 Token；三層放置＋不寫/Skill/Hook 三分流
 
 ### 思維方法
 - [[第一性原理]] — 底層思考法，剝除假設從基礎事實重建
@@ -165,6 +170,11 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-08-08_claude_md_15分鐘精通]] — CLAUDE.md 三層設計、指令預算、花園式修剪（YouTube，2026-08-08）
+- [[2026-08-08_ocuclaw_even_g2_ai_agent]] — Even G2 接自架 OpenClaw：OcuClaw + Tailscale 完整設定（YouTube，2026-08-08）
+- [[2026-08-08_even_g2_開放平台評測]] — Even G2 真正身分是零審查可編程平台：Evenhub、社群 10,000 功能（YouTube，2026-08-08）
+- [[2026-08-08_even_g2_vs_memomind_one]] — 無相機顯示派對決：規格/價格全對照（YouTube，2026-08-08）
+- [[2026-08-08_meta三款新眼鏡]] — Meta 去 Ray-Ban 化平價三款：$299、3K 錄影、續航翻倍（YouTube，2026-08-08）
 - [[2026-08-01_llm如何工作_transformer架構]] — LLM 完整拆解：分詞/嵌入/RoPE/注意力/FFN/MoE（YouTube，2026-08-01）
 - [[2026-08-01_神經網路40分鐘_王木頭]] — 從二維分類推導神經網路：萬能逼近、隱藏層抽象、梯度消失（YouTube，2026-08-01）
 - [[2026-07-25_claude_record_a_skill]] — Claude co-work「record a skill」：錄螢幕+語音即成 Skill（YouTube，2026-07-25）
@@ -257,10 +267,10 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-_以下為 2026-08-01 實際檔案數。_
-- Sources: 88（+2：2026-08-01 批次 YouTube 影片）
-- Entities: 49（+大飛、王木頭）
-- Concepts: 65（+Transformer、注意力機制、位置編碼、MoE、萬能逼近定理、激活函數）
-- Topics: 4（+LLM_原理；Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
+_以下為 2026-08-08 實際檔案數。_
+- Sources: 93（+5：2026-08-08 批次 YouTube 影片）
+- Entities: 53（+MemoMind_One、Ray-Ban_Meta、OpenClaw、Tailscale）
+- Concepts: 66（+指令預算）
+- Topics: 4（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
 - Syntheses: 2
-- 最近活動: 2026-08-01 · ingest 批次 2 支影片（ai-tooling ×2，AI 原理類）
+- 最近活動: 2026-08-08 · ingest 批次 5 支影片（ai-tooling ×5：CLAUDE.md ×1、AI 眼鏡 ×4）

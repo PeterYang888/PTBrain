@@ -310,3 +310,17 @@
 - 更新：[[Transformer]]、[[神經網路]]（加樞紐頁回連）、[[index]]（Topics 4）
 - 未修（使用者本輪未選）：[[Transformer]] 對齊敘述把三階段壓成兩階段（與 [[RLHF]] 頁的 SFT 說法不完全一致）；[[潛在空間]] stub 可指向 [[VAE]]
 - 已知缺口（記錄於 [[LLM_原理]]，本輪未建頁）：Tokenization、預訓練、SFT、Scaling Laws、Context Window、前饋網路 FFN
+
+## [2026-08-08] ingest | 批次處理 5 支影片（ai-tooling，NotebookLM 繁中 briefing）
+- source 頁（新建 5）：[[2026-08-08_claude_md_15分鐘精通]], [[2026-08-08_ocuclaw_even_g2_ai_agent]], [[2026-08-08_even_g2_開放平台評測]], [[2026-08-08_even_g2_vs_memomind_one]], [[2026-08-08_meta三款新眼鏡]]
+- raw 檔（新建 5）：`raw/transcripts/2026-08-08_*.md`
+- 新建 entities（4）：[[MemoMind_One]], [[Ray-Ban_Meta]], [[OpenClaw]], [[Tailscale]]
+- 新建 concepts（1）：[[指令預算]]（Instruction Budget，Gary Chen）
+- 更新（8）：[[Even_Realities_G2]]（Evenhub 開放平台、OcuClaw 外接、美元價格階梯、FOV 27.5°、規格衝突表）、[[AI智慧眼鏡]]（路線光譜表擴為四款、新增「顯示派 vs 相機派」與「眼鏡作為 Agent 終端」兩節）、[[Meta]]（去 Ray-Ban 化三款、Meta AI 弱項）、[[Gary_Chen]]、[[Peter_Steinberger]]（回填 OpenClaw 待追蹤）、[[Context_工程]]（連指令預算）、[[Skill_輕量化]]（Gary 的三分流表佐證）、[[index]]
+- 本批主題分佈：1 支 Claude Code 工作流 ＋ 4 支 AI 眼鏡（同一位評測者 Steven Sullivan 同時測了兩派產品，形成難得的橫向對照）
+- **已記錄但未裁決的矛盾**：Even G2 續航 48 小時（2026-06-27 批次、Ken）vs 12 小時（Steven Sullivan）；翻譯語言數 31 種 vs 29 種。兩者皆並列於 [[Even_Realities_G2]] 的「待裁決的規格衝突」表
+- 已更正的來源誤植：`openclaw space gateway space restart` 等「space」為逐字稿把空格/連字號念出，已還原為 `openclaw gateway restart`、`-Scope CurrentUser`（標為 [推導]）；"Meta Gen 2 WFares" → Wayfarer
+- 未核實的名詞（已在 source 頁標註）：語音轉文字服務 "Sonics"/`sonx.com`、"Harmon audio"（疑為 Harman）、Meta 三款型號名、CLAUDE.md 影片的 `.code` 資料夾（實際應為 `~/.claude/`）與 `/insights` 指令拼法
+- stub link 保留未建頁：[[Even_Realities_G1]]
+- 既有斷鏈（非本批造成，待 lint 處理）：[[Will_Fan]] 被 [[Even_Realities_G2]] 與 [[AI智慧眼鏡]] 引用但無頁面
+- 工具狀況：開工時 NotebookLM 認證過期，升級 CLI 0.7.3→0.8.0 無效（與 D-008 不同），headless reauth 與 browser-cookies 皆失敗，最後由使用者跑 `login --fresh` 解決（見 PROGRESS D-012）
