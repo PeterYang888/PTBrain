@@ -1,8 +1,8 @@
 # PROGRESS
 
 ## 目前狀態
-- 最後更新：2026-08-08
-- 目前焦點：2026-08-08 ingest 批次 **5/5 完成**（1 支 CLAUDE.md 工作流 ＋ 4 支 AI 眼鏡），尚未 commit
+- 最後更新：2026-08-22
+- 目前焦點：`ingest inbox` 批次（3 支：ai-tooling ×2、competitor-intel ×1）**卡在 notebooklm 認證失效**，尚未實際 ingest 任何一支。工作在獨立 worktree `C:\Users\user\Desktop\PTBrain\PTBrain\.claude\worktrees\ingest-inbox-20260822`（分支 `worktree-ingest-inbox-20260822`）進行
 
 ## 已完成
 - [x] ingest 2026-08-08 批次 5 支 ai-tooling 影片 — raw/transcripts/ 新增 5 檔、wiki/sources/ 新增 5 頁；新建 entities [[MemoMind_One]]、[[Ray-Ban_Meta]]、[[OpenClaw]]、[[Tailscale]]，新建 concept [[指令預算]]；更新 [[Even_Realities_G2]]（Evenhub 平台／OcuClaw／美元價格階梯／規格衝突表）、[[AI智慧眼鏡]]（路線光譜擴為四款＋顯示派vs相機派＋眼鏡作為 Agent 終端）、[[Meta]]、[[Gary_Chen]]、[[Peter_Steinberger]]、[[Context_工程]]、[[Skill_輕量化]]；index.md（實測 93/53/66）、log.md、inbox.md 已同步；斷鏈掃描通過（僅餘 stub [[Even_Realities_G1]] 與既有 [[Will_Fan]]）
@@ -14,7 +14,10 @@
 - [x]（前次）ingest「多 AI Deep Research → Claude 裁決 Prompt 組」＋ raw 檔正名歸位（詳見 log.md 2026-07-16）
 
 ## 進行中
-- （無）
+- `ingest inbox` 2026-08-22 批次：待處理清單已確認（見下），卡在 notebooklm 認證，等使用者跑完 `notebooklm login --fresh` 後接續
+  1. ai-tooling `d4329xvSDK4`「AI 額度老是不夠用？新手先改這 8 個習慣」
+  2. ai-tooling `j-PlWhTJVsc`「從詞向量到 Transformer：AI 大模型背後的原理」
+  3. competitor-intel `n3WFEnVPSBE`「Big Win — Super Ace Deluxe 實錄」
 
 ## 待辦（依優先序）
 1. 裁決 [[Even_Realities_G2]] 的規格衝突（續航 48hr vs 12hr、語言 31 vs 29）——需第三方規格頁或官網佐證，目前三份來源皆未說明測法
@@ -38,6 +41,7 @@
 - D-012：2026-08-08 的 `Authentication expired` **不是**版本問題（0.7.3→0.8.0 升級後仍失敗），是 cookie 真的失效。已排除的自動路徑：`NOTEBOOKLM_HEADLESS_REAUTH=1`（無效）、`notebooklm login --browser-cookies chrome`（Windows App-Bound Encryption 導致 `Could not decrypt chrome cookies`）。結論：**只能由使用者跑 `notebooklm login --fresh` 走瀏覽器 OAuth**，且要確認 Chromium 視窗登入完成才會寫入 storage_state（本次使用者第一次跑的 PID 27680 結束但未寫入）
 - D-013：升級 notebooklm-py 前要先確認沒有 notebooklm 程序在跑，否則 pip 無法覆寫 `Scripts\notebooklm.exe`（WinError 32），會留下 `~otebooklm` / `~otebooklm_py-<舊版>.dist-info` 殘留目錄。模組本體仍會裝成功、`--version` 正常，可事後清理
 - D-009：這台機器有兩套 Python（PATH 上 `pip` 屬 Python314，但 `notebooklm` 執行檔屬 Python312）。升級 notebooklm-py 必須指定 `/c/Users/user/AppData/Local/Programs/Python/Python312/python -m pip install -U notebooklm-py`，直接下 `pip install` 會裝到錯的環境
+- D-014：2026-08-22 `ingest inbox` 一開始就撞到 `notebooklm list` 回報 `Authentication expired`。依 D-008 慣例先查版本：`notebooklm --version` 顯示 CLI 0.8.0，PyPI 最新 0.8.1，只差一個 patch version，排除版本落後的可能。`notebooklm auth check --test` 證實 cookie 存在但 `token_fetch: false`（真的過期，非 D-008 那種版本問題）。依 D-012 的結論，這種情況只能由使用者跑 `notebooklm login --fresh` 走瀏覽器 OAuth 重新授權，agent 端無法代為處理
 
 ## 已知問題 / 風險
 - [[多AI研究裁決]] 工作流尚無實跑驗證；首次 run 後應回填效果評估到 source 頁「待追蹤」
@@ -46,6 +50,8 @@
 - [[ai自動化os_三家比較]] synthesis 可能需擴充：Grok 4.5 入局後 agentic 編程成三強格局
 
 ## 下次接續點
+- **接續 2026-08-22 `ingest inbox`**：使用者跑完 `notebooklm login --fresh` 後，回到 worktree `.claude/worktrees/ingest-inbox-20260822`（分支 `worktree-ingest-inbox-20260822`），先 `notebooklm list --json` 取回 ai-tooling／competitor-intel 的 notebook id（因認證失敗當下沒拿到），再依「進行中」清單的 3 支影片跑完整 ingest 流程（`_meta/inbox_ingest_prompt.md`），全程不中途確認、跑到底
+- **⚠️ 主目錄（非 worktree）有未 commit 的 2026-08-15 批次**：`raw/transcripts/2026-08-15_claude_output_style_不降智.md`、`2026-08-15_even_g2_開箱_joeman.md`、`2026-08-15_原子習慣_50歲.md`、`wiki/concepts/Output_Style.md`／`STE100.md`／`原子習慣.md`、`wiki/entities/Joeman.md`／`阿蘭.md`，以及連帶修改的 `index.md`／`log.md`／`CLAUDE.md`／`wiki/entities/{Claude_Code,Even_Realities_G2,Gary_Chen,Matt_Pocock}.md` 都還停在 working tree 沒 commit。這批看起來是完整成果、只是沒收尾；建議使用者先在主目錄 review 並單獨 commit 這批，再處理本次 worktree 分支的合併，避免 index.md／log.md 兩邊分岔衝突
 - inbox.md 待處理區已清空；下次 ingest 先查 `git status --short raw/` 有無未處理的 untracked 檔
 - 環境已清理（2026-08-08 使用者授權）：移除 `~otebooklm` / `~otebooklm_py-0.7.3.dist-info` 殘留目錄，卸載本次臨時安裝的 10 個套件（browser_cookie3、rookiepy 及其依賴鏈 lz4／pycryptodomex／pywin32／WMI／shadowcopy，以及查依賴用的 pipdeptree／nab-index／nab-python）。清理後 `pip check` 無破損、`notebooklm status` API 實測正常
 - 可重用腳本存於本次 scratchpad：`make_raw.py`（rich 硬換行 unwrap ＋ 加 frontmatter，本批 5 檔實測可用）、`linkcheck.py`（斷鏈 ＋ inbound 統計，可直接當 lint 第一步）
