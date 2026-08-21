@@ -7,21 +7,19 @@
 
 ## 待處理
 
-### ai-tooling（2 支）
+### ai-tooling（1 支）
 
-- https://www.youtube.com/watch?v=d4329xvSDK4 | ai-tooling
-  > AI 額度老是不夠用？新手先改這 8 個習慣
-
-- https://www.youtube.com/watch?v=j-PlWhTJVsc | ai-tooling
+- https://www.youtube.com/watch?v=j-PlWhTJVsc | ai-tooling ❌ notebooklm source add 連續 2 次失敗（RPC rpc_code=9，"URL invalid/paywall/empty/rate limit"），疑來源端問題，2026-08-22 跳過待重試
   > 從詞向量到 Transformer：AI 大模型背後的原理，一個動畫急速入門
-
-### competitor-intel（1 支）
-
-- https://www.youtube.com/watch?v=n3WFEnVPSBE | competitor-intel
-  > Big Win — Super Ace Deluxe 實錄
 
 ---
 
 ## 已處理
 
 <!-- 處理完的連結會自動移到這裡 -->
+
+- https://www.youtube.com/watch?v=d4329xvSDK4 | ai-tooling ✅ 2026-08-22
+  > AI 額度老是不夠用？三招省 Token 的實戰方法 → [[2026-08-22_省token三招_context管理]]
+
+- https://www.youtube.com/watch?v=n3WFEnVPSBE | competitor-intel ✅ 2026-08-22
+  > Big Win — Super Ace Deluxe 實錄 → [[2026-08-22_super_ace_deluxe_實錄]]（內容薄，僅 source stub）

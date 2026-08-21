@@ -3,8 +3,8 @@ type: entity
 entity_type: person
 tags: [ai, claude-code, codex, harness-engineering]
 created: 2026-07-04
-updated: 2026-08-08
-sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通]
+updated: 2026-08-22
+sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通, 2026-08-22_省token三招_context管理]
 ---
 
 # Gary Chen
@@ -30,6 +30,10 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 - 給出規則的三層放置法（User / Project / Nested）與三分流（不寫／Skill／Hook）
 - 「一份好的 CLAUDE.md 就像一個花園，維護工作只有兩件事：新增與修剪」——與他一貫「系統勝過人為紀律」的主張一致
 
+## 內容主軸（2026-08-22）
+- 提出「省 token 三招」：丟掉用不到的 context（換任務開新對話／編輯回溯／精簡工具）、縮減留下來的（先搜尋再餵／給結論清過程／限縮輸入輸出）、善用 [[Prompt_Caching]] 折扣
+- 把每次請求注入的 context 拆成四層（系統規則／工具說明／對話歷史／外部檔案），呼應他一貫「精準控制而非被動承受」的工程哲學
+
 ## 相關來源
 - [[2026-07-04_claude_codex_互審]]
 - [[2026-07-18_google_agentic_engineering_day1]] — Google Agentic Engineering 課 Day 1
@@ -37,3 +41,4 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 - [[2026-07-18_git_github_vibe_coding基礎]] — 非技術人員的 Git/GitHub 教學
 - [[2026-07-25_grill_me_matt_pocock]] — 拆解 [[Matt_Pocock]] 的 /grill-me 極簡 Skill 工作流
 - [[2026-08-08_claude_md_15分鐘精通]] — CLAUDE.md 的層級設計、指令預算與花園式維護
+- [[2026-08-22_省token三招_context管理]] — 省 token 三招與四層 context 拆解

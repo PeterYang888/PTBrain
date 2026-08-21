@@ -324,3 +324,18 @@
 - stub link 保留未建頁：[[Even_Realities_G1]]
 - 既有斷鏈（非本批造成，待 lint 處理）：[[Will_Fan]] 被 [[Even_Realities_G2]] 與 [[AI智慧眼鏡]] 引用但無頁面
 - 工具狀況：開工時 NotebookLM 認證過期，升級 CLI 0.7.3→0.8.0 無效（與 D-008 不同），headless reauth 與 browser-cookies 皆失敗，最後由使用者跑 `login --fresh` 解決（見 PROGRESS D-012）
+
+## [2026-08-22] ingest | 省 token 三招（ai-tooling，1/3）
+- source 頁：[[2026-08-22_省token三招_context管理]]
+- raw 檔：`raw/transcripts/2026-08-22_省token三招_context管理.md`
+- 新建 concepts（1）：[[Prompt_Caching]]（快取折扣機制：省 10 倍、壽命 1hr、換模型/調思考強度會失效）
+- 更新（2）：[[Context_工程]]（新增「四層 Context 結構」實戰拆解節）、[[Gary_Chen]]（2026-08-22 內容主軸）
+- 工具狀況：開工前 notebooklm 認證再次過期（token_fetch 失敗），比對 PyPI 排除版本落後，確認為真過期，使用者跑 `login --fresh` 解決（PROGRESS D-014）
+
+## [2026-08-22] ingest | 批次 3/3（j-PlWhTJVsc 失敗，Super Ace Deluxe 實錄）
+- ❌ ai-tooling `j-PlWhTJVsc`（詞向量到 Transformer）：notebooklm source add 連續 2 次失敗（RPC rpc_code=9），疑來源端問題，已在 inbox.md 標註跳過，未中斷整批
+- source 頁：[[2026-08-22_super_ace_deluxe_實錄]]（competitor-intel）
+- raw 檔：`raw/transcripts/2026-08-22_super_ace_deluxe_實錄.md`
+- 未新建 entity/concept：逐字稿僅為遊戲符號/音效報讀，無下注額、RTP、選房邏輯等機制資訊，資訊量不足以建立《Super Ace Deluxe》entity 頁（與既有 [[2026-05-16_戰神賽特2_選房技巧]] 同類型限制）
+- 更新：[[index]]（統計待補）
+- 本輪 3 支批次結果：1 支完整 ingest（省 token 三招）、1 支失敗跳過（詞向量到 Transformer）、1 支內容過薄僅存 source stub（Super Ace Deluxe）
