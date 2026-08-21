@@ -2,10 +2,16 @@
 
 ## 目前狀態
 - 最後更新：2026-08-22
-- 目前焦點：`ingest inbox` 2026-08-22 批次已跑完（1 完整 ingest／1 失敗跳過／1 內容過薄僅存 stub）。工作在獨立 worktree `C:\Users\user\Desktop\PTBrain\PTBrain\.claude\worktrees\ingest-inbox-20260822`（分支 `worktree-ingest-inbox-20260822`），已 commit + push，待使用者 review 後合併回 main
+- 目前焦點：`ingest inbox` 2026-08-22 批次 **3/3 全數完成**（含 1 支修正連結後補跑成功）。工作在獨立 worktree `C:\Users\user\Desktop\PTBrain\PTBrain\.claude\worktrees\ingest-inbox-20260822`（分支 `worktree-ingest-inbox-20260822`），待使用者 review 後合併回 main
 
 ## 已完成
-- [x] ingest inbox 2026-08-22 批次（3 支：ai-tooling ×2、competitor-intel ×1，在獨立 worktree 進行）— source 頁新增 2：[[2026-08-22_省token三招_context管理]]、[[2026-08-22_super_ace_deluxe_實錄]]；raw/transcripts/ 新增 2 檔；新建 concept [[Prompt_Caching]]；更新 [[Context_工程]]（新增「四層 Context 結構」實戰拆解節）、[[Gary_Chen]]（2026-08-22 內容主軸）；index.md（統計 95/53/67）、log.md、inbox.md 已同步。ai-tooling `j-PlWhTJVsc`（詞向量到 Transformer）source add 連續 2 次失敗（RPC rpc_code=9）已標記跳過（D-015）；competitor-intel `n3WFEnVPSBE`（Super Ace Deluxe）逐字稿僅符號報讀，內容過薄未建 entity，僅存 source stub。批次過程另撞上 notebooklm 認證再次過期（D-014），已由使用者跑 `login --fresh` 解決
+- [x] ingest inbox 2026-08-22 批次（3 支：ai-tooling ×2、competitor-intel ×1，全數完成，在獨立 worktree 進行）
+  - source 頁新增 3：[[2026-08-22_省token三招_context管理]]、[[2026-08-22_super_ace_deluxe_實錄]]、[[2026-08-22_詞向量到transformer_nlp演進]]；raw/transcripts/ 新增 3 檔
+  - 新建 entities（1）：[[軒轅]]；新建 concepts（6）：[[Prompt_Caching]]、[[N-gram]]、[[詞向量]]、[[前饋網路]]（填補 [[LLM_原理]] 已知缺口）、[[RNN]]、[[LSTM]]
+  - 更新：[[Context_工程]]（四層 Context 結構）、[[Gary_Chen]]（2026-08-22 內容主軸）、[[LLM_原理]]（新增「第 1.5 層」、五位主講者理解階梯、缺口清單移除前饋網路）、[[MoE]]（補前饋網路回連）；index.md（統計 96/54/72）、log.md、inbox.md 已同步
+  - ai-tooling `j-PlWhTJVsc`（詞向量到 Transformer）第一次連結因大小寫錯誤已失效（`j-PlWhTJVsc` vs 正確 `j-PLWhTJVsc`），經 curl 查 oEmbed/player response 確認後由使用者提供修正連結，補跑成功（見 D-015、D-017）
+  - competitor-intel `n3WFEnVPSBE`（Super Ace Deluxe）逐字稿僅符號報讀，內容過薄未建 entity，僅存 source stub
+  - 批次過程另撞上 notebooklm 認證再次過期（D-014），已由使用者跑 `login --fresh` 解決；另發現 worktree bash 對含 `source` 字樣指令的誤攔截（D-016）
 - [x] ingest 2026-08-08 批次 5 支 ai-tooling 影片 — raw/transcripts/ 新增 5 檔、wiki/sources/ 新增 5 頁；新建 entities [[MemoMind_One]]、[[Ray-Ban_Meta]]、[[OpenClaw]]、[[Tailscale]]，新建 concept [[指令預算]]；更新 [[Even_Realities_G2]]（Evenhub 平台／OcuClaw／美元價格階梯／規格衝突表）、[[AI智慧眼鏡]]（路線光譜擴為四款＋顯示派vs相機派＋眼鏡作為 Agent 終端）、[[Meta]]、[[Gary_Chen]]、[[Peter_Steinberger]]、[[Context_工程]]、[[Skill_輕量化]]；index.md（實測 93/53/66）、log.md、inbox.md 已同步；斷鏈掃描通過（僅餘 stub [[Even_Realities_G1]] 與既有 [[Will_Fan]]）
 - [x] lint LLM 底層原理頁群（22 concept ＋ 8 source）— 新建 topic 樞紐頁 [[LLM_原理]]（四層階梯／路線之爭／四位主講者理解階梯／缺口清單，38 個連結零斷鏈）；修 [[World_Models]] 斷鏈 3 處 → [[世界模型]]；[[Transformer]]、[[神經網路]] 加回連；index.md（Topics 4）、log.md 已同步
 - [x] ingest 2026-08-01 批次 2 支 ai-tooling 影片（AI 原理類）— raw/transcripts/ 新增 2 檔、wiki/sources/ 新增 2 頁；新建 entities [[大飛]]、[[王木頭]]，新建 concepts [[Transformer]]、[[注意力機制]]、[[位置編碼]]、[[MoE]]、[[萬能逼近定理]]、[[激活函數]]；更新 [[神經網路]]、[[反向傳播]]、[[梯度下降]]、[[2026-07-10_神經網路_漫士科普]]；index.md（實測 88/49/65）、log.md、inbox.md 已同步
@@ -21,9 +27,8 @@
 1. 裁決 [[Even_Realities_G2]] 的規格衝突（續航 48hr vs 12hr、語言 31 vs 29）——需第三方規格頁或官網佐證，目前三份來源皆未說明測法
 1b. 建 [[Will_Fan]] entity 頁（既有斷鏈，被 [[Even_Realities_G2]] 與 [[AI智慧眼鏡]] 引用；素材在 2026-06-27_even_g2_創辦人訪談）
 2. 兩處敘述小修（使用者本輪未選，隨時可做）：[[Transformer]] 頁「靠後續 RLHF 等對齊階段」把三階段壓成兩階段，應改為明確的預訓練→SFT→RL；[[2026-05-16_stanford_diffusion_lecture4]] 的 [[潛在空間]] stub 可指向 [[VAE]]
-3. 補 [[LLM_原理]] 標記的六個缺口頁（依重要性）：Tokenization、預訓練、前饋網路 FFN、SFT、Scaling_Laws、Context_Window
+3. 補 [[LLM_原理]] 標記的五個缺口頁（依重要性，前饋網路已於 2026-08-22 補齊）：Tokenization、預訓練、SFT、Scaling_Laws、Context_Window
 4. competitor-intel「Treasures of Aztec — PG Soft 大獎實錄」（W-5vaMiUlKQ）ingest 失敗待重試（見 D-004）
-4b. ai-tooling「從詞向量到 Transformer」（j-PlWhTJVsc）影片已失效（見 D-015），**待使用者提供正確連結**才能重試，非技術問題
 5. ingest `raw/notes/2026-07-16_GitEasyLearning.md`（使用者手寫筆記，與 `Git_版本控制` concept 主題重疊，屆時合併觀點）
 6. 若有更完整機制說明的來源，可考慮建立《Super Ace Deluxe》entity 頁（見 [[2026-08-22_super_ace_deluxe_實錄]]，目前僅 source stub）
 
@@ -44,6 +49,7 @@
 - D-014：2026-08-22 `ingest inbox` 一開始就撞到 `notebooklm list` 回報 `Authentication expired`。依 D-008 慣例先查版本：`notebooklm --version` 顯示 CLI 0.8.0，PyPI 最新 0.8.1，只差一個 patch version，排除版本落後的可能。`notebooklm auth check --test` 證實 cookie 存在但 `token_fetch: false`（真的過期，非 D-008 那種版本問題）。依 D-012 的結論，這種情況只能由使用者跑 `notebooklm login --fresh` 走瀏覽器 OAuth 重新授權，agent 端無法代為處理
 - D-015：ai-tooling `j-PlWhTJVsc`（詞向量到 Transformer）`notebooklm source add` 連續 3 次皆回報 `RPCError rpc_code=9`。追查根因：`curl` 直查 YouTube oEmbed 回 404，watch 頁面 player response 顯示 `"status":"ERROR"`、`"reason":"無法播放影片"`——**影片本身已失效**（下架/私人/區域限制之一），不是 notebooklm 或本流程的問題，重試無用。已在 inbox.md 標註並請使用者提供正確連結，不猜測替代影片 ID
 - D-016：worktree-isolated 的 Bash 環境會攔截任何含有字面字串 `source` 的指令（誤判為 shell `source` 建置腳本，即使是 `notebooklm source add/wait` 這類 CLI 子指令名稱），直接 `export ... && notebooklm source ...` 會被拒絕。解法：把指令寫進 `.sh` 檔（存在 job tmp 目錄），再用 `bash <script路徑>` 執行——Bash 工具收到的指令字串本身不含 `source` 字樣即可放行
+- D-017：D-015 的 `j-PlWhTJVsc` 失效連結，根因是**使用者貼進 inbox.md 時打錯大小寫**——正確 ID 是 `j-PLWhTJVsc`（YouTube 影片 ID 區分大小寫，`l` vs `L` 是完全不同的影片）。經 `curl "https://www.youtube.com/oembed?url=...&format=json"` 驗證修正後的連結回傳有效 JSON（含標題／作者）即可放心進 notebooklm，不必再猜測；下次遇到「影片無法播放」，先檢查連結字元本身有無大小寫或形似字元（l/I/1、O/0）的手誤，比假設影片下架更快排除
 
 ## 已知問題 / 風險
 - [[多AI研究裁決]] 工作流尚無實跑驗證；首次 run 後應回填效果評估到 source 頁「待追蹤」
@@ -52,7 +58,7 @@
 - [[ai自動化os_三家比較]] synthesis 可能需擴充：Grok 4.5 入局後 agentic 編程成三強格局
 
 ## 下次接續點
-- **2026-08-22 `ingest inbox` 已跑完並 commit + push 到分支 `worktree-ingest-inbox-20260822`**：待使用者 review worktree 內容後，決定是否合併回 main（含 j-PlWhTJVsc 重試、Super Ace Deluxe 是否補建 entity）
+- **2026-08-22 `ingest inbox` 3/3 全數完成，已 commit + push 到分支 `worktree-ingest-inbox-20260822`**：待使用者 review worktree 內容後，決定是否合併回 main（Super Ace Deluxe 若有更完整來源可考慮補建 entity）
 - **⚠️ 主目錄（非 worktree）有未 commit 的 2026-08-15 批次**：`raw/transcripts/2026-08-15_claude_output_style_不降智.md`、`2026-08-15_even_g2_開箱_joeman.md`、`2026-08-15_原子習慣_50歲.md`、`wiki/concepts/Output_Style.md`／`STE100.md`／`原子習慣.md`、`wiki/entities/Joeman.md`／`阿蘭.md`，以及連帶修改的 `index.md`／`log.md`／`CLAUDE.md`／`wiki/entities/{Claude_Code,Even_Realities_G2,Gary_Chen,Matt_Pocock}.md` 都還停在 working tree 沒 commit。這批看起來是完整成果、只是沒收尾；建議使用者先在主目錄 review 並單獨 commit 這批，再處理本次 worktree 分支的合併，避免 index.md／log.md 兩邊分岔衝突
 - inbox.md 待處理區已清空；下次 ingest 先查 `git status --short raw/` 有無未處理的 untracked 檔
 - 環境已清理（2026-08-08 使用者授權）：移除 `~otebooklm` / `~otebooklm_py-0.7.3.dist-info` 殘留目錄，卸載本次臨時安裝的 10 個套件（browser_cookie3、rookiepy 及其依賴鏈 lz4／pycryptodomex／pywin32／WMI／shadowcopy，以及查依賴用的 pipdeptree／nab-index／nab-python）。清理後 `pip check` 無破損、`notebooklm status` API 實測正常

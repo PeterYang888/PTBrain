@@ -38,6 +38,7 @@
 - [[Jay_JayLuxAI]] — AIOS 框架推廣者，Claude Code 儀表板實作教學
 - [[Matt_Pocock]] — TypeScript 專家；/grill-me 系列極簡 Skill，16 萬星、700 萬次下載
 - [[Corey_McClain]] — 同名頻道主，AI 生產力短影片；Claude record a skill 示範
+- [[軒轅]] — 「軒轅的编程宇宙」主講者，動畫解析 NLP／LLM 原理；補上 Transformer 之前的技術演進
 
 ### Organizations
 - [[Anthropic]] — AI 公司，Claude 系列與 Claude Code 的開發商；ARR $30B 於 2026-04 超越 OpenAI
@@ -112,6 +113,13 @@ _（尚未建立）_
 - [[位置編碼]] — 注意力沒有順序感；RoPE（2021）與 Lost in the Middle
 - [[MoE]] — 混合專家稀疏激活；Mixtral 8x7B 總參數 467 億、實算 129 億
 
+### NLP 序列建模（Transformer 之前）
+- [[N-gram]] — 詞語組合頻率統計；組合爆炸 + 符號孤立，無法泛化到新組合
+- [[詞向量]] — 詞轉高維語義座標，解決符號孤立問題；餘弦相似度量化語義接近度
+- [[前饋網路]] — FFN；能學複雜規律但輸入窗口固定；也是 Transformer 內「Token 自己深加工」與事實記憶的所在
+- [[RNN]] — 隱藏狀態讀取任意長度句子；長期依賴問題（記不住太久之前的資訊）
+- [[LSTM]] — 細胞狀態 + 三道門解決遺忘問題；仍受限於順序計算，無法並行
+
 ### 深度學習基礎（原理）
 - [[神經網路]] — 智慧即函數；1943 MP 模型 → 1957 感知機 → 1986 反向傳播；GPT-3 1750 億參數
 - [[萬能逼近定理]] — 神經元夠多＋非線性即可逼近任何曲線；保證表達力，不保證找得到
@@ -171,6 +179,7 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-08-22_詞向量到transformer_nlp演進]] — N-gram/詞向量/RNN/LSTM，Transformer 誕生的前置動機（YouTube，2026-08-22）
 - [[2026-08-22_super_ace_deluxe_實錄]] — Super Ace Deluxe 實戰錄影，20倍乘數連發，逐字稿僅符號報讀（YouTube，2026-08-22）
 - [[2026-08-22_省token三招_context管理]] — Gary Chen 省 token 三招：丟/縮/快取折扣，四層 context 拆解（YouTube，2026-08-22）
 - [[2026-08-08_claude_md_15分鐘精通]] — CLAUDE.md 三層設計、指令預算、花園式修剪（YouTube，2026-08-08）
@@ -270,10 +279,10 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-_以下為 2026-08-22 實際檔案數。_
-- Sources: 95（+2：2026-08-22 批次，1 支失敗跳過未計入）
-- Entities: 53（本批無新建，Gary_Chen 為既有頁更新）
-- Concepts: 67（+Prompt_Caching）
-- Topics: 4（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
+_以下為 2026-08-22 實際檔案數（含重試補齊的第 2 支）。_
+- Sources: 96（+3：2026-08-22 批次全數補齊）
+- Entities: 54（+軒轅）
+- Concepts: 72（+Prompt_Caching、N-gram、詞向量、前饋網路、RNN、LSTM）
+- Topics: 4（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁；[[LLM_原理]] 已知缺口移除「前饋網路」一項）
 - Syntheses: 2
-- 最近活動: 2026-08-22 · ingest inbox 批次 3 支（ai-tooling ×2、competitor-intel ×1）：1 支完整 ingest、1 支失敗跳過（詞向量到 Transformer，notebooklm 連續失敗）、1 支內容過薄僅存 source stub（Super Ace Deluxe）
+- 最近活動: 2026-08-22 · ingest inbox 批次 3 支全數完成（ai-tooling ×2、competitor-intel ×1）：j-PlWhTJVsc 原連結失效，使用者提供修正後大小寫的正確連結（j-PLWhTJVsc）補跑成功

@@ -339,3 +339,13 @@
 - 未新建 entity/concept：逐字稿僅為遊戲符號/音效報讀，無下注額、RTP、選房邏輯等機制資訊，資訊量不足以建立《Super Ace Deluxe》entity 頁（與既有 [[2026-05-16_戰神賽特2_選房技巧]] 同類型限制）
 - 更新：[[index]]（統計待補）
 - 本輪 3 支批次結果：1 支完整 ingest（省 token 三招）、1 支失敗跳過（詞向量到 Transformer）、1 支內容過薄僅存 source stub（Super Ace Deluxe）
+
+## [2026-08-22] ingest | 詞向量到 Transformer（j-PlWhTJVsc 補跑成功，根因為連結大小寫錯誤）
+- 根因確認：`j-PlWhTJVsc` 經 curl 查 YouTube oEmbed（404）與 watch 頁 player response（"無法播放影片"）證實影片失效；使用者提供修正連結 `j-PLWhTJVsc`（大小寫不同，YouTube ID 區分大小寫），oEmbed 驗證有效後成功加入 notebooklm
+- source 頁：[[2026-08-22_詞向量到transformer_nlp演進]]
+- raw 檔：`raw/transcripts/2026-08-22_詞向量到transformer_nlp演進.md`
+- 新建 entity（1）：[[軒轅]]（頻道「軒轅的编程宇宙」，NLP 演進系列動畫科普）
+- 新建 concepts（5）：[[N-gram]]、[[詞向量]]、[[前饋網路]]（填補 [[LLM_原理]] 已知缺口）、[[RNN]]、[[LSTM]]
+- 更新（2）：[[LLM_原理]]（新增「第 1.5 層 — Transformer 之前」、五位主講者理解階梯新增軒轅、已知缺口移除前饋網路、來源列表）、[[MoE]]（補上 [[前饋網路]] 回連）
+- index.md（統計 96/54/72）、inbox.md（3 支全數移入已處理）已同步
+- 本次 ai-tooling 2 支主題互補：軒轅講「Transformer 之前」的技術鋪陳，[[大飛]]（2026-08-01）講「Transformer 內部」的組件拆解，兩者前後銜接

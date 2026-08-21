@@ -7,10 +7,7 @@
 
 ## 待處理
 
-### ai-tooling（1 支）
-
-- https://www.youtube.com/watch?v=j-PlWhTJVsc | ai-tooling ❌ 影片本身無法播放（YouTube 頁面回報「無法播放影片」，oEmbed 回 404），非 notebooklm 或流程問題，2026-08-22 確認後跳過——請提供正確連結
-  > 從詞向量到 Transformer：AI 大模型背後的原理，一個動畫急速入門
+<!-- 貼新連結到這裡，格式：- URL | notebook標記 -->
 
 ---
 
@@ -23,3 +20,6 @@
 
 - https://www.youtube.com/watch?v=n3WFEnVPSBE | competitor-intel ✅ 2026-08-22
   > Big Win — Super Ace Deluxe 實錄 → [[2026-08-22_super_ace_deluxe_實錄]]（內容薄，僅 source stub）
+
+- https://www.youtube.com/watch?v=j-PLWhTJVsc | ai-tooling ✅ 2026-08-22（原連結 j-PlWhTJVsc 大小寫有誤已失效，使用者提供修正連結）
+  > 從詞向量到 Transformer：AI 大模型背後的原理 → [[2026-08-22_詞向量到transformer_nlp演進]]
