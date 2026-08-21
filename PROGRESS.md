@@ -23,7 +23,7 @@
 2. 兩處敘述小修（使用者本輪未選，隨時可做）：[[Transformer]] 頁「靠後續 RLHF 等對齊階段」把三階段壓成兩階段，應改為明確的預訓練→SFT→RL；[[2026-05-16_stanford_diffusion_lecture4]] 的 [[潛在空間]] stub 可指向 [[VAE]]
 3. 補 [[LLM_原理]] 標記的六個缺口頁（依重要性）：Tokenization、預訓練、前饋網路 FFN、SFT、Scaling_Laws、Context_Window
 4. competitor-intel「Treasures of Aztec — PG Soft 大獎實錄」（W-5vaMiUlKQ）ingest 失敗待重試（見 D-004）
-4b. ai-tooling「從詞向量到 Transformer」（j-PlWhTJVsc）ingest 失敗待重試（見 D-015）
+4b. ai-tooling「從詞向量到 Transformer」（j-PlWhTJVsc）影片已失效（見 D-015），**待使用者提供正確連結**才能重試，非技術問題
 5. ingest `raw/notes/2026-07-16_GitEasyLearning.md`（使用者手寫筆記，與 `Git_版本控制` concept 主題重疊，屆時合併觀點）
 6. 若有更完整機制說明的來源，可考慮建立《Super Ace Deluxe》entity 頁（見 [[2026-08-22_super_ace_deluxe_實錄]]，目前僅 source stub）
 
@@ -42,7 +42,7 @@
 - D-013：升級 notebooklm-py 前要先確認沒有 notebooklm 程序在跑，否則 pip 無法覆寫 `Scripts\notebooklm.exe`（WinError 32），會留下 `~otebooklm` / `~otebooklm_py-<舊版>.dist-info` 殘留目錄。模組本體仍會裝成功、`--version` 正常，可事後清理
 - D-009：這台機器有兩套 Python（PATH 上 `pip` 屬 Python314，但 `notebooklm` 執行檔屬 Python312）。升級 notebooklm-py 必須指定 `/c/Users/user/AppData/Local/Programs/Python/Python312/python -m pip install -U notebooklm-py`，直接下 `pip install` 會裝到錯的環境
 - D-014：2026-08-22 `ingest inbox` 一開始就撞到 `notebooklm list` 回報 `Authentication expired`。依 D-008 慣例先查版本：`notebooklm --version` 顯示 CLI 0.8.0，PyPI 最新 0.8.1，只差一個 patch version，排除版本落後的可能。`notebooklm auth check --test` 證實 cookie 存在但 `token_fetch: false`（真的過期，非 D-008 那種版本問題）。依 D-012 的結論，這種情況只能由使用者跑 `notebooklm login --fresh` 走瀏覽器 OAuth 重新授權，agent 端無法代為處理
-- D-015：ai-tooling `j-PlWhTJVsc`（詞向量到 Transformer）`notebooklm source add` 連續 2 次皆回報 `RPCError rpc_code=9`（"URL invalid/paywall/empty/rate limit"），判定為來源端問題（可能無字幕或影片受限），依 D-004 同樣的失敗處理規則標註 ❌ 並保留在待處理區，不中斷整批
+- D-015：ai-tooling `j-PlWhTJVsc`（詞向量到 Transformer）`notebooklm source add` 連續 3 次皆回報 `RPCError rpc_code=9`。追查根因：`curl` 直查 YouTube oEmbed 回 404，watch 頁面 player response 顯示 `"status":"ERROR"`、`"reason":"無法播放影片"`——**影片本身已失效**（下架/私人/區域限制之一），不是 notebooklm 或本流程的問題，重試無用。已在 inbox.md 標註並請使用者提供正確連結，不猜測替代影片 ID
 - D-016：worktree-isolated 的 Bash 環境會攔截任何含有字面字串 `source` 的指令（誤判為 shell `source` 建置腳本，即使是 `notebooklm source add/wait` 這類 CLI 子指令名稱），直接 `export ... && notebooklm source ...` 會被拒絕。解法：把指令寫進 `.sh` 檔（存在 job tmp 目錄），再用 `bash <script路徑>` 執行——Bash 工具收到的指令字串本身不含 `source` 字樣即可放行
 
 ## 已知問題 / 風險

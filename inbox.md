@@ -9,7 +9,7 @@
 
 ### ai-tooling（1 支）
 
-- https://www.youtube.com/watch?v=j-PlWhTJVsc | ai-tooling ❌ notebooklm source add 連續 2 次失敗（RPC rpc_code=9，"URL invalid/paywall/empty/rate limit"），疑來源端問題，2026-08-22 跳過待重試
+- https://www.youtube.com/watch?v=j-PlWhTJVsc | ai-tooling ❌ 影片本身無法播放（YouTube 頁面回報「無法播放影片」，oEmbed 回 404），非 notebooklm 或流程問題，2026-08-22 確認後跳過——請提供正確連結
   > 從詞向量到 Transformer：AI 大模型背後的原理，一個動畫急速入門
 
 ---

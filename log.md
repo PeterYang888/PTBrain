@@ -333,7 +333,7 @@
 - 工具狀況：開工前 notebooklm 認證再次過期（token_fetch 失敗），比對 PyPI 排除版本落後，確認為真過期，使用者跑 `login --fresh` 解決（PROGRESS D-014）
 
 ## [2026-08-22] ingest | 批次 3/3（j-PlWhTJVsc 失敗，Super Ace Deluxe 實錄）
-- ❌ ai-tooling `j-PlWhTJVsc`（詞向量到 Transformer）：notebooklm source add 連續 2 次失敗（RPC rpc_code=9），疑來源端問題，已在 inbox.md 標註跳過，未中斷整批
+- ❌ ai-tooling `j-PlWhTJVsc`（詞向量到 Transformer）：notebooklm source add 連續 3 次失敗（RPC rpc_code=9）；追查後確認為**影片本身已失效**（YouTube oEmbed 404、player response "無法播放影片"），非工具或流程問題，已在 inbox.md 標註並待使用者提供正確連結（見 PROGRESS D-015）
 - source 頁：[[2026-08-22_super_ace_deluxe_實錄]]（competitor-intel）
 - raw 檔：`raw/transcripts/2026-08-22_super_ace_deluxe_實錄.md`
 - 未新建 entity/concept：逐字稿僅為遊戲符號/音效報讀，無下注額、RTP、選房邏輯等機制資訊，資訊量不足以建立《Super Ace Deluxe》entity 頁（與既有 [[2026-05-16_戰神賽特2_選房技巧]] 同類型限制）
