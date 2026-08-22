@@ -2,8 +2,8 @@
 type: concept
 tags: [ai, agent, harness, workflow, engineering]
 created: 2026-07-18
-updated: 2026-07-18
-sources: [2026-07-18_google_agentic_engineering_day1]
+updated: 2026-08-22
+sources: [2026-07-18_google_agentic_engineering_day1, 2026-08-09_google_ai課程day4_5]
 ---
 
 # Agentic Engineering
@@ -30,5 +30,17 @@ sources: [2026-07-18_google_agentic_engineering_day1]
 - 85% 專業開發者使用 AI agent；41% 新程式碼由 AI 生成
 - 反例：資深工程師缺驗證機制用 AI，特定任務效率反降 19%
 
+## 落地生產環境的三大動作（Day 4+5，2026-08-09）
+Day 1 定義了 Agent = Model + Harness 的框架後，Day 4+5 給出讓 Agent 安全上正式環境的具體動作，工程師的角色從「寫程式碼」轉向「藍圖建築師」（見 [[2026-08-09_google_ai課程day4_5]]）：
+
+1. **Spec（規格）**：五大元素——做什麼、為什麼做、用什麼做（寫死工具版本）、什麼不能碰（底線）、什麼叫完成（Given-When-Then 驗收格式）。指令格式未優化，AI 表現最多可相差 40%（SKCC 論文，未查證原文）
+2. **Security（零信任防護）**：AI 必然犯錯，重點是「就算犯錯也傷不到系統」的三層防禦——沙盒（用完即丟）、Human-in-the-loop（高風險動作設 Checkpoint，Code 翻譯回白話文供人審核）、套件白名單與固定版本（防 Slop squatting：駭客搶註 AI 幻覺出的虛擬套件名稱植入惡意代碼）
+3. **Evaluation（實戰驗收）**：不是二元對錯，而是打分數看「漂移」——初始需求當考題、看成品不看程式碼、看收斂輪數（改 8 次還錯最有分析價值）、收集被糾正的話回頭修 Spec
+
+**可觀測性（Observability）**：完整記錄整趟任務、每步思考過程、工具與參數——用來監控 **Denial of Wallet**（Agent 陷入無限迴圈狂燒付費 API）這類安全威脅
+
+**人類審查瓶頸**：AI 產碼速度提升，但造成 Reviewer「微管理倦怠」（重度使用 AI 者 Burnout 機率高出 45%），解法是 **Conditional LGTM**（人工審完架構給有條件同意，自動化測試通過後系統自動合併）或 CI 掛載 AI Reviewer 代理
+
 ## 來源
 - [[2026-07-18_google_agentic_engineering_day1]]
+- [[2026-08-09_google_ai課程day4_5]]

@@ -75,6 +75,8 @@
 - [[Gemini_Omni]] — Google Flow 的多模態生成模型（OmniFlash 圖生影）
 - [[Replit]] — 雲端開發平台；多 Agent 並行編碼（Pro 10 個），協作類比 Git 分支合併
 - [[Grok_4.5]] — xAI 旗艦模型；agentic 編程 + 80 tokens/秒，對標 Claude Code / Codex
+- [[Cowart]] — Codex 畫布標註修圖插件，解決純文字修圖指令的位置/對象歧義
+- [[bookMDViewer]] — 輕量本機 Markdown 檢視器，Tauri v2，完全離線無遙測
 
 ### Places
 _（尚未建立）_
@@ -179,6 +181,17 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-08-09_google_ai課程day4_5]] — Google AI 課程系列最後一集：Spec/Security/Evaluation 三大動作（YouTube，經 Raindrop，2026-08-22）
+- [[2026-08-05_李宏毅機器學習2026筆記集]] — 李宏毅 ML2026 筆記集合頁，11 主題列表（HackMD，經 Raindrop，2026-08-22）
+- [[2026-07-30_codex_plugin_cc]] — 官方 Claude Code↔Codex 外掛：review/rescue/transfer 斜線指令（GitHub，經 Raindrop，2026-08-22）
+- [[2026-06-04_bookmdviewer]] — 輕量本機 Markdown 檢視器（GitHub，經 Raindrop，2026-08-22）
+- [[2026-07-10_codex_cowart_修圖]] — Cowart 畫布標註 + Codex 修圖插件（文章，經 Raindrop，2026-08-22）
+- [[2026-07-10_ig_cowart_ai郵報]] — 同上主題的 IG caption 版（經 Raindrop，2026-08-22）
+- [[2026-07-31_ig_設計靈感海莉]] — AI 時代設計參考素材轉變（IG caption，經 Raindrop，2026-08-22）
+- [[2026-07-13_fb_vibe_coding美感_eason]] — Vibe Coding 素材庫/元件庫趨勢（FB，經 Raindrop，2026-08-22）
+- [[2026-08-18_ig_raywang_圖表]] — 內容過薄 stub（IG，經 Raindrop，2026-08-22）
+- [[2026-07-26_fb_gemini_prompts_teaser]] — 內容過薄 stub（FB，經 Raindrop，2026-08-22）
+- [[2026-05-08_fb_tonyaigirls_電子書]] — 內容過薄 stub（FB，經 Raindrop，2026-08-22）
 - [[2026-08-22_詞向量到transformer_nlp演進]] — N-gram/詞向量/RNN/LSTM，Transformer 誕生的前置動機（YouTube，2026-08-22）
 - [[2026-08-22_super_ace_deluxe_實錄]] — Super Ace Deluxe 實戰錄影，20倍乘數連發，逐字稿僅符號報讀（YouTube，2026-08-22）
 - [[2026-08-22_省token三招_context管理]] — Gary Chen 省 token 三招：丟/縮/快取折扣，四層 context 拆解（YouTube，2026-08-22）
@@ -279,10 +292,10 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-_以下為 2026-08-22 實際檔案數（含重試補齊的第 2 支）。_
-- Sources: 96（+3：2026-08-22 批次全數補齊）
-- Entities: 54（+軒轅）
+_以下為 2026-08-22 實際檔案數。_
+- Sources: 107（+11：`ingest raindrop` 首跑，文章/社群貼文/1 支影片）
+- Entities: 56（+Cowart、bookMDViewer）
 - Concepts: 72（+Prompt_Caching、N-gram、詞向量、前饋網路、RNN、LSTM）
 - Topics: 4（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁；[[LLM_原理]] 已知缺口移除「前饋網路」一項）
 - Syntheses: 2
-- 最近活動: 2026-08-22 · ingest inbox 批次 3 支全數完成（ai-tooling ×2、competitor-intel ×1）：j-PlWhTJVsc 原連結失效，使用者提供修正後大小寫的正確連結（j-PLWhTJVsc）補跑成功
+- 最近活動: 2026-08-22 · `ingest inbox` 批次 3 支全數完成 + `ingest raindrop` 首次實跑全數完成（30 筆 #ptbrain 書籤：14 重複移除標籤、1 頻道頁待人工、4 空白 FB 待人工、11 篇新內容 ingest）

@@ -66,10 +66,11 @@ Raindrop 上的書籤可能早就透過別的管道（手動貼、`ingest inbox`
 ## 4. 移除標籤的做法
 
 ```
-PUT https://api.raindrop.io/rest/v1/raindrops/{_id}
+PUT https://api.raindrop.io/rest/v1/raindrop/{_id}
 Authorization: Bearer {token}
 Body: {"tags": [<原本的 tags 陣列，去掉 "ptbrain">]}
 ```
+注意：單筆操作的端點是**單數** `raindrop`（不是 `raindrops`），跟第 0 節列表用的複數端點不同，兩者搞混會回 404。
 
 ---
 

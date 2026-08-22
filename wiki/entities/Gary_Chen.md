@@ -4,7 +4,7 @@ entity_type: person
 tags: [ai, claude-code, codex, harness-engineering]
 created: 2026-07-04
 updated: 2026-08-22
-sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通, 2026-08-22_省token三招_context管理]
+sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通, 2026-08-22_省token三招_context管理, 2026-08-09_google_ai課程day4_5]
 ---
 
 # Gary Chen
@@ -33,6 +33,7 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 ## 內容主軸（2026-08-22）
 - 提出「省 token 三招」：丟掉用不到的 context（換任務開新對話／編輯回溯／精簡工具）、縮減留下來的（先搜尋再餵／給結論清過程／限縮輸入輸出）、善用 [[Prompt_Caching]] 折扣
 - 把每次請求注入的 context 拆成四層（系統規則／工具說明／對話歷史／外部檔案），呼應他一貫「精準控制而非被動承受」的工程哲學
+- 解析 Google AI 課程系列最後一集（Day 4+5）：提出讓 AI 安全上生產環境的 Spec／Security／Evaluation 三大動作，延續他一貫「系統勝過人為紀律」的立場——這次是把該立場套用在別人（Google）的官方框架上，而非自己發明
 
 ## 相關來源
 - [[2026-07-04_claude_codex_互審]]
@@ -42,3 +43,4 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 - [[2026-07-25_grill_me_matt_pocock]] — 拆解 [[Matt_Pocock]] 的 /grill-me 極簡 Skill 工作流
 - [[2026-08-08_claude_md_15分鐘精通]] — CLAUDE.md 的層級設計、指令預算與花園式維護
 - [[2026-08-22_省token三招_context管理]] — 省 token 三招與四層 context 拆解
+- [[2026-08-09_google_ai課程day4_5]] — Google AI 課程 Day 4+5：Spec/Security/Evaluation 三大動作

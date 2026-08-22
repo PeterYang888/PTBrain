@@ -340,6 +340,23 @@
 - 更新：[[index]]（統計待補）
 - 本輪 3 支批次結果：1 支完整 ingest（省 token 三招）、1 支失敗跳過（詞向量到 Transformer）、1 支內容過薄僅存 source stub（Super Ace Deluxe）
 
+## [2026-08-22] ingest raindrop | 首次實跑（30 筆 #ptbrain 書籤）
+- 新增 `_meta/prompts/raindrop_ingest.md` 流程文件與 `CLAUDE.md` §12 `ingest raindrop` 快捷指令（最小整合版：複用現有 raw/wiki 三層結構，不新建資料夾/schema）
+- API 端點修正：單筆更新是 `PUT /rest/v1/raindrop/{id}`（單數），非文件初稿誤寫的複數 `raindrops`
+- **去重（14 筆）**：YouTube 影片經正規化影片 ID 比對 `wiki/sources` 既有 `source_url`，14 支已存在（其中 2 支就是本次稍早才 ingest 的 j-PLWhTJVsc、以及 2026-08-01 批次的 jFuft0mKj7E 等），直接移除標籤
+- **新內容 ingest（10 筆）**：
+  - source 頁新建 10：[[2026-08-05_李宏毅機器學習2026筆記集]]、[[2026-07-30_codex_plugin_cc]]、[[2026-06-04_bookmdviewer]]、[[2026-07-10_codex_cowart_修圖]]、[[2026-07-10_ig_cowart_ai郵報]]、[[2026-07-31_ig_設計靈感海莉]]、[[2026-07-13_fb_vibe_coding美感_eason]]、[[2026-08-18_ig_raywang_圖表]]（薄）、[[2026-07-26_fb_gemini_prompts_teaser]]（薄）、[[2026-05-08_fb_tonyaigirls_電子書]]（薄）
+  - raw/articles/ 新增 4 檔（文章類，經 WebFetch）；IG/FB 貼文（social）依設計不另存 raw 檔，excerpt 本身即內容
+  - 新建 entities（2）：[[Cowart]]（Codex 畫布標註修圖插件，aiposthub 文章 + IG 兩份來源共同支持）、[[bookMDViewer]]（輕量本機 Markdown 檢視器）
+  - 更新：[[OpenAI_Codex]]（官方 Claude Code 外掛 `codex-plugin-cc`、Cowart 生態）、[[Claude_Code]]（同一外掛的 Claude Code 側視角）、[[Vibe_Coding]]（AI 時代設計參考素材轉變，兩份獨立來源交叉驗證）
+  - index.md（統計 106/56/72）已同步
+- **保留標籤待人工處理（5 筆）**：1 筆 YouTube 頻道頁（非單一影片內容，`@twtrubiks`）；4 筆 Facebook 貼文 excerpt 完全空白，無可蒸餾內容
+- **新 YouTube 影片（1 筆，補完）**：`h7abDtqN9gs`（Google AI 課程 Day 4+5）一開始撞上 notebooklm 認證再次過期，稍後自行恢復（未經使用者介入），成功 ingest：
+  - source 頁：[[2026-08-09_google_ai課程day4_5]]；raw 檔：`raw/transcripts/2026-08-09_google_ai課程day4_5.md`
+  - 更新：[[Agentic_Engineering]]（延續 Day1 框架，新增「落地生產環境的三大動作」Spec/Security/Evaluation）、[[Gary_Chen]]
+  - 移除該筆 Raindrop 標籤
+- 本次 `ingest raindrop` 首跑總計：30 筆書籤全數處理完畢（14 去重＋11 新 ingest＋1 頻道頁待人工＋4 空白 FB 待人工）
+
 ## [2026-08-22] ingest | 詞向量到 Transformer（j-PlWhTJVsc 補跑成功，根因為連結大小寫錯誤）
 - 根因確認：`j-PlWhTJVsc` 經 curl 查 YouTube oEmbed（404）與 watch 頁 player response（"無法播放影片"）證實影片失效；使用者提供修正連結 `j-PLWhTJVsc`（大小寫不同，YouTube ID 區分大小寫），oEmbed 驗證有效後成功加入 notebooklm
 - source 頁：[[2026-08-22_詞向量到transformer_nlp演進]]

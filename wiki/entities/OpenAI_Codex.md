@@ -3,8 +3,8 @@ type: entity
 entity_type: product
 tags: [openai, ai-tool, automation, agentic]
 created: 2026-05-30
-updated: 2026-07-18
-sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 2026-05-30_ai_ppt_codex, 2026-06-19_claude_code轉codex, 2026-06-19_loop_engineering, 2026-06-27_image2_codex_可編輯ppt, 2026-06-27_rpa_要沒了, 2026-07-04_claude_codex_互審, 2026-07-04_codex_geo, 2026-07-10_六月_ai_更新彙整, 2026-07-18_codex_record_replay_fork]
+updated: 2026-08-22
+sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 2026-05-30_ai_ppt_codex, 2026-06-19_claude_code轉codex, 2026-06-19_loop_engineering, 2026-06-27_image2_codex_可編輯ppt, 2026-06-27_rpa_要沒了, 2026-07-04_claude_codex_互審, 2026-07-04_codex_geo, 2026-07-10_六月_ai_更新彙整, 2026-07-18_codex_record_replay_fork, 2026-07-30_codex_plugin_cc, 2026-07-10_codex_cowart_修圖]
 ---
 
 # OpenAI Codex
@@ -41,6 +41,10 @@ sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 20
 
 ## 跨模型互審角色（2026-07-04）
 - **Codex 當審稿人**：在 [[Gary_Chen]] 的個人 [[Harness_Engineering|Harness]] 實踐中，Codex 被賦予「守最後一道關」的角色——特點是穩健、無聊但極少出錯，擅長處理複雜後端邏輯；與 Claude（細心、創意、擅互動的「作者」角色）形成分工。見 [[2026-07-04_claude_codex_互審]]
+- **官方外掛版（2026-07-30）**：OpenAI 發布 [[Claude_Code]] 官方外掛 `codex-plugin-cc`，用斜線指令（`/codex:review`、`/codex:adversarial-review`、`/codex:rescue`、`/codex:transfer`）把上面 Gary Chen 手刻的 DIY 互審 Harness 官方化、標準化，共用本機 Codex CLI 的認證與設定。見 [[2026-07-30_codex_plugin_cc]]
+
+## 圖片編輯生態（2026-07-10）
+- **[[Cowart]] 插件**：畫布標註（箭頭/圈選/手寫指令）+ gpt-image-1.5 生圖，解決純文字修圖指令的位置/對象歧義問題，定位在 Midjourney 與 Photoshop 之間的中等修圖需求。見 [[2026-07-10_codex_cowart_修圖]]
 
 ## [[GEO]] 執行引擎（2026-07-04）
 - [[黃一河]] 用 Codex 執行「盤點內容 → 結構化 → 建 Wiki → 機器入口 → 追數據 → 強化贏家頁」六步驟 SOP，把內容資產轉成 AI 友善知識庫，實測單頁 30 天被 AI 引用 700+ 次。見 [[2026-07-04_codex_geo]]
@@ -66,3 +70,5 @@ sources: [2026-05-30_codex_零基礎入門, 2026-05-30_codex_office全包辦, 20
 - [[2026-07-04_codex_geo]] — GEO 六步驟 SOP：內容資產轉 AI 友善 Wiki
 - [[2026-07-10_六月_ai_更新彙整]] — Record and Reply 的抗變化原理與 Skill 數位資產化
 - [[2026-07-18_codex_record_replay_fork]] — Fork / Side Chat / Steering / 手機遠端操控
+- [[2026-07-30_codex_plugin_cc]] — 官方 Claude Code 外掛，斜線指令做互審/委派/會話轉移
+- [[2026-07-10_codex_cowart_修圖]] — Cowart 畫布標註修圖插件

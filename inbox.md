@@ -23,3 +23,6 @@
 
 - https://www.youtube.com/watch?v=j-PLWhTJVsc | ai-tooling ✅ 2026-08-22（原連結 j-PlWhTJVsc 大小寫有誤已失效，使用者提供修正連結）
   > 從詞向量到 Transformer：AI 大模型背後的原理 → [[2026-08-22_詞向量到transformer_nlp演進]]
+
+- https://youtube.com/watch?v=h7abDtqN9gs | ai-tooling ✅ 2026-08-22（來自 Raindrop #ptbrain）
+  > Google AI 課程 Day 4+5 解析，怎麼放心讓 AI 上正式環境？ → [[2026-08-09_google_ai課程day4_5]]
