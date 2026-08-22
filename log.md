@@ -324,3 +324,13 @@
 - stub link 保留未建頁：[[Even_Realities_G1]]
 - 既有斷鏈（非本批造成，待 lint 處理）：[[Will_Fan]] 被 [[Even_Realities_G2]] 與 [[AI智慧眼鏡]] 引用但無頁面
 - 工具狀況：開工時 NotebookLM 認證過期，升級 CLI 0.7.3→0.8.0 無效（與 D-008 不同），headless reauth 與 browser-cookies 皆失敗，最後由使用者跑 `login --fresh` 解決（見 PROGRESS D-012）
+
+## [2026-08-15] ingest | 批次處理 3 支影片（ai-tooling ×2、thinking ×1，NotebookLM 繁中 briefing）
+- source 頁（新建 3）：[[2026-08-15_claude_output_style_不降智]], [[2026-08-15_even_g2_開箱_joeman]], [[2026-08-15_原子習慣_50歲]]
+- raw 檔（新建 3）：`raw/transcripts/2026-08-15_*.md`
+- 新建 entities（2）：[[Joeman]]（台灣科技開箱 YouTuber）, [[阿蘭]]（懶讀報告頻道主講者）
+- 新建 concepts（3）：[[Output_Style]]（Claude Code 專案層級輸出風格）, [[STE100]]（航太簡化技術英文標準）, [[原子習慣]]（習慣改變框架，中年視角詮釋）
+- 更新（4）：[[Claude_Code]]（新增 Output Style 段落）、[[Gary_Chen]]（新增 2026-08-15 內容主軸）、[[Matt_Pocock]]（補「W」skill 與 STE100 關聯）、[[Even_Realities_G2]]（新增 Joeman 開箱段落：設計協作、Claude Code Terminal 連線門檻＋Pro 訂閱限制、導航限制；規格衝突表補第三筆翻譯語言數據）
+- 更新：[[index]]（Sources 93→96、Entities 53→55、Concepts 66→69）
+- inbox.md：3 筆全部從「待處理」移到「已處理」
+- 備註：本批 3 支影片橫跨兩個 notebook（ai-tooling 2 支、thinking-methods 1 支，後者為該 notebook 第二次使用）；notebooklm CLI 全程無認證問題，一次成功

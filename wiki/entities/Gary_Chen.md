@@ -3,8 +3,8 @@ type: entity
 entity_type: person
 tags: [ai, claude-code, codex, harness-engineering]
 created: 2026-07-04
-updated: 2026-08-08
-sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通]
+updated: 2026-08-15
+sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通, 2026-08-15_claude_output_style_不降智]
 ---
 
 # Gary Chen
@@ -30,6 +30,10 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 - 給出規則的三層放置法（User / Project / Nested）與三分流（不寫／Skill／Hook）
 - 「一份好的 CLAUDE.md 就像一個花園，維護工作只有兩件事：新增與修剪」——與他一貫「系統勝過人為紀律」的主張一致
 
+## 內容主軸（2026-08-15）
+- 提出「AI 降智」多為溝通語境失配，用 [[Claude_Code]] 的 [[Output_Style]] 功能規範輸出的技術密度與語氣，不動及程式能力
+- 引入 [[STE100]] 航太簡化技術英文標準管理 AI 說話方式，並依技術背景（小白／Vibe Coder/PM／工程師）設計三套自訂風格
+
 ## 相關來源
 - [[2026-07-04_claude_codex_互審]]
 - [[2026-07-18_google_agentic_engineering_day1]] — Google Agentic Engineering 課 Day 1
@@ -37,3 +41,4 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 - [[2026-07-18_git_github_vibe_coding基礎]] — 非技術人員的 Git/GitHub 教學
 - [[2026-07-25_grill_me_matt_pocock]] — 拆解 [[Matt_Pocock]] 的 /grill-me 極簡 Skill 工作流
 - [[2026-08-08_claude_md_15分鐘精通]] — CLAUDE.md 的層級設計、指令預算與花園式維護
+- [[2026-08-15_claude_output_style_不降智]] — Output Style 設定教學與 STE100 溝通標準

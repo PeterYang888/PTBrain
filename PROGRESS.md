@@ -1,10 +1,12 @@
 # PROGRESS
 
 ## 目前狀態
-- 最後更新：2026-08-08
-- 目前焦點：2026-08-08 ingest 批次 **5/5 完成**（1 支 CLAUDE.md 工作流 ＋ 4 支 AI 眼鏡），尚未 commit
+- 最後更新：2026-08-15
+- 目前焦點：2026-08-15 ingest 批次 3/3 完成 ＋ CLAUDE.md 快捷指令路徑修正，尚未 commit
 
 ## 已完成
+- [x] 修正 CLAUDE.md 第 12 節「ingest inbox」路徑：`_meta/prompts/inbox_ingest.md`（不存在）→ `_meta/inbox_ingest_prompt.md`（實際檔案位置），使用者已確認同意修改 schema
+- [x] ingest 2026-08-15 批次 3 支影片（ai-tooling ×2 + thinking ×1）— raw/transcripts/ 新增 3 檔、wiki/sources/ 新增 3 頁；新建 entities [[Joeman]]、[[阿蘭]]，新建 concepts [[Output_Style]]、[[STE100]]、[[原子習慣]]；更新 [[Claude_Code]]（Output Style 段落）、[[Gary_Chen]]（2026-08-15 內容主軸）、[[Matt_Pocock]]（W skill/STE100 關聯）、[[Even_Realities_G2]]（Joeman 開箱：設計協作、Claude Code Terminal 連線門檻＋Pro 訂閱限制、導航限制、規格衝突表補第三筆翻譯語言數據）；index.md（96/55/69）、log.md、inbox.md 已同步（3 筆全移已處理）；notebooklm CLI 全程無認證問題
 - [x] ingest 2026-08-08 批次 5 支 ai-tooling 影片 — raw/transcripts/ 新增 5 檔、wiki/sources/ 新增 5 頁；新建 entities [[MemoMind_One]]、[[Ray-Ban_Meta]]、[[OpenClaw]]、[[Tailscale]]，新建 concept [[指令預算]]；更新 [[Even_Realities_G2]]（Evenhub 平台／OcuClaw／美元價格階梯／規格衝突表）、[[AI智慧眼鏡]]（路線光譜擴為四款＋顯示派vs相機派＋眼鏡作為 Agent 終端）、[[Meta]]、[[Gary_Chen]]、[[Peter_Steinberger]]、[[Context_工程]]、[[Skill_輕量化]]；index.md（實測 93/53/66）、log.md、inbox.md 已同步；斷鏈掃描通過（僅餘 stub [[Even_Realities_G1]] 與既有 [[Will_Fan]]）
 - [x] lint LLM 底層原理頁群（22 concept ＋ 8 source）— 新建 topic 樞紐頁 [[LLM_原理]]（四層階梯／路線之爭／四位主講者理解階梯／缺口清單，38 個連結零斷鏈）；修 [[World_Models]] 斷鏈 3 處 → [[世界模型]]；[[Transformer]]、[[神經網路]] 加回連；index.md（Topics 4）、log.md 已同步
 - [x] ingest 2026-08-01 批次 2 支 ai-tooling 影片（AI 原理類）— raw/transcripts/ 新增 2 檔、wiki/sources/ 新增 2 頁；新建 entities [[大飛]]、[[王木頭]]，新建 concepts [[Transformer]]、[[注意力機制]]、[[位置編碼]]、[[MoE]]、[[萬能逼近定理]]、[[激活函數]]；更新 [[神經網路]]、[[反向傳播]]、[[梯度下降]]、[[2026-07-10_神經網路_漫士科普]]；index.md（實測 88/49/65）、log.md、inbox.md 已同步
@@ -17,7 +19,7 @@
 - （無）
 
 ## 待辦（依優先序）
-1. 裁決 [[Even_Realities_G2]] 的規格衝突（續航 48hr vs 12hr、語言 31 vs 29）——需第三方規格頁或官網佐證，目前三份來源皆未說明測法
+1. 裁決 [[Even_Realities_G2]] 的規格衝突（續航 48hr vs 12hr、語言 31 vs 29 vs「35 種支援/29 種雙向中文」）——2026-08-15 新增第三筆語言數據仍未解開差異，需第三方規格頁或官網佐證
 1b. 建 [[Will_Fan]] entity 頁（既有斷鏈，被 [[Even_Realities_G2]] 與 [[AI智慧眼鏡]] 引用；素材在 2026-06-27_even_g2_創辦人訪談）
 2. 兩處敘述小修（使用者本輪未選，隨時可做）：[[Transformer]] 頁「靠後續 RLHF 等對齊階段」把三階段壓成兩階段，應改為明確的預訓練→SFT→RL；[[2026-05-16_stanford_diffusion_lecture4]] 的 [[潛在空間]] stub 可指向 [[VAE]]
 3. 補 [[LLM_原理]] 標記的六個缺口頁（依重要性）：Tokenization、預訓練、前饋網路 FFN、SFT、Scaling_Laws、Context_Window
@@ -46,7 +48,9 @@
 - [[ai自動化os_三家比較]] synthesis 可能需擴充：Grok 4.5 入局後 agentic 編程成三強格局
 
 ## 下次接續點
-- inbox.md 待處理區已清空；下次 ingest 先查 `git status --short raw/` 有無未處理的 untracked 檔
+- inbox.md 待處理區已清空（2026-08-15 批次 3 支全部處理完）；下次 ingest 先查 `git status --short raw/` 有無未處理的 untracked 檔
+- 發現小落差：CLAUDE.md 第 12 節寫的快捷指令路徑是 `_meta/prompts/inbox_ingest.md`，但實際檔案在 `_meta/inbox_ingest_prompt.md`（無 prompts 子資料夾）。本次靠 Glob 找到，未動 CLAUDE.md（schema 改動需使用者同意），下次可考慮請使用者確認要不要順手修正路徑
+- 本批未建立 topic 樞紐頁：[[原子習慣]] 是 thinking-methods notebook 的第二個主題（第一個是 2026-07-04 的馬斯克清醒演講/第一性原理），兩者尚未有共同樞紐，暫不急著建（CLAUDE.md 3.1：少量頁面不用急著建 topic）
 - 環境已清理（2026-08-08 使用者授權）：移除 `~otebooklm` / `~otebooklm_py-0.7.3.dist-info` 殘留目錄，卸載本次臨時安裝的 10 個套件（browser_cookie3、rookiepy 及其依賴鏈 lz4／pycryptodomex／pywin32／WMI／shadowcopy，以及查依賴用的 pipdeptree／nab-index／nab-python）。清理後 `pip check` 無破損、`notebooklm status` API 實測正常
 - 可重用腳本存於本次 scratchpad：`make_raw.py`（rich 硬換行 unwrap ＋ 加 frontmatter，本批 5 檔實測可用）、`linkcheck.py`（斷鏈 ＋ inbound 統計，可直接當 lint 第一步）
 - 可考慮的 synthesis：**AI 眼鏡兩派路線對決**素材已齊（顯示派 [[Even_Realities_G2]]／[[MemoMind_One]] vs 相機派 [[Ray-Ban_Meta]]，加上 [[RayNeo_X3_Pro]] 的全彩 AR 第三路線，共 8 份來源）——比既有的三家 AI OS 比較更成熟

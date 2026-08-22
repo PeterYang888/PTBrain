@@ -38,6 +38,8 @@
 - [[Jay_JayLuxAI]] — AIOS 框架推廣者，Claude Code 儀表板實作教學
 - [[Matt_Pocock]] — TypeScript 專家；/grill-me 系列極簡 Skill，16 萬星、700 萬次下載
 - [[Corey_McClain]] — 同名頻道主，AI 生產力短影片；Claude record a skill 示範
+- [[Joeman]] — 台灣科技開箱 YouTuber（九妹）；開箱 Even G2 並實測 Claude Code 連線
+- [[阿蘭]] — 「懶讀報告」頻道主講者，從中年視角重新拆解長銷書
 
 ### Organizations
 - [[Anthropic]] — AI 公司，Claude 系列與 Claude Code 的開發商；ARR $30B 於 2026-04 超越 OpenAI
@@ -146,12 +148,15 @@ _（尚未建立）_
 - [[Git_版本控制]] — AI 協作視角的 Git：commit 存檔點、branch 風險隔離、worktree 多 Agent 並行
 - [[示範式自動化]] — 示範一遍即成 Skill；Codex Record & Replay 與 Claude record a skill 對照
 - [[指令預算]] — Instruction Budget；規則檔的稀缺資源是注意力不是 Token；三層放置＋不寫/Skill/Hook 三分流
+- [[Output_Style]] — Claude Code 專案層級輸出風格設定；規範技術密度與語氣，不影響程式碼能力
+- [[STE100]] — 航太業簡化技術英文標準；短句/單一動作/一詞一意，移植管理 AI 說話方式
 
 ### 思維方法
 - [[第一性原理]] — 底層思考法，剝除假設從基礎事實重建
 - [[類比思維]] — 複製既有成功模式，與第一性原理對立
 - [[語義樹]] — Elon Musk 的學習框架（先建原則樹幹，再掛細節樹葉）
 - [[寧靜技術]] — Quiet Technology：技術不奪取注意力，只在需要時輕輕靠近（穿戴設計哲學）
+- [[原子習慣]] — 環境設計取代意志力對抗；Never miss twice；兩分鐘法則修復自我信用
 
 ### 醫學 / 生理
 - [[GLP-1受體激動劑]] — 瘦瘦針的作用機制、藥物世代、跨系統效果與風險
@@ -170,6 +175,9 @@ _（尚未建立）_
 
 ## Sources
 _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾。_
+- [[2026-08-15_原子習慣_50歲]] — 原子習慣給中年人的部分：環境地形、不中斷兩次、兩分鐘法則（YouTube，2026-08-15）
+- [[2026-08-15_even_g2_開箱_joeman]] — Joeman 開箱 Even G2：設計協作、Claude Code 連線門檻、導航限制（YouTube，2026-08-15）
+- [[2026-08-15_claude_output_style_不降智]] — Claude Code Output Style 設定教學 + STE100 溝通標準（YouTube，2026-08-15）
 - [[2026-08-08_claude_md_15分鐘精通]] — CLAUDE.md 三層設計、指令預算、花園式修剪（YouTube，2026-08-08）
 - [[2026-08-08_ocuclaw_even_g2_ai_agent]] — Even G2 接自架 OpenClaw：OcuClaw + Tailscale 完整設定（YouTube，2026-08-08）
 - [[2026-08-08_even_g2_開放平台評測]] — Even G2 真正身分是零審查可編程平台：Evenhub、社群 10,000 功能（YouTube，2026-08-08）
@@ -267,10 +275,10 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-_以下為 2026-08-08 實際檔案數。_
-- Sources: 93（+5：2026-08-08 批次 YouTube 影片）
-- Entities: 53（+MemoMind_One、Ray-Ban_Meta、OpenClaw、Tailscale）
-- Concepts: 66（+指令預算）
+_以下為 2026-08-15 實際檔案數。_
+- Sources: 96（+3：2026-08-15 批次 YouTube 影片）
+- Entities: 55（+Joeman、阿蘭）
+- Concepts: 69（+Output_Style、STE100、原子習慣）
 - Topics: 4（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁）
 - Syntheses: 2
-- 最近活動: 2026-08-08 · ingest 批次 5 支影片（ai-tooling ×5：CLAUDE.md ×1、AI 眼鏡 ×4）
+- 最近活動: 2026-08-15 · ingest 批次 3 支影片（ai-tooling ×2、thinking ×1）

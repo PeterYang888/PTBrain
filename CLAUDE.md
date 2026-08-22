@@ -348,4 +348,4 @@ sources: [...]
 
 ## 12. 快捷指令
 
-- **`ingest inbox`**：讀 `_meta/prompts/inbox_ingest.md`，執行其中的完整流程
+- **`ingest inbox`**：讀 `_meta/inbox_ingest_prompt.md`，執行其中的完整流程
