@@ -62,12 +62,13 @@ source_extra:
 | ai-tooling | ai-tooling | [ai, claude-code, workflow] | 聚焦 Claude Code、MCP、agent、workflow automation。保留 CLI 指令、程式碼片段、設定範例。 |
 | thinking | thinking-methods | [thinking, mental-model, reasoning] | 聚焦思維框架本身——如何拆解、如何應用、實際案例。保留具體提問模板與操作步驟。 |
 | health | health-wellness | [health, wellness, science] | 聚焦健康科普的機制與實證：說了什麼身體/醫學原理、有沒有具體研究數據佐證。保留具體數字與研究來源。 |
-| entertainment | entertainment | [entertainment, pop-culture] | 一般娛樂/追劇/追星/音樂放鬆內容，輕量記錄：一句話劇情或事件摘要即可，不需深入分析。 |
 | news | news-watch | [news, current-events] | 新聞時事摘要：事件是什麼、有沒有後續發展待追蹤。 |
 | tech-life | tech-lifestyle | [gadget, consumer-tech, review] | 消費電子開箱評測：規格、價格、實測心得、跟同類產品的比較。 |
 | tech-news | tech-news | [tech, industry-news] | 科技產業新聞：新產品發表、公司動態、技術趨勢報導，聚焦「發生了什麼事」而非深度技術教學。 |
 
-**注意**：新分類對應的 notebook（health-wellness、entertainment、news-watch、tech-lifestyle、tech-news）目前 NotebookLM 帳號裡可能還沒建立。執行 ingest 時若 `notebooklm list` 找不到對應名稱，先用 `notebooklm create "notebook名稱"` 建立，再繼續加來源。
+**注意**：新分類對應的 notebook（health-wellness、news-watch、tech-lifestyle、tech-news）目前 NotebookLM 帳號裡可能還沒建立。執行 ingest 時若 `notebooklm list` 找不到對應名稱，先用 `notebooklm create "notebook名稱"` 建立，再繼續加來源。
+
+**明確排除、一律 skip 不進 inbox.md**：一般娛樂內容——動漫、電影/劇集解說與預告、明星/網紅/偶像、音樂放鬆/BGM、運動賽事等。這類內容不屬於任何分類，遇到就直接跳過，不要用「無法判斷就先標 ai-tooling」的預設規則硬塞進來。
 
 ---
 
@@ -94,7 +95,7 @@ source_extra:
    c. 篩選：只留 `https://www.youtube.com/watch?v=...` 或 `https://youtu.be/...` 這種**單一影片頁面**，排除搜尋結果頁（`youtube.com/results?...`）、頻道頁等非單一影片內容
    d. 依影片 ID 去重（同一支影片常有多筆瀏覽紀錄；ID 需處理 `watch?v=` 與 `youtu.be/` 兩種格式，忽略 query string）
    e. 二次去重：跟現有 `wiki/sources/*.md` 的 frontmatter `source_url` 比對（YouTube ID 正規化後比對），已存在的直接跳過；也跳過 `inbox.md`「已處理」區塊已經列過的連結
-   f. 依標題內容判斷最貼近的 notebook 標記（對照下方「Notebook 對應規則」表），無法判斷就先標 `ai-tooling`
+   f. 依標題內容判斷最貼近的 notebook 標記（對照下方「Notebook 對應規則」表：`ai-tooling`／`thinking`／`health`／`news`／`tech-life`／`tech-news`）。**明確不屬於這幾類的一般娛樂內容（動漫、電影/劇集解說與預告、明星/網紅/偶像、音樂放鬆/BGM、運動賽事等）直接跳過，不列進待處理**——不要套用「無法判斷就先標 ai-tooling」的預設規則硬塞娛樂內容進來，這條規則只用來處理真正模糊、但明顯跟專業/知識類主題相關的邊界案例
    g. 依 `inbox.md` 現有格式（`- URL | notebook標記` 換行加一句標題），把這些新項目加進「## 待處理」對應分類區塊——不要覆蓋或刪除既有的待處理項目，用附加的方式加進去
    h. 這一步不用另外跟我確認，直接做；補齊後的完整清單會在下面第 3 步一起列出來讓我確認
 1. 讀 `inbox.md`，列出「待處理」的所有連結與數量
