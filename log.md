@@ -376,3 +376,15 @@
 - 更新（2）：[[LLM_原理]]（新增「第 1.5 層 — Transformer 之前」、五位主講者理解階梯新增軒轅、已知缺口移除前饋網路、來源列表）、[[MoE]]（補上 [[前饋網路]] 回連）
 - index.md（統計 96/54/72）、inbox.md（3 支全數移入已處理）已同步
 - 本次 ai-tooling 2 支主題互補：軒轅講「Transformer 之前」的技術鋪陳，[[大飛]]（2026-08-01）講「Transformer 內部」的組件拆解，兩者前後銜接
+
+## [2026-08-22] ingest | `ingest inbox` 新增「從瀏覽紀錄自動補齊」+ 首次實跑（19 支 ingest，43 支娛樂內容整類移除）
+- `_meta/inbox_ingest_prompt.md` 新增第 0 步：每次執行前先讀 Downloads 底下最新 `history.csv`，篩選 YouTube 單一影片頁、依 ID 去重、跟 wiki/sources 及 inbox.md 已處理去重，猜 notebook 標記後附加進 inbox.md
+- 首次實跑：history.csv 1447 筆瀏覽紀錄中找到 63 支去重後的新影片候選，依標題分類：health×3、tech-news×1、tech-life×6、news×10、entertainment×43
+- 使用者決定：entertainment（動漫/電影解說/明星網紅/音樂放鬆/運動，43 支）整類不需要進知識庫，一律 skip。已刪除誤建立的 NotebookLM entertainment notebook（43 支已加入但未產出 briefing），並修改 `inbox_ingest_prompt.md` 明確規定這類內容以後直接跳過，不套用「無法判斷就先標 ai-tooling」的預設規則
+- 剩餘 20 支（health/tech-news/tech-life/news）新建 5 個 NotebookLM notebook（health-wellness、tech-news、tech-lifestyle、news-watch，entertainment 已刪除）並全數跑完，19 支成功：
+  - health（3）：[[2026-08-22_家庭收入影響兒童腦發育]]、[[2026-08-22_單身性慾調適]]、[[2026-08-22_攝護腺保養_抓龍筋迷思]]
+  - tech-news（1）：[[2026-08-22_zoox無人計程車商用許可]]
+  - tech-life（6）：[[2026-08-22_ai自拍棒開箱]]、[[2026-08-22_特斯拉model_y車宿體驗]]、[[2026-08-22_jowua滑板車收納特斯拉]]、[[2026-08-22_jowua150滑板車ifDesign獎]]、[[2026-08-22_三星watch_ultra2評測]]、[[2026-08-22_ausnat多螢幕系統評測]]
+  - news（9，1 支失敗）：[[2026-08-22_網紅課稅5261萬]]、[[2026-08-22_阿根廷巴西球迷鬥毆]]、[[2026-08-22_靜音跳舞爆紅]]、[[2026-08-22_爐端燒擺攤爭議]]、[[2026-08-22_ezway關貿公司爭議]]、[[2026-08-22_ezway三大澄清記者會]]、[[2026-08-22_kk事件民眾黨]]、[[2026-08-22_交流道鳥籠籃球場]]、[[2026-08-22_趙建銘離婚教育金]]；`2Smy2AUbLJI` notebooklm source add 連續失敗（oEmbed 確認影片有效，疑 notebooklm 端問題），標記跳過待重試
+- 這批內容一律只建 wiki/sources 頁，不建 entity/concept（個人生活類內容不適合累積成知識網），健康/科技新聞類保留 raw 檔，tech-life/news 類為節省時間僅存 source 頁（無獨立 raw 檔）
+- index.md（統計 129/58/75）、inbox.md 已同步

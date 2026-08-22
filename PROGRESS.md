@@ -2,9 +2,16 @@
 
 ## 目前狀態
 - 最後更新：2026-08-22
-- 目前焦點：**主目錄與 worktree 分支已正式合併整合完畢**。2026-08-15 批次（3 支）＋ 2026-08-22 `ingest inbox`（3 支）＋ `ingest raindrop` 首跑（30 筆 #ptbrain）全部併入 `main`，worktree 即將清除，之後只保留一份最新內容
+- 目前焦點：`ingest inbox` 新增「從瀏覽紀錄自動補齊」步驟並完成首次實跑（19 支 ingest，entertainment 43 支依使用者決定整類移除不再處理）
 
 ## 已完成
+- [x] `ingest inbox` 新增「從瀏覽紀錄自動補齊」步驟（讀 Downloads 底下 history.csv）並首次實跑
+  - history.csv 1447 筆瀏覽紀錄 → 去重後 63 支新影片候選 → 分類：health×3/tech-news×1/tech-life×6/news×10/entertainment×43
+  - **使用者決定移除 entertainment 整類**（動漫/電影解說/明星網紅/音樂放鬆/運動不需要進知識庫）：已刪除誤建立的 NotebookLM entertainment notebook（43 支已加入但未產出 briefing），`inbox_ingest_prompt.md` 明確規定這類內容以後直接 skip，不套用「無法判斷就先標 ai-tooling」規則
+  - 剩餘 20 支新建 4 個 notebook（health-wellness、tech-news、tech-lifestyle、news-watch）跑完，19 支成功（health×3、tech-news×1、tech-life×6、news×9），1 支 news（2Smy2AUbLJI）notebooklm 端問題跳過待重試
+  - 這批內容只建 wiki/sources 頁，不建 entity/concept（個人生活類內容不適合累積知識網）
+  - index.md（統計 129/58/75）、inbox.md、log.md 已同步
+- [x] 合併整合：main 分支的 2026-08-15 批次 commit（7d2edad）＋ worktree 分支 `worktree-ingest-inbox-20260822` 全部 commit 合併回 main，解決 CLAUDE.md／PROGRESS.md／inbox.md／index.md／log.md／Claude_Code.md／Gary_Chen.md 的內容衝突（皆為雙邊各自新增內容需要合併，非互斥修改）；`raindrop_ingest.md` 順手移到跟 `inbox_ingest_prompt.md` 一致的路徑慣例（`_meta/raindrop_ingest_prompt.md`，無 `prompts/` 子資料夾）
 - [x] 合併整合：main 分支的 2026-08-15 批次 commit（7d2edad）＋ worktree 分支 `worktree-ingest-inbox-20260822` 全部 commit 合併回 main，解決 CLAUDE.md／PROGRESS.md／inbox.md／index.md／log.md／Claude_Code.md／Gary_Chen.md 的內容衝突（皆為雙邊各自新增內容需要合併，非互斥修改）；`raindrop_ingest.md` 順手移到跟 `inbox_ingest_prompt.md` 一致的路徑慣例（`_meta/raindrop_ingest_prompt.md`，無 `prompts/` 子資料夾）
 - [x] 設計 + 建置 + 首跑 `ingest raindrop` 流程（最小整合版）
   - 新增 `_meta/raindrop_ingest_prompt.md`（流程文件）與 `CLAUDE.md` §12 快捷指令；複用現有 raw/wiki 三層結構，不新建資料夾/schema
@@ -41,6 +48,7 @@
 6. 若有更完整機制說明的來源，可考慮建立《Super Ace Deluxe》entity 頁（見 [[2026-08-22_super_ace_deluxe_實錄]]，目前僅 source stub）
 7. Raindrop `#ptbrain` 標籤還留著 5 筆待人工處理：YouTube 頻道頁 `@twtrubiks`（raindrop_id 1742793174，非單一影片內容）；4 筆 Facebook 貼文 excerpt 完全空白（1801195206、1738256591、1716800463、1710412372），需要使用者自己看原貼文決定要不要保留/怎麼處理
 8. [[2026-08-05_李宏毅機器學習2026筆記集]] 只讀了 HackMD 集合頁摘要，11 篇子文章都還沒逐篇深入；若想真正蒸餾內容需要之後個別 WebFetch
+9. news `2Smy2AUbLJI`（同一人?12年前爸爸為接球...TVBS新聞）notebooklm source add 連續失敗，oEmbed 確認影片本身有效，疑 notebooklm 端問題，待重試
 
 ## 重要決策與假設（D-001 起編號，永不刪除）
 - D-001：inbox「待處理」為空時，`ingest` 指令的對象是 raw/ 中未 ingest 的新檔案（本次即 `00_brief_多AI研究裁決.md`；另兩篇 raw 根目錄文章已有對應 source 頁）
@@ -62,6 +70,8 @@
 - D-017：D-015 的 `j-PlWhTJVsc` 失效連結，根因是**使用者貼進 inbox.md 時打錯大小寫**——正確 ID 是 `j-PLWhTJVsc`（YouTube 影片 ID 區分大小寫，`l` vs `L` 是完全不同的影片）。經 `curl "https://www.youtube.com/oembed?url=...&format=json"` 驗證修正後的連結回傳有效 JSON（含標題／作者）即可放心進 notebooklm，不必再猜測；下次遇到「影片無法播放」，先檢查連結字元本身有無大小寫或形似字元（l/I/1、O/0）的手誤，比假設影片下架更快排除
 - D-018：Raindrop API 單筆操作（更新/刪除單一 raindrop）的端點是**單數** `PUT /rest/v1/raindrop/{id}`；列表/搜尋端點才是**複數** `GET /rest/v1/raindrops/{collectionId}`。第一次照 `raindrop_ingest.md` 初稿寫的複數端點打單筆更新會全部回 404，已修正文件
 - D-019：2026-08-22 `ingest raindrop` 首跑過程中 notebooklm 認證中途又報過期一次（`token_fetch: false`），但幾分鐘後**未經使用者任何動作就自行恢復正常**（`token_fetch: true`）。跟 D-012/D-014 的「真過期、只能使用者手動 login」不同——這次可能是短暫的 session token 刷新延遲。下次遇到認證錯誤，若使用者稍早才成功登入過，可以先間隔幾分鐘重試一次 `auth check --test`，不必立刻要求重新 login
+- D-020：一般個人娛樂內容（動漫、電影/劇集解說與預告、明星網紅偶像、音樂放鬆/BGM、運動賽事）**明確不進 PTBrain**，遇到直接 skip，不建 notebook、不進 inbox.md。這跟 CLAUDE.md 的知識庫定位一致：PTBrain 是專業/知識類累積，不是全部瀏覽紀錄的備份。判斷關鍵字沒有窮舉清單，靠常識判斷「這是不是知識/專業內容」，模糊時才套用「無法判斷先標 ai-tooling」規則，不要對明顯的娛樂內容套用這個 fallback
+- D-021：從瀏覽紀錄／Raindrop 這類「被動蒐集」來源批次 ingest 個人生活類內容時（health/tech-life/news 等），只建 `wiki/sources/` 頁，**不建 entity/concept**——這類內容多是一次性事件或消費性產品評測，沒有累積性的知識網絡可言，跟 ai-tooling/thinking 那種會被多篇來源反覆更新的專業概念不同
 
 ## 已知問題 / 風險
 - [[多AI研究裁決]] 工作流尚無實跑驗證；首次 run 後應回填效果評估到 source 頁「待追蹤」
@@ -70,6 +80,7 @@
 - [[ai自動化os_三家比較]] synthesis 可能需擴充：Grok 4.5 入局後 agentic 編程成三強格局
 
 ## 下次接續點
+- **`ingest inbox` 現在每次都會先跑「從瀏覽紀錄自動補齊」**：讀 Downloads 底下最新 history.csv，遇到娛樂內容直接 skip，不會再像這次一樣建出entertainment notebook
 - **主目錄與 worktree 已正式合併，worktree 即將清除**：合併後只保留 main 一份，不用再擔心兩邊分岔
 - **下次 `ingest raindrop`**：直接跑 `_meta/raindrop_ingest_prompt.md`；Raindrop `#ptbrain` 標籤上還留 5 筆待人工的（見待辦 7），下次跑之前使用者可以先自己清一清或決定要不要保留
 - inbox.md 待處理區已清空；下次 ingest 先查 `git status --short raw/` 有無未處理的 untracked 檔
