@@ -349,3 +349,4 @@ sources: [...]
 ## 12. 快捷指令
 
 - **`ingest inbox`**：讀 `_meta/prompts/inbox_ingest.md`，執行其中的完整流程
+- **`ingest raindrop`**：讀 `_meta/prompts/raindrop_ingest.md`，執行其中的完整流程（從 Raindrop.io 的 `#ptbrain` 標籤拉書籤 ingest）
