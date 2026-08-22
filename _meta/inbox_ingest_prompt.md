@@ -84,6 +84,15 @@ source_extra:
 
 ## 開始前先做
 
+0. **從瀏覽紀錄自動補齊 inbox.md**：
+   a. 找 `C:\Users\user\Desktop\Downloads\` 底下**最新**的 `history.csv`（若有多個依檔案修改時間取最新一份）
+   b. 讀取 CSV，找出網址欄位（實際欄名以檔案第一行 header 為準——目前版本欄名是「網址 (URL)」，標題欄是「標題」；瀏覽器版本或語言變了就依實際 header 調整，不要硬套死欄名）
+   c. 篩選：只留 `https://www.youtube.com/watch?v=...` 或 `https://youtu.be/...` 這種**單一影片頁面**，排除搜尋結果頁（`youtube.com/results?...`）、頻道頁等非單一影片內容
+   d. 依影片 ID 去重（同一支影片常有多筆瀏覽紀錄；ID 需處理 `watch?v=` 與 `youtu.be/` 兩種格式，忽略 query string）
+   e. 二次去重：跟現有 `wiki/sources/*.md` 的 frontmatter `source_url` 比對（YouTube ID 正規化後比對），已存在的直接跳過；也跳過 `inbox.md`「已處理」區塊已經列過的連結
+   f. 依標題內容判斷最貼近的 notebook 標記（對照下方「Notebook 對應規則」表），無法判斷就先標 `ai-tooling`
+   g. 依 `inbox.md` 現有格式（`- URL | notebook標記` 換行加一句標題），把這些新項目加進「## 待處理」對應分類區塊——不要覆蓋或刪除既有的待處理項目，用附加的方式加進去
+   h. 這一步不用另外跟我確認，直接做；補齊後的完整清單會在下面第 3 步一起列出來讓我確認
 1. 讀 `inbox.md`，列出「待處理」的所有連結與數量
 2. 確認 notebooklm skill 可用（`notebooklm status`）
 3. 回報清單給我確認，我說「開始」後才執行
