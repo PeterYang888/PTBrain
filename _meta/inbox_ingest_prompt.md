@@ -60,9 +60,6 @@ source_extra:
 | inbox 標記 | NotebookLM notebook | tags | briefing 聚焦提示 |
 |---|---|---|---|
 | ai-tooling | ai-tooling | [ai, claude-code, workflow] | 聚焦 Claude Code、MCP、agent、workflow automation。保留 CLI 指令、程式碼片段、設定範例。 |
-| competitor-intel | competitor-intel | [competitor, slot, sea-market] | 聚焦遊戲機制設計、倍率結構、選房邏輯、玩家行為。從競品分析角度，保留具體數字與機制細節。 |
-| slot-math | slot-math-design | [slot, math, game-design] | 聚焦 RTP、hit frequency、volatility、bonus buy、cascade 機制。保留所有具體數字與公式。 |
-| team-management | team-management | [management, team, ai-adoption] | 聚焦小團隊管理、績效評估、AI 導入策略。忽略企業管理理論，關注實務做法。 |
 | thinking | thinking-methods | [thinking, mental-model, reasoning] | 聚焦思維框架本身——如何拆解、如何應用、實際案例。保留具體提問模板與操作步驟。 |
 
 ---
