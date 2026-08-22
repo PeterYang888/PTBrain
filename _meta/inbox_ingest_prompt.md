@@ -61,6 +61,13 @@ source_extra:
 |---|---|---|---|
 | ai-tooling | ai-tooling | [ai, claude-code, workflow] | 聚焦 Claude Code、MCP、agent、workflow automation。保留 CLI 指令、程式碼片段、設定範例。 |
 | thinking | thinking-methods | [thinking, mental-model, reasoning] | 聚焦思維框架本身——如何拆解、如何應用、實際案例。保留具體提問模板與操作步驟。 |
+| health | health-wellness | [health, wellness, science] | 聚焦健康科普的機制與實證：說了什麼身體/醫學原理、有沒有具體研究數據佐證。保留具體數字與研究來源。 |
+| entertainment | entertainment | [entertainment, pop-culture] | 一般娛樂/追劇/追星/音樂放鬆內容，輕量記錄：一句話劇情或事件摘要即可，不需深入分析。 |
+| news | news-watch | [news, current-events] | 新聞時事摘要：事件是什麼、有沒有後續發展待追蹤。 |
+| tech-life | tech-lifestyle | [gadget, consumer-tech, review] | 消費電子開箱評測：規格、價格、實測心得、跟同類產品的比較。 |
+| tech-news | tech-news | [tech, industry-news] | 科技產業新聞：新產品發表、公司動態、技術趨勢報導，聚焦「發生了什麼事」而非深度技術教學。 |
+
+**注意**：新分類對應的 notebook（health-wellness、entertainment、news-watch、tech-lifestyle、tech-news）目前 NotebookLM 帳號裡可能還沒建立。執行 ingest 時若 `notebooklm list` 找不到對應名稱，先用 `notebooklm create "notebook名稱"` 建立，再繼續加來源。
 
 ---
 
