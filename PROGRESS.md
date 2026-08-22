@@ -2,22 +2,24 @@
 
 ## 目前狀態
 - 最後更新：2026-08-22
-- 目前焦點：`ingest inbox` 2026-08-22 批次 **3/3 全數完成**；新增 `ingest raindrop` 流程並**首次實跑完成**（30 筆 #ptbrain 書籤全數處理）。工作在獨立 worktree `C:\Users\user\Desktop\PTBrain\PTBrain\.claude\worktrees\ingest-inbox-20260822`（分支 `worktree-ingest-inbox-20260822`），待使用者 review 後合併回 main
+- 目前焦點：**主目錄與 worktree 分支已正式合併整合完畢**。2026-08-15 批次（3 支）＋ 2026-08-22 `ingest inbox`（3 支）＋ `ingest raindrop` 首跑（30 筆 #ptbrain）全部併入 `main`，worktree 即將清除，之後只保留一份最新內容
 
 ## 已完成
+- [x] 合併整合：main 分支的 2026-08-15 批次 commit（7d2edad）＋ worktree 分支 `worktree-ingest-inbox-20260822` 全部 commit 合併回 main，解決 CLAUDE.md／PROGRESS.md／inbox.md／index.md／log.md／Claude_Code.md／Gary_Chen.md 的內容衝突（皆為雙邊各自新增內容需要合併，非互斥修改）；`raindrop_ingest.md` 順手移到跟 `inbox_ingest_prompt.md` 一致的路徑慣例（`_meta/raindrop_ingest_prompt.md`，無 `prompts/` 子資料夾）
 - [x] 設計 + 建置 + 首跑 `ingest raindrop` 流程（最小整合版）
-  - 新增 `_meta/prompts/raindrop_ingest.md`（流程文件）與 `CLAUDE.md` §12 快捷指令；複用現有 raw/wiki 三層結構，不新建資料夾/schema
+  - 新增 `_meta/raindrop_ingest_prompt.md`（流程文件）與 `CLAUDE.md` §12 快捷指令；複用現有 raw/wiki 三層結構，不新建資料夾/schema
   - Token 存於 repo 外 `C:\Users\user\.raindrop_token`；API 單筆更新端點修正為 `PUT /rest/v1/raindrop/{id}`（單數，非文件初稿誤寫的複數）
   - 首跑處理 30 筆 `#ptbrain` 書籤：14 筆去重（比對既有 `wiki/sources` 的 `source_url`，YouTube 需正規化影片 ID）直接移除標籤；1 筆 YouTube 頻道頁（非單一影片）與 4 筆空白 FB 貼文保留標籤待人工；11 筆新內容全數 ingest（4 篇文章 WebFetch、6 筆 IG/FB caption-only stub、1 支影片併入 inbox.md 走 notebooklm）
   - 新建 entities（2）：[[Cowart]]、[[bookMDViewer]]；更新 [[OpenAI_Codex]]、[[Claude_Code]]（官方 codex-plugin-cc 外掛）、[[Vibe_Coding]]（AI 時代設計參考素材）、[[Agentic_Engineering]]（Google 課程 Day 4+5：Spec/Security/Evaluation）、[[Gary_Chen]]
-  - index.md（統計 107/56/72）、log.md、inbox.md 已同步
 - [x] ingest inbox 2026-08-22 批次（3 支：ai-tooling ×2、competitor-intel ×1，全數完成，在獨立 worktree 進行）
   - source 頁新增 3：[[2026-08-22_省token三招_context管理]]、[[2026-08-22_super_ace_deluxe_實錄]]、[[2026-08-22_詞向量到transformer_nlp演進]]；raw/transcripts/ 新增 3 檔
   - 新建 entities（1）：[[軒轅]]；新建 concepts（6）：[[Prompt_Caching]]、[[N-gram]]、[[詞向量]]、[[前饋網路]]（填補 [[LLM_原理]] 已知缺口）、[[RNN]]、[[LSTM]]
-  - 更新：[[Context_工程]]（四層 Context 結構）、[[Gary_Chen]]（2026-08-22 內容主軸）、[[LLM_原理]]（新增「第 1.5 層」、五位主講者理解階梯、缺口清單移除前饋網路）、[[MoE]]（補前饋網路回連）；index.md（統計 96/54/72）、log.md、inbox.md 已同步
+  - 更新：[[Context_工程]]（四層 Context 結構）、[[Gary_Chen]]（2026-08-22 內容主軸）、[[LLM_原理]]（新增「第 1.5 層」、五位主講者理解階梯、缺口清單移除前饋網路）、[[MoE]]（補前饋網路回連）
   - ai-tooling `j-PlWhTJVsc`（詞向量到 Transformer）第一次連結因大小寫錯誤已失效（`j-PlWhTJVsc` vs 正確 `j-PLWhTJVsc`），經 curl 查 oEmbed/player response 確認後由使用者提供修正連結，補跑成功（見 D-015、D-017）
   - competitor-intel `n3WFEnVPSBE`（Super Ace Deluxe）逐字稿僅符號報讀，內容過薄未建 entity，僅存 source stub
   - 批次過程另撞上 notebooklm 認證再次過期（D-014），已由使用者跑 `login --fresh` 解決；另發現 worktree bash 對含 `source` 字樣指令的誤攔截（D-016）
+- [x] ingest 2026-08-15 批次 3 支影片（ai-tooling ×2 + thinking ×1）— raw/transcripts/ 新增 3 檔、wiki/sources/ 新增 3 頁；新建 entities [[Joeman]]、[[阿蘭]]，新建 concepts [[Output_Style]]、[[STE100]]、[[原子習慣]]；更新 [[Claude_Code]]（Output Style 段落）、[[Gary_Chen]]（2026-08-15 內容主軸）、[[Matt_Pocock]]（W skill/STE100 關聯）、[[Even_Realities_G2]]（Joeman 開箱：設計協作、Claude Code Terminal 連線門檻＋Pro 訂閱限制、導航限制、規格衝突表補第三筆翻譯語言數據）；notebooklm CLI 全程無認證問題
+- [x] 修正 CLAUDE.md 第 12 節「ingest inbox」路徑：`_meta/prompts/inbox_ingest.md`（不存在）→ `_meta/inbox_ingest_prompt.md`（實際檔案位置）
 - [x] ingest 2026-08-08 批次 5 支 ai-tooling 影片 — raw/transcripts/ 新增 5 檔、wiki/sources/ 新增 5 頁；新建 entities [[MemoMind_One]]、[[Ray-Ban_Meta]]、[[OpenClaw]]、[[Tailscale]]，新建 concept [[指令預算]]；更新 [[Even_Realities_G2]]（Evenhub 平台／OcuClaw／美元價格階梯／規格衝突表）、[[AI智慧眼鏡]]（路線光譜擴為四款＋顯示派vs相機派＋眼鏡作為 Agent 終端）、[[Meta]]、[[Gary_Chen]]、[[Peter_Steinberger]]、[[Context_工程]]、[[Skill_輕量化]]；index.md（實測 93/53/66）、log.md、inbox.md 已同步；斷鏈掃描通過（僅餘 stub [[Even_Realities_G1]] 與既有 [[Will_Fan]]）
 - [x] lint LLM 底層原理頁群（22 concept ＋ 8 source）— 新建 topic 樞紐頁 [[LLM_原理]]（四層階梯／路線之爭／四位主講者理解階梯／缺口清單，38 個連結零斷鏈）；修 [[World_Models]] 斷鏈 3 處 → [[世界模型]]；[[Transformer]]、[[神經網路]] 加回連；index.md（Topics 4）、log.md 已同步
 - [x] ingest 2026-08-01 批次 2 支 ai-tooling 影片（AI 原理類）— raw/transcripts/ 新增 2 檔、wiki/sources/ 新增 2 頁；新建 entities [[大飛]]、[[王木頭]]，新建 concepts [[Transformer]]、[[注意力機制]]、[[位置編碼]]、[[MoE]]、[[萬能逼近定理]]、[[激活函數]]；更新 [[神經網路]]、[[反向傳播]]、[[梯度下降]]、[[2026-07-10_神經網路_漫士科普]]；index.md（實測 88/49/65）、log.md、inbox.md 已同步
@@ -30,7 +32,7 @@
 - （無）
 
 ## 待辦（依優先序）
-1. 裁決 [[Even_Realities_G2]] 的規格衝突（續航 48hr vs 12hr、語言 31 vs 29）——需第三方規格頁或官網佐證，目前三份來源皆未說明測法
+1. 裁決 [[Even_Realities_G2]] 的規格衝突（續航 48hr vs 12hr、語言 31 vs 29 vs「35 種支援/29 種雙向中文」）——2026-08-15 新增第三筆語言數據仍未解開差異，需第三方規格頁或官網佐證
 1b. 建 [[Will_Fan]] entity 頁（既有斷鏈，被 [[Even_Realities_G2]] 與 [[AI智慧眼鏡]] 引用；素材在 2026-06-27_even_g2_創辦人訪談）
 2. 兩處敘述小修（使用者本輪未選，隨時可做）：[[Transformer]] 頁「靠後續 RLHF 等對齊階段」把三階段壓成兩階段，應改為明確的預訓練→SFT→RL；[[2026-05-16_stanford_diffusion_lecture4]] 的 [[潛在空間]] stub 可指向 [[VAE]]
 3. 補 [[LLM_原理]] 標記的五個缺口頁（依重要性，前饋網路已於 2026-08-22 補齊）：Tokenization、預訓練、SFT、Scaling_Laws、Context_Window
@@ -68,10 +70,10 @@
 - [[ai自動化os_三家比較]] synthesis 可能需擴充：Grok 4.5 入局後 agentic 編程成三強格局
 
 ## 下次接續點
-- **2026-08-22 `ingest inbox`（3/3）+ `ingest raindrop` 首跑全數完成，待 commit + push 到分支 `worktree-ingest-inbox-20260822`**：待使用者 review worktree 內容後，決定是否合併回 main（Super Ace Deluxe 若有更完整來源可考慮補建 entity）
-- **下次 `ingest raindrop`**：直接跑 `_meta/prompts/raindrop_ingest.md`；Raindrop `#ptbrain` 標籤上還留 5 筆待人工的（見待辦 7），下次跑之前使用者可以先自己清一清或決定要不要保留
-- **⚠️ 主目錄（非 worktree）有未 commit 的 2026-08-15 批次**：`raw/transcripts/2026-08-15_claude_output_style_不降智.md`、`2026-08-15_even_g2_開箱_joeman.md`、`2026-08-15_原子習慣_50歲.md`、`wiki/concepts/Output_Style.md`／`STE100.md`／`原子習慣.md`、`wiki/entities/Joeman.md`／`阿蘭.md`，以及連帶修改的 `index.md`／`log.md`／`CLAUDE.md`／`wiki/entities/{Claude_Code,Even_Realities_G2,Gary_Chen,Matt_Pocock}.md` 都還停在 working tree 沒 commit。這批看起來是完整成果、只是沒收尾；建議使用者先在主目錄 review 並單獨 commit 這批，再處理本次 worktree 分支的合併，避免 index.md／log.md 兩邊分岔衝突
+- **主目錄與 worktree 已正式合併，worktree 即將清除**：合併後只保留 main 一份，不用再擔心兩邊分岔
+- **下次 `ingest raindrop`**：直接跑 `_meta/raindrop_ingest_prompt.md`；Raindrop `#ptbrain` 標籤上還留 5 筆待人工的（見待辦 7），下次跑之前使用者可以先自己清一清或決定要不要保留
 - inbox.md 待處理區已清空；下次 ingest 先查 `git status --short raw/` 有無未處理的 untracked 檔
+- 本批未建立 topic 樞紐頁：[[原子習慣]] 是 thinking-methods notebook 的第二個主題（第一個是 2026-07-04 的馬斯克清醒演講/第一性原理），兩者尚未有共同樞紐，暫不急著建（CLAUDE.md 3.1：少量頁面不用急著建 topic）
 - 環境已清理（2026-08-08 使用者授權）：移除 `~otebooklm` / `~otebooklm_py-0.7.3.dist-info` 殘留目錄，卸載本次臨時安裝的 10 個套件（browser_cookie3、rookiepy 及其依賴鏈 lz4／pycryptodomex／pywin32／WMI／shadowcopy，以及查依賴用的 pipdeptree／nab-index／nab-python）。清理後 `pip check` 無破損、`notebooklm status` API 實測正常
 - 可重用腳本存於本次 scratchpad：`make_raw.py`（rich 硬換行 unwrap ＋ 加 frontmatter，本批 5 檔實測可用）、`linkcheck.py`（斷鏈 ＋ inbound 統計，可直接當 lint 第一步）
 - 可考慮的 synthesis：**AI 眼鏡兩派路線對決**素材已齊（顯示派 [[Even_Realities_G2]]／[[MemoMind_One]] vs 相機派 [[Ray-Ban_Meta]]，加上 [[RayNeo_X3_Pro]] 的全彩 AR 第三路線，共 8 份來源）——比既有的三家 AI OS 比較更成熟

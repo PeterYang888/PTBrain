@@ -3,8 +3,8 @@ type: entity
 entity_type: product
 tags: [ai-glasses, hardware, wearable, even-realities]
 created: 2026-06-27
-updated: 2026-08-08
-sources: [2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 2026-06-27_even_realities_g2_36g, 2026-08-08_ocuclaw_even_g2_ai_agent, 2026-08-08_even_g2_開放平台評測, 2026-08-08_even_g2_vs_memomind_one]
+updated: 2026-08-15
+sources: [2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 2026-06-27_even_realities_g2_36g, 2026-08-08_ocuclaw_even_g2_ai_agent, 2026-08-08_even_g2_開放平台評測, 2026-08-08_even_g2_vs_memomind_one, 2026-08-15_even_g2_開箱_joeman]
 ---
 
 # Even Realities G2
@@ -36,6 +36,14 @@ sources: [2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 20
 - 刻意**不做語音喚醒**，改鏡腳觸控或戒指雙擊後單擊才監聽，避免公共場合誤聽
 - 缺點是設定極繁瑣（PowerShell ＋ 虛擬區網 ＋ API 串接），且 OpenClaw 端穩定度尚未成熟
 
+## 補充：Joeman 開箱實測（2026-08-15）
+來自 [[2026-08-15_even_g2_開箱_joeman]]，第三位評測者視角，補充前兩批未提到的細節：
+- **設計協作**：邀請德國高階眼鏡品牌 MYKITA 共同創辦人 Filip Hoffman 操刀外觀；2 種框型（復古圓形／俐落方形）× 3 色（綠/棕/灰）
+- **Claude Code Terminal 連線門檻**：電腦端需裝 Claude Code CLI＋Node 環境，經官方 Even Terminal 連線；**免費版 Claude 帳號無法使用，必須 Pro 以上訂閱或 API 計量付費的 Console 帳號**
+- **對話轉寫實測準確度**：約 90%
+- **導航限制**：僅走路／腳踏車兩種慢速模式（不適合開車/騎摩托車，GPS 有延遲），且僅支援 App 內建地圖，不支援第三方地圖
+- **EvenHub 生態實例**：電子書閱讀器（可調自動翻頁速度）、貪食蛇等小遊戲
+
 ## 補充：美元價格階梯與規格（2026-08-08）
 來自 [[2026-08-08_even_g2_vs_memomind_one]]（主講者自費購買、數月實測）：
 - **基本款 $599** ｜ 配鏡版 $758–$948（依度數）｜ Ring controller $249（未稅）｜ 太陽鏡片 $99 ｜ 最高配總價可達 **$1,296**
@@ -47,9 +55,9 @@ sources: [2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 20
 | 項目 | 說法 A | 說法 B |
 |---|---|---|
 | 續航 | **48 小時 / 2 天**（[[2026-06-27_even_realities_g2_36g]]、[[2026-08-08_even_g2_開放平台評測]]） | **12 小時**（[[2026-08-08_even_g2_vs_memomind_one]]） |
-| 翻譯語言數 | **31 種**（2026-06-27 批次） | **29 種**（2026-08-08 Ken） |
+| 翻譯語言數 | **31 種**（2026-06-27 批次） | **29 種**（2026-08-08 Ken） | **支援 35 種，其中 29 種可雙向翻中文**（2026-08-15 Joeman） |
 
-推測續航差異來自測試條件（混合／待機 vs 重度使用），但三方來源皆未說明測法；語言數可能是版本更新差異。本頁並列不裁決。
+推測續航差異來自測試條件（混合／待機 vs 重度使用），但三方來源皆未說明測法。語言數：Joeman 的「29」與 Ken 的「29」數字相同但計量基準不同（前者明確是「雙向翻中文」子集，後者未說明是否為同一基準），31 種說法仍未解釋差異來源。本頁並列不裁決。
 
 ## 與其他頁的關係
 - 是 [[AI智慧眼鏡]] 的「無相機生產力工具」路線代表，對比 [[RayNeo_X3_Pro]]（全彩 AR + 本機 Gemini，76g/約 1hr）、[[Ray-Ban_Meta]]（相機/社群、299 美元起）
@@ -64,3 +72,4 @@ sources: [2026-06-27_even_g2_claude_code, 2026-06-27_even_g2_創辦人訪談, 20
 - [[2026-08-08_even_g2_開放平台評測]] — Evenhub 與社群生態
 - [[2026-08-08_ocuclaw_even_g2_ai_agent]] — 外接 OpenClaw 完整設定
 - [[2026-08-08_even_g2_vs_memomind_one]] — 對 MemoMind One 的規格與價格對照
+- [[2026-08-15_even_g2_開箱_joeman]] — Joeman 開箱：設計協作、Claude Code 連線門檻、導航限制

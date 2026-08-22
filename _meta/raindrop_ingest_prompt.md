@@ -35,10 +35,10 @@ Raindrop 上的書籤可能早就透過別的管道（手動貼、`ingest inbox`
 
 ### 2a. YouTube 影片（`type: video`，domain 為 youtube.com / youtu.be）
 不重新實作 YouTube 抽取邏輯——**併入現有 `inbox.md` 流程**：
-1. 依標題/note 內容判斷最貼近的 notebook 標記（`ai-tooling` / `competitor-intel` / `slot-math` / `team-management` / `thinking`，對應表見 `inbox_ingest.md` 第 58 節「Notebook 對應規則」）。無法判斷就先標 `ai-tooling`
+1. 依標題/note 內容判斷最貼近的 notebook 標記（`ai-tooling` / `competitor-intel` / `slot-math` / `team-management` / `thinking`，對應表見 `_meta/inbox_ingest_prompt.md` 的「Notebook 對應規則」）。無法判斷就先標 `ai-tooling`
 2. **先把這一批（連同猜測的 notebook 標記）列給使用者看一次，確認或修正後才動手**——這跟 `ingest inbox` 開跑前的確認習慣一致，只在批次開始前問一次，之後不再中途詢問
 3. 確認後，把這些項目依格式（`- URL | notebook標記`）加進 `inbox.md` 的「## 待處理」對應分類
-4. 呼叫 `ingest inbox` 的完整流程（`inbox_ingest.md`）處理這些新加入的項目
+4. 呼叫 `ingest inbox` 的完整流程（`_meta/inbox_ingest_prompt.md`）處理這些新加入的項目
 5. 全部處理完後，把這些項目在 Raindrop 上的 `ptbrain` 標籤移除
 
 ### 2b. 文章／連結（`type: link`，domain 非社群媒體，如 github.com、hackmd.io 等）

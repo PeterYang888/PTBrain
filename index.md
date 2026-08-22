@@ -39,6 +39,8 @@
 - [[Matt_Pocock]] — TypeScript 專家；/grill-me 系列極簡 Skill，16 萬星、700 萬次下載
 - [[Corey_McClain]] — 同名頻道主，AI 生產力短影片；Claude record a skill 示範
 - [[軒轅]] — 「軒轅的编程宇宙」主講者，動畫解析 NLP／LLM 原理；補上 Transformer 之前的技術演進
+- [[Joeman]] — 台灣科技開箱 YouTuber（九妹）；開箱 Even G2 並實測 Claude Code 連線
+- [[阿蘭]] — 「懶讀報告」頻道主講者，從中年視角重新拆解長銷書
 
 ### Organizations
 - [[Anthropic]] — AI 公司，Claude 系列與 Claude Code 的開發商；ARR $30B 於 2026-04 超越 OpenAI
@@ -157,12 +159,15 @@ _（尚未建立）_
 - [[示範式自動化]] — 示範一遍即成 Skill；Codex Record & Replay 與 Claude record a skill 對照
 - [[指令預算]] — Instruction Budget；規則檔的稀缺資源是注意力不是 Token；三層放置＋不寫/Skill/Hook 三分流
 - [[Prompt_Caching]] — 提示詞快取折扣機制；命中快取省 10 倍，壽命約 1 小時，換模型/調思考強度會全失效
+- [[Output_Style]] — Claude Code 專案層級輸出風格設定；規範技術密度與語氣，不影響程式碼能力
+- [[STE100]] — 航太業簡化技術英文標準；短句/單一動作/一詞一意，移植管理 AI 說話方式
 
 ### 思維方法
 - [[第一性原理]] — 底層思考法，剝除假設從基礎事實重建
 - [[類比思維]] — 複製既有成功模式，與第一性原理對立
 - [[語義樹]] — Elon Musk 的學習框架（先建原則樹幹，再掛細節樹葉）
 - [[寧靜技術]] — Quiet Technology：技術不奪取注意力，只在需要時輕輕靠近（穿戴設計哲學）
+- [[原子習慣]] — 環境設計取代意志力對抗；Never miss twice；兩分鐘法則修復自我信用
 
 ### 醫學 / 生理
 - [[GLP-1受體激動劑]] — 瘦瘦針的作用機制、藥物世代、跨系統效果與風險
@@ -195,6 +200,9 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 - [[2026-08-22_詞向量到transformer_nlp演進]] — N-gram/詞向量/RNN/LSTM，Transformer 誕生的前置動機（YouTube，2026-08-22）
 - [[2026-08-22_super_ace_deluxe_實錄]] — Super Ace Deluxe 實戰錄影，20倍乘數連發，逐字稿僅符號報讀（YouTube，2026-08-22）
 - [[2026-08-22_省token三招_context管理]] — Gary Chen 省 token 三招：丟/縮/快取折扣，四層 context 拆解（YouTube，2026-08-22）
+- [[2026-08-15_原子習慣_50歲]] — 原子習慣給中年人的部分：環境地形、不中斷兩次、兩分鐘法則（YouTube，2026-08-15）
+- [[2026-08-15_even_g2_開箱_joeman]] — Joeman 開箱 Even G2：設計協作、Claude Code 連線門檻、導航限制（YouTube，2026-08-15）
+- [[2026-08-15_claude_output_style_不降智]] — Claude Code Output Style 設定教學 + STE100 溝通標準（YouTube，2026-08-15）
 - [[2026-08-08_claude_md_15分鐘精通]] — CLAUDE.md 三層設計、指令預算、花園式修剪（YouTube，2026-08-08）
 - [[2026-08-08_ocuclaw_even_g2_ai_agent]] — Even G2 接自架 OpenClaw：OcuClaw + Tailscale 完整設定（YouTube，2026-08-08）
 - [[2026-08-08_even_g2_開放平台評測]] — Even G2 真正身分是零審查可編程平台：Evenhub、社群 10,000 功能（YouTube，2026-08-08）
@@ -292,10 +300,10 @@ _最近 ingest 的來源（倒序）。完整列表看 `wiki/sources/` 資料夾
 ---
 
 ## 統計
-_以下為 2026-08-22 實際檔案數。_
-- Sources: 107（+11：`ingest raindrop` 首跑，文章/社群貼文/1 支影片）
-- Entities: 56（+Cowart、bookMDViewer）
-- Concepts: 72（+Prompt_Caching、N-gram、詞向量、前饋網路、RNN、LSTM）
+_以下為合併 2026-08-15 與 2026-08-22 兩批後、實際檔案數清點（`ls wiki/{sources,entities,concepts} | wc -l`）。_
+- Sources: 110
+- Entities: 58
+- Concepts: 75
 - Topics: 4（Topics 區塊列出的 [[第一性原理]] 實為 concept 頁；[[LLM_原理]] 已知缺口移除「前饋網路」一項）
 - Syntheses: 2
-- 最近活動: 2026-08-22 · `ingest inbox` 批次 3 支全數完成 + `ingest raindrop` 首次實跑全數完成（30 筆 #ptbrain 書籤：14 重複移除標籤、1 頻道頁待人工、4 空白 FB 待人工、11 篇新內容 ingest）
+- 最近活動: 2026-08-22 · 合併 2026-08-15 批次（3 支：Output_Style/STE100/原子習慣）+ 2026-08-22 `ingest inbox`（3 支全數完成）+ `ingest raindrop` 首次實跑（30 筆 #ptbrain 書籤處理）

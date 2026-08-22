@@ -4,7 +4,7 @@ entity_type: product
 tags: [anthropic, ai-dev-tool, agent]
 created: 2026-04-17
 updated: 2026-08-22
-sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_claude_code_代理工具, 2026-05-16_claude_code_obsidian_知識庫, 2026-05-16_claude_code_人物蒸餾, 2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_graphify_claude_code, 2026-06-19_claude_code_500小時心得, 2026-06-19_claude_code轉codex, 2026-06-19_loop_engineering, 2026-06-19_ai復活老遊戲, 2026-07-04_claude_codex_互審, 2026-07-30_codex_plugin_cc]
+sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模型選擇指南, 2026-05-16_claude_code_代理工具, 2026-05-16_claude_code_obsidian_知識庫, 2026-05-16_claude_code_人物蒸餾, 2026-06-06_11天_claude_code_dynamic_workflows, 2026-06-12_graphify_claude_code, 2026-06-19_claude_code_500小時心得, 2026-06-19_claude_code轉codex, 2026-06-19_loop_engineering, 2026-06-19_ai復活老遊戲, 2026-07-04_claude_codex_互審, 2026-07-30_codex_plugin_cc, 2026-08-15_claude_output_style_不降智]
 ---
 
 # Claude Code
@@ -64,6 +64,11 @@ sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模�
 ## 官方 Codex 外掛（2026-07-30）
 - OpenAI 發布官方外掛 `codex-plugin-cc`：`/plugin marketplace add openai/codex-plugin-cc` 安裝後，可在 Claude Code 裡直接用 `/codex:review`、`/codex:rescue`、`/codex:transfer` 等斜線指令呼叫 Codex 審查/委派/轉移會話，把上面 stopHook 的 DIY 互審流程官方化。見 [[2026-07-30_codex_plugin_cc]]
 
+## [[Output_Style]]（2026-08-15）
+- 專案層級設定，規範輸出的技術密度與語氣，不影響程式碼能力。內建 4 套：`default`／`proactive`／`learning`／`explanatory`
+- 存在每個專案的 settings local，可跨專案切換；`/branch` 可快速生成候選風格供挑選
+- 見 [[2026-08-15_claude_output_style_不降智]]
+
 ## 相關來源
 - [[2026-04-15_claude_code_desktop_routines改版]]
 - [[2026-04-16_claude_模型選擇指南]]
@@ -72,3 +77,4 @@ sources: [2026-04-15_claude_code_desktop_routines改版, 2026-04-16_claude_模�
 - [[2026-05-16_claude_code_人物蒸餾]]
 - [[2026-07-04_claude_codex_互審]]
 - [[2026-07-30_codex_plugin_cc]]
+- [[2026-08-15_claude_output_style_不降智]]

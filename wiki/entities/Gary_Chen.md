@@ -4,7 +4,7 @@ entity_type: person
 tags: [ai, claude-code, codex, harness-engineering]
 created: 2026-07-04
 updated: 2026-08-22
-sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通, 2026-08-22_省token三招_context管理, 2026-08-09_google_ai課程day4_5]
+sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_day1, 2026-07-18_codex_record_replay_fork, 2026-07-18_git_github_vibe_coding基礎, 2026-07-25_grill_me_matt_pocock, 2026-08-08_claude_md_15分鐘精通, 2026-08-15_claude_output_style_不降智, 2026-08-22_省token三招_context管理, 2026-08-09_google_ai課程day4_5]
 ---
 
 # Gary Chen
@@ -30,6 +30,10 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 - 給出規則的三層放置法（User / Project / Nested）與三分流（不寫／Skill／Hook）
 - 「一份好的 CLAUDE.md 就像一個花園，維護工作只有兩件事：新增與修剪」——與他一貫「系統勝過人為紀律」的主張一致
 
+## 內容主軸（2026-08-15）
+- 提出「AI 降智」多為溝通語境失配，用 [[Claude_Code]] 的 [[Output_Style]] 功能規範輸出的技術密度與語氣，不動及程式能力
+- 引入 [[STE100]] 航太簡化技術英文標準管理 AI 說話方式，並依技術背景（小白／Vibe Coder/PM／工程師）設計三套自訂風格
+
 ## 內容主軸（2026-08-22）
 - 提出「省 token 三招」：丟掉用不到的 context（換任務開新對話／編輯回溯／精簡工具）、縮減留下來的（先搜尋再餵／給結論清過程／限縮輸入輸出）、善用 [[Prompt_Caching]] 折扣
 - 把每次請求注入的 context 拆成四層（系統規則／工具說明／對話歷史／外部檔案），呼應他一貫「精準控制而非被動承受」的工程哲學
@@ -42,5 +46,6 @@ sources: [2026-07-04_claude_codex_互審, 2026-07-18_google_agentic_engineering_
 - [[2026-07-18_git_github_vibe_coding基礎]] — 非技術人員的 Git/GitHub 教學
 - [[2026-07-25_grill_me_matt_pocock]] — 拆解 [[Matt_Pocock]] 的 /grill-me 極簡 Skill 工作流
 - [[2026-08-08_claude_md_15分鐘精通]] — CLAUDE.md 的層級設計、指令預算與花園式維護
+- [[2026-08-15_claude_output_style_不降智]] — Output Style 設定教學與 STE100 溝通標準
 - [[2026-08-22_省token三招_context管理]] — 省 token 三招與四層 context 拆解
 - [[2026-08-09_google_ai課程day4_5]] — Google AI 課程 Day 4+5：Spec/Security/Evaluation 三大動作
