@@ -393,3 +393,9 @@
 - 參考頁面：[[Even_Realities_G2]]
 - 回答涵蓋：減法美學（無相機/喇叭）、Evenhub 開放平台（社群 10,000 功能 vs 官方 10 個）、AI 功能（Conversate/Teleprompter/Terminal Mode）、R1 Ring 健康監測、MYKITA 設計協作；如實引用頁面既有的續航/語言數規格爭議，未裁決
 - 產出：無（使用者選擇不歸檔成 synthesis，純屬既有 entity 頁內容重述）
+
+## [2026-08-23] lint
+- 每月健檢，範圍：`wiki/` 全部 269 個檔案（結構掃描 + 三分群精讀：LLM 原理核心／AI 工作流與 Claude 生態／AI 眼鏡與雜項）
+- 發現 5 個矛盾（含 Even G2 續航/語言數舊案未裁決、Ray-Ban Meta $299 對應世代不一致、Transformer 三階段壓兩階段舊案未修）、6 個過時聲明（[[Anthropic_Claude_生態]] 樞紐頁落後 4 個月最嚴重）、0 個真孤立頁面（僅 wiki/README.md）、15+ 個缺頁概念候選（[[Will_Fan]] 最高優先）、約 20 個漏連結（含文生圖概念群系統性單向連結）、14 個檔案缺 frontmatter（6 個集中 2026-05-24 批次）、約 20 項資料缺口、13 個建議新方向
+- 報告：[[_meta/lint_reports/2026-08-23|2026-08-23 健檢報告]]（`_meta/lint_reports/2026-08-23.md`）
+- 本輪未修任何項目（報告任務，待使用者勾選決定）
