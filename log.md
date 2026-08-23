@@ -388,3 +388,8 @@
   - news（9，1 支失敗）：[[2026-08-22_網紅課稅5261萬]]、[[2026-08-22_阿根廷巴西球迷鬥毆]]、[[2026-08-22_靜音跳舞爆紅]]、[[2026-08-22_爐端燒擺攤爭議]]、[[2026-08-22_ezway關貿公司爭議]]、[[2026-08-22_ezway三大澄清記者會]]、[[2026-08-22_kk事件民眾黨]]、[[2026-08-22_交流道鳥籠籃球場]]、[[2026-08-22_趙建銘離婚教育金]]；`2Smy2AUbLJI` notebooklm source add 連續失敗（oEmbed 確認影片有效，疑 notebooklm 端問題），標記跳過待重試
 - 這批內容一律只建 wiki/sources 頁，不建 entity/concept（個人生活類內容不適合累積成知識網），健康/科技新聞類保留 raw 檔，tech-life/news 類為節省時間僅存 source 頁（無獨立 raw 檔）
 - index.md（統計 129/58/75）、inbox.md 已同步
+
+## [2026-08-23] query | Even G2 有什麼優點
+- 參考頁面：[[Even_Realities_G2]]
+- 回答涵蓋：減法美學（無相機/喇叭）、Evenhub 開放平台（社群 10,000 功能 vs 官方 10 個）、AI 功能（Conversate/Teleprompter/Terminal Mode）、R1 Ring 健康監測、MYKITA 設計協作；如實引用頁面既有的續航/語言數規格爭議，未裁決
+- 產出：無（使用者選擇不歸檔成 synthesis，純屬既有 entity 頁內容重述）
